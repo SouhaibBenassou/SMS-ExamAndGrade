@@ -1,0 +1,6 @@
+C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.csproj.AssemblyReference.cache
+C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.AssemblyInfoInputs.cache
+C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.AssemblyInfo.cs
+C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.csproj.CoreCompileInputs.cache
+C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.MvcApplicationPartsAssemblyInfo.cache
