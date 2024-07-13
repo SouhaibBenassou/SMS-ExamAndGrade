@@ -3,6 +3,7 @@ using Application.IRepository;
 using Infrastracture;
 using Infrastracture.Repositories;
 using Infrastructure.Data;
+using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,6 +20,7 @@ namespace Infrastructure
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(con));
             //dependency injection contanaireS
             services.AddScoped<IExamRepository, ExamRepository>();
+            services.AddScoped<IRoomRepository, RoomRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             return services;

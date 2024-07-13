@@ -7,8 +7,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Folder Include="Features\Room\Command\" />
-		<Folder Include="Features\Room\Queries\" />
+	  <Compile Remove="Features\Room\**" />
+	  <EmbeddedResource Remove="Features\Room\**" />
+	  <None Remove="Features\Room\**" />
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="12.0.1" />

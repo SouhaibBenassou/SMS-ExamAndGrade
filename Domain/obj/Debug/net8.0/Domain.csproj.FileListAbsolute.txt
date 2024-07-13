@@ -2,3 +2,15 @@ C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Domain\obj\Debug
 C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
 C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
 C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Domain\obj\Debug\net8.0\ref\Domain.dll

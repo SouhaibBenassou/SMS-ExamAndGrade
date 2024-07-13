@@ -3,3 +3,9 @@ C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Infrastracture\o
 C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Infrastracture\obj\Debug\net8.0\Infrastracture.AssemblyInfoInputs.cache
 C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Infrastracture\obj\Debug\net8.0\Infrastracture.AssemblyInfo.cs
 C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Infrastracture\obj\Debug\net8.0\Infrastracture.csproj.CoreCompileInputs.cache
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Infrastracture\obj\Debug\net8.0\Infrastracture.csproj.AssemblyReference.cache
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Infrastracture\obj\Debug\net8.0\Infrastracture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Infrastracture\obj\Debug\net8.0\Infrastracture.AssemblyInfoInputs.cache
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Infrastracture\obj\Debug\net8.0\Infrastracture.AssemblyInfo.cs
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Infrastracture\obj\Debug\net8.0\Infrastracture.csproj.CoreCompileInputs.cache
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Infrastracture\obj\Debug\net8.0\Infrastracture.sourcelink.json

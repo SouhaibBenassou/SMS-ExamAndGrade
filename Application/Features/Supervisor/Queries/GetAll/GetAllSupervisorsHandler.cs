@@ -14,7 +14,7 @@ namespace Application.Features.Supervisor.Queries
 
         public async Task<List<Domain.Entities.Supervisor>> Handle(GetAllSupervisorsQuery request, CancellationToken cancellationToken) {
 
-            return await _UnitOfService.SupervisorService.
+            return await _UnitOfService.SupervisorService;
         }
     }
 }

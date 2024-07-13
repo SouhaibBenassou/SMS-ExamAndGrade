@@ -1,4 +1,5 @@
 ﻿using Domain;
+using Domain.Enums;
 using MediatR;
 
 namespace Application.Features.Exam.Command.Create

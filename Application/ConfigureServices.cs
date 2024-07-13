@@ -15,7 +15,7 @@ namespace Application
             //configuration of mediator
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
             //configuration of auto mapper
-            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            //services.AddAutoMapper(Assembly.GetExecutingAssembly());
             return services;
         }
     }

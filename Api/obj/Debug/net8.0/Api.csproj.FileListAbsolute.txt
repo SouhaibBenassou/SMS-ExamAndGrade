@@ -4,3 +4,10 @@ C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Api\obj\Debug\ne
 C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.AssemblyInfo.cs
 C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.csproj.CoreCompileInputs.cache
 C:\Users\souhaib\Documents\GitHub\ExamAndGrade\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.csproj.AssemblyReference.cache
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.AssemblyInfoInputs.cache
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.AssemblyInfo.cs
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.csproj.CoreCompileInputs.cache
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastvertionProject\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.sourcelink.json

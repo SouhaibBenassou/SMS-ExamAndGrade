@@ -1,5 +1,5 @@
-﻿using MediatR;
-using Domain.Dtos.SupervisorDto;
+﻿using Domain.Dtos;
+using MediatR;
 
 
 
@@ -7,9 +7,9 @@ namespace Application.Features.Supervisor.command.Create
 {
     public class CreateSupervisorCommand : IRequest<Domain.Entities.Supervisor>
     {
-        public CreateSupervisorDto SupervisorDto { get; }
+        public SupervisorDto SupervisorDto { get; }
 
-        public CreateSupervisorCommand(CreateSupervisorDto supervisorDto)
+        public CreateSupervisorCommand(SupervisorDto supervisorDto)
         {
             SupervisorDto = supervisorDto;
         }
