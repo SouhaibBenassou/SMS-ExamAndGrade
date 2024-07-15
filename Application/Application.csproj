@@ -7,9 +7,9 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Compile Remove="Features\Room\**" />
-	  <EmbeddedResource Remove="Features\Room\**" />
-	  <None Remove="Features\Room\**" />
+		<Compile Remove="Features\Room\**" />
+		<EmbeddedResource Remove="Features\Room\**" />
+		<None Remove="Features\Room\**" />
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="13.0.1" />
@@ -18,7 +18,7 @@
 		<PackageReference Include="RabbitMQ.Client" Version="7.0.0-rc.4" />
 	</ItemGroup>
 	<ItemGroup>
-	  <ProjectReference Include="..\Domain\Domain.csproj" />
+		<ProjectReference Include="..\Domain\Domain.csproj" />
 	</ItemGroup>
 
 </Project>

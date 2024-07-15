@@ -3,32 +3,112 @@
   "WorkspaceRootPath": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\features\\rooms\\commands\\update\\updateroomcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\features\\rooms\\commands\\update\\updateroomcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDCFE72A-4E4B-4170-A55C-6D2A172C53F9}|Infrastracture\\Infrastracture.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\infrastracture\\uow\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCFE72A-4E4B-4170-A55C-6D2A172C53F9}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\uow\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDCFE72A-4E4B-4170-A55C-6D2A172C53F9}|Infrastracture\\Infrastracture.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\infrastracture\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCFE72A-4E4B-4170-A55C-6D2A172C53F9}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\services\\unitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\services\\unitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\interfaces\\iunitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iunitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\features\\rooms\\commands\\update\\updateroomcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\features\\rooms\\commands\\update\\updateroomcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\features\\rooms\\commands\\update\\updateroomcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\features\\rooms\\commands\\update\\updateroomcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDCFE72A-4E4B-4170-A55C-6D2A172C53F9}|Infrastracture\\Infrastracture.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\infrastracture\\uow\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDCFE72A-4E4B-4170-A55C-6D2A172C53F9}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\uow\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\services\\supervisorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\services\\supervisorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ECEE260-FB51-4E16-915B-E77BAD985406}|Domain\\Domain.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5ECEE260-FB51-4E16-915B-E77BAD985406}|Domain\\Domain.csproj|solutionrelative:domain\\domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\services\\examservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\services\\examservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\iservices\\iexamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\iservices\\iexamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\profiles\\examprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\profiles\\examprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\profiles\\roomprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\profiles\\roomprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ECEE260-FB51-4E16-915B-E77BAD985406}|Domain\\Domain.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\domain\\dtos\\examdto\\getlistexamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ECEE260-FB51-4E16-915B-E77BAD985406}|Domain\\Domain.csproj|solutionrelative:domain\\dtos\\examdto\\getlistexamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ECEE260-FB51-4E16-915B-E77BAD985406}|Domain\\Domain.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\domain\\entities\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ECEE260-FB51-4E16-915B-E77BAD985406}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\exam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDCFE72A-4E4B-4170-A55C-6D2A172C53F9}|Infrastracture\\Infrastracture.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\infrastracture\\repositories\\examrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDCFE72A-4E4B-4170-A55C-6D2A172C53F9}|Infrastracture\\Infrastracture.csproj|solutionrelative:infrastracture\\repositories\\examrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\features\\exam\\queries\\getlistexamquery\\getlistexamquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\features\\exam\\queries\\getlistexamquery\\getlistexamquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\features\\exam\\queries\\getlistexamquery\\getlistexamqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\features\\exam\\queries\\getlistexamquery\\getlistexamqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\iservices\\iroomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\iservices\\iroomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4822933-1622-48A2-8400-37A988DE7E0F}|Api\\Api.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\api\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4822933-1622-48A2-8400-37A988DE7E0F}|Api\\Api.csproj|solutionrelative:api\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4822933-1622-48A2-8400-37A988DE7E0F}|Api\\Api.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\api\\controllers\\examcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4822933-1622-48A2-8400-37A988DE7E0F}|Api\\Api.csproj|solutionrelative:api\\controllers\\examcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\profiles\\roomprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\profiles\\roomprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4822933-1622-48A2-8400-37A988DE7E0F}|Api\\Api.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B4822933-1622-48A2-8400-37A988DE7E0F}|Api\\Api.csproj|solutionrelative:api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4822933-1622-48A2-8400-37A988DE7E0F}|Api\\Api.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\api\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4822933-1622-48A2-8400-37A988DE7E0F}|Api\\Api.csproj|solutionrelative:api\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4822933-1622-48A2-8400-37A988DE7E0F}|Api\\Api.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\api\\controllers\\supervisorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4822933-1622-48A2-8400-37A988DE7E0F}|Api\\Api.csproj|solutionrelative:api\\controllers\\supervisorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4822933-1622-48A2-8400-37A988DE7E0F}|Api\\Api.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\api\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4822933-1622-48A2-8400-37A988DE7E0F}|Api\\Api.csproj|solutionrelative:api\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\features\\rooms\\commands\\delete\\deleteroomcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,10 +127,6 @@
       "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\features\\rooms\\queries\\getroombyid\\getroombyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4822933-1622-48A2-8400-37A988DE7E0F}|Api\\Api.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\api\\controllers\\supervisorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4822933-1622-48A2-8400-37A988DE7E0F}|Api\\Api.csproj|solutionrelative:api\\controllers\\supervisorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\features\\rooms\\queries\\getlistofrooms\\getlistofroomsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\features\\rooms\\queries\\getlistofrooms\\getlistofroomsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,20 +135,8 @@
       "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\features\\rooms\\queries\\getlistofrooms\\getlistofroomsquerieshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\services\\unitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\services\\unitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\interfaces\\iunitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iunitofservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\irepository\\iasyncrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\irepository\\iasyncrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\application\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CC876CE-3B00-486E-B565-F20B8071F8C0}|Application\\Application.csproj|solutionrelative:application\\configureservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDCFE72A-4E4B-4170-A55C-6D2A172C53F9}|Infrastracture\\Infrastracture.csproj|c:\\users\\souhaib\\documents\\github\\sms-examandgrade\\infrastracture\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +154,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,33 +162,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Infrastracture\\UOW\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "Infrastracture\\UOW\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Infrastracture\\UOW\\UnitOfWork.cs",
-              "RelativeToolTip": "Infrastracture\\UOW\\UnitOfWork.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAIBCwCIAAAAnAAAA",
+              "DocumentIndex": 4,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T23:58:55.265Z",
+              "WhenOpened": "2024-07-15T01:43:40.539Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UpdateRoomCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Features\\Rooms\\Commands\\Update\\UpdateRoomCommandHandler.cs",
-              "RelativeDocumentMoniker": "Application\\Features\\Rooms\\Commands\\Update\\UpdateRoomCommandHandler.cs",
-              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Features\\Rooms\\Commands\\Update\\UpdateRoomCommandHandler.cs",
-              "RelativeToolTip": "Application\\Features\\Rooms\\Commands\\Update\\UpdateRoomCommandHandler.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAcwCAAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "ConfigureServices.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\ConfigureServices.cs",
+              "RelativeDocumentMoniker": "Application\\ConfigureServices.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\ConfigureServices.cs",
+              "RelativeToolTip": "Application\\ConfigureServices.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAUwA0AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T21:07:50.247Z",
+              "WhenOpened": "2024-07-14T20:09:42.398Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
+              "Title": "RoomService.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Services\\RoomService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\RoomService.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Services\\RoomService.cs",
+              "RelativeToolTip": "Application\\Services\\RoomService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAowB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T19:47:56.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "UpdateRoomCommand.cs",
               "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Features\\Rooms\\Commands\\Update\\UpdateRoomCommand.cs",
               "RelativeDocumentMoniker": "Application\\Features\\Rooms\\Commands\\Update\\UpdateRoomCommand.cs",
@@ -138,6 +215,110 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "UpdateRoomCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Features\\Rooms\\Commands\\Update\\UpdateRoomCommandHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Rooms\\Commands\\Update\\UpdateRoomCommandHandler.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Features\\Rooms\\Commands\\Update\\UpdateRoomCommandHandler.cs",
+              "RelativeToolTip": "Application\\Features\\Rooms\\Commands\\Update\\UpdateRoomCommandHandler.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAcwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T21:07:50.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUnitOfService.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Interfaces\\IUnitOfService.cs",
+              "RelativeDocumentMoniker": "Application\\Interfaces\\IUnitOfService.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Interfaces\\IUnitOfService.cs",
+              "RelativeToolTip": "Application\\Interfaces\\IUnitOfService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T20:16:05.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitOfService.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Services\\UnitOfService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\UnitOfService.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Services\\UnitOfService.cs",
+              "RelativeToolTip": "Application\\Services\\UnitOfService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIA2wA0AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T20:16:38.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConfigureServices.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Infrastracture\\ConfigureServices.cs",
+              "RelativeDocumentMoniker": "Infrastracture\\ConfigureServices.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Infrastracture\\ConfigureServices.cs",
+              "RelativeToolTip": "Infrastracture\\ConfigureServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T00:55:13.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Infrastracture\\UOW\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Infrastracture\\UOW\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Infrastracture\\UOW\\UnitOfWork.cs",
+              "RelativeToolTip": "Infrastracture\\UOW\\UnitOfWork.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAswBIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T23:58:55.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SupervisorService.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Services\\SupervisorService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\SupervisorService.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Services\\SupervisorService.cs",
+              "RelativeToolTip": "Application\\Services\\SupervisorService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T01:41:00.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Domain",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Domain\\Domain.csproj",
+              "RelativeDocumentMoniker": "Domain\\Domain.csproj",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Domain\\Domain.csproj",
+              "RelativeToolTip": "Domain\\Domain.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-15T01:40:11.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IExamService.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\IServices\\IExamService.cs",
+              "RelativeDocumentMoniker": "Application\\IServices\\IExamService.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\IServices\\IExamService.cs",
+              "RelativeToolTip": "Application\\IServices\\IExamService.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAADwvwkAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T00:50:51.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "RoomProfile.cs",
               "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Profiles\\RoomProfile.cs",
               "RelativeDocumentMoniker": "Application\\Profiles\\RoomProfile.cs",
@@ -150,7 +331,150 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GetListExamQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Features\\Exam\\Queries\\GetListExamQuery\\GetListExamQueryHandler.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Exam\\Queries\\GetListExamQuery\\GetListExamQueryHandler.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Features\\Exam\\Queries\\GetListExamQuery\\GetListExamQueryHandler.cs",
+              "RelativeToolTip": "Application\\Features\\Exam\\Queries\\GetListExamQuery\\GetListExamQueryHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T00:47:49.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GetListExamQuery.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Features\\Exam\\Queries\\GetListExamQuery\\GetListExamQuery.cs",
+              "RelativeDocumentMoniker": "Application\\Features\\Exam\\Queries\\GetListExamQuery\\GetListExamQuery.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Features\\Exam\\Queries\\GetListExamQuery\\GetListExamQuery.cs",
+              "RelativeToolTip": "Application\\Features\\Exam\\Queries\\GetListExamQuery\\GetListExamQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T00:55:25.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Exam.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Domain\\Entities\\Exam.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Exam.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Domain\\Entities\\Exam.cs",
+              "RelativeToolTip": "Domain\\Entities\\Exam.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T01:23:02.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "ExamProfile.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Profiles\\ExamProfile.cs",
+              "RelativeDocumentMoniker": "Application\\Profiles\\ExamProfile.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Profiles\\ExamProfile.cs",
+              "RelativeToolTip": "Application\\Profiles\\ExamProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T01:27:50.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GetListExamDto.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Domain\\Dtos\\ExamDto\\GetListExamDto.cs",
+              "RelativeDocumentMoniker": "Domain\\Dtos\\ExamDto\\GetListExamDto.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Domain\\Dtos\\ExamDto\\GetListExamDto.cs",
+              "RelativeToolTip": "Domain\\Dtos\\ExamDto\\GetListExamDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T01:29:00.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ExamService.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Services\\ExamService.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\ExamService.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Services\\ExamService.cs",
+              "RelativeToolTip": "Application\\Services\\ExamService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T00:52:03.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Api\\Controllers\\RoomController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\RoomController.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Api\\Controllers\\RoomController.cs",
+              "RelativeToolTip": "Api\\Controllers\\RoomController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T19:41:43.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Application",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Application.csproj",
+              "RelativeDocumentMoniker": "Application\\Application.csproj",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Application.csproj",
+              "RelativeToolTip": "Application\\Application.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-15T00:31:24.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ExamRepository.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Infrastracture\\Repositories\\ExamRepository.cs",
+              "RelativeDocumentMoniker": "Infrastracture\\Repositories\\ExamRepository.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Infrastracture\\Repositories\\ExamRepository.cs",
+              "RelativeToolTip": "Infrastracture\\Repositories\\ExamRepository.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA0wBIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T00:19:10.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Api\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\TestController.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Api\\Controllers\\TestController.cs",
+              "RelativeToolTip": "Api\\Controllers\\TestController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T00:42:18.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ExamController.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Api\\Controllers\\ExamController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\ExamController.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Api\\Controllers\\ExamController.cs",
+              "RelativeToolTip": "Api\\Controllers\\ExamController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAUwBEAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-15T00:47:12.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "GetListOfRoomsQueriesHandler.cs",
               "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Features\\Rooms\\Queries\\GetListOfRooms\\GetListOfRoomsQueriesHandler.cs",
               "RelativeDocumentMoniker": "Application\\Features\\Rooms\\Queries\\GetListOfRooms\\GetListOfRoomsQueriesHandler.cs",
@@ -158,24 +482,51 @@
               "RelativeToolTip": "Application\\Features\\Rooms\\Queries\\GetListOfRooms\\GetListOfRoomsQueriesHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T19:42:45.457Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RoomController.cs",
-              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Api\\Controllers\\RoomController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\RoomController.cs",
-              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Api\\Controllers\\RoomController.cs",
-              "RelativeToolTip": "Api\\Controllers\\RoomController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAmwDAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T19:41:43.869Z",
+              "WhenOpened": "2024-07-14T19:42:45.457Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 20,
+              "Title": "IRoomService.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\IServices\\IRoomService.cs",
+              "RelativeDocumentMoniker": "Application\\IServices\\IRoomService.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\IServices\\IRoomService.cs",
+              "RelativeToolTip": "Application\\IServices\\IRoomService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T20:06:09.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SupervisorController.cs",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Api\\Controllers\\SupervisorController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\SupervisorController.cs",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Api\\Controllers\\SupervisorController.cs",
+              "RelativeToolTip": "Api\\Controllers\\SupervisorController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAkwA8AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T20:42:51.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Api.csproj",
+              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Api\\Api.csproj",
+              "RelativeDocumentMoniker": "Api\\Api.csproj",
+              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Api\\Api.csproj",
+              "RelativeToolTip": "Api\\Api.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAUwAwAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-15T00:25:46.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "DeleteRoomCommand.cs",
               "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Features\\Rooms\\Commands\\Delete\\DeleteRoomCommand.cs",
               "RelativeDocumentMoniker": "Application\\Features\\Rooms\\Commands\\Delete\\DeleteRoomCommand.cs",
@@ -188,33 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RoomService.cs",
-              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Services\\RoomService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\RoomService.cs",
-              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Services\\RoomService.cs",
-              "RelativeToolTip": "Application\\Services\\RoomService.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAUwB4AAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T19:47:56.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IRoomService.cs",
-              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\IServices\\IRoomService.cs",
-              "RelativeDocumentMoniker": "Application\\IServices\\IRoomService.cs",
-              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\IServices\\IRoomService.cs",
-              "RelativeToolTip": "Application\\IServices\\IRoomService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T20:06:09.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 28,
               "Title": "DeleteRoomCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Features\\Rooms\\Commands\\Delete\\DeleteRoomCommandHandler.cs",
               "RelativeDocumentMoniker": "Application\\Features\\Rooms\\Commands\\Delete\\DeleteRoomCommandHandler.cs",
@@ -222,11 +547,12 @@
               "RelativeToolTip": "Application\\Features\\Rooms\\Commands\\Delete\\DeleteRoomCommandHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T21:08:36.277Z"
+              "WhenOpened": "2024-07-14T21:08:36.277Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 31,
               "Title": "GetListOfRoomsQuery.cs",
               "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Features\\Rooms\\Queries\\GetListOfRooms\\GetListOfRoomsQuery.cs",
               "RelativeDocumentMoniker": "Application\\Features\\Rooms\\Queries\\GetListOfRooms\\GetListOfRoomsQuery.cs",
@@ -234,11 +560,12 @@
               "RelativeToolTip": "Application\\Features\\Rooms\\Queries\\GetListOfRooms\\GetListOfRoomsQuery.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T20:11:08.536Z"
+              "WhenOpened": "2024-07-14T20:11:08.536Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 29,
               "Title": "GetRoomByIdQuery.cs",
               "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Features\\Rooms\\Queries\\GetRoomById\\GetRoomByIdQuery.cs",
               "RelativeDocumentMoniker": "Application\\Features\\Rooms\\Queries\\GetRoomById\\GetRoomByIdQuery.cs",
@@ -246,11 +573,12 @@
               "RelativeToolTip": "Application\\Features\\Rooms\\Queries\\GetRoomById\\GetRoomByIdQuery.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T20:30:47.281Z"
+              "WhenOpened": "2024-07-14T20:30:47.281Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 30,
               "Title": "GetRoomByIdQueryHandler.cs",
               "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Features\\Rooms\\Queries\\GetRoomById\\GetRoomByIdQueryHandler.cs",
               "RelativeDocumentMoniker": "Application\\Features\\Rooms\\Queries\\GetRoomById\\GetRoomByIdQueryHandler.cs",
@@ -258,35 +586,12 @@
               "RelativeToolTip": "Application\\Features\\Rooms\\Queries\\GetRoomById\\GetRoomByIdQueryHandler.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T20:31:14.468Z"
+              "WhenOpened": "2024-07-14T20:31:14.468Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SupervisorController.cs",
-              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Api\\Controllers\\SupervisorController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\SupervisorController.cs",
-              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Api\\Controllers\\SupervisorController.cs",
-              "RelativeToolTip": "Api\\Controllers\\SupervisorController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T20:42:51.929Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ConfigureServices.cs",
-              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\ConfigureServices.cs",
-              "RelativeDocumentMoniker": "Application\\ConfigureServices.cs",
-              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\ConfigureServices.cs",
-              "RelativeToolTip": "Application\\ConfigureServices.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T20:09:42.398Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 33,
               "Title": "IAsyncRepository.cs",
               "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\IRepository\\IAsyncRepository.cs",
               "RelativeDocumentMoniker": "Application\\IRepository\\IAsyncRepository.cs",
@@ -294,35 +599,12 @@
               "RelativeToolTip": "Application\\IRepository\\IAsyncRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T20:13:25.884Z"
+              "WhenOpened": "2024-07-14T20:13:25.884Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UnitOfService.cs",
-              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Services\\UnitOfService.cs",
-              "RelativeDocumentMoniker": "Application\\Services\\UnitOfService.cs",
-              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Services\\UnitOfService.cs",
-              "RelativeToolTip": "Application\\Services\\UnitOfService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAIA2wAoAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T20:16:38.27Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "IUnitOfService.cs",
-              "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Interfaces\\IUnitOfService.cs",
-              "RelativeDocumentMoniker": "Application\\Interfaces\\IUnitOfService.cs",
-              "ToolTip": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Interfaces\\IUnitOfService.cs",
-              "RelativeToolTip": "Application\\Interfaces\\IUnitOfService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T20:16:05.462Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 35,
               "Title": "20240714194057_initii.cs",
               "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Infrastracture\\Migrations\\20240714194057_initii.cs",
               "RelativeDocumentMoniker": "Infrastracture\\Migrations\\20240714194057_initii.cs",
@@ -330,11 +612,12 @@
               "RelativeToolTip": "Infrastracture\\Migrations\\20240714194057_initii.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T19:40:57.755Z"
+              "WhenOpened": "2024-07-14T19:40:57.755Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 34,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Infrastracture\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Infrastracture\\Data\\ApplicationDbContext.cs",
@@ -342,7 +625,8 @@
               "RelativeToolTip": "Infrastracture\\Data\\ApplicationDbContext.cs",
               "ViewState": "AQIAAEwAAAAAAAAAAIA0wFoAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T19:40:45.533Z"
+              "WhenOpened": "2024-07-14T19:40:45.533Z",
+              "EditorCaption": ""
             }
           ]
         }
