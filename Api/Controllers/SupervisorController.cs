@@ -16,35 +16,40 @@ namespace Api.Controllers
         private readonly ISupervisorService _supervisorService;
         private readonly IMediator _mediator;
 
-        public SupervisorController(ISupervisorService supervisorService, IMediator mediator) {
+        public SupervisorController(ISupervisorService supervisorService, IMediator mediator)
+        {
             _supervisorService = supervisorService;
             _mediator = mediator;
         }
 
 
         [HttpGet]
-        public async Task<IActionResult> GetAllSupervisors() {
+        public async Task<IActionResult> GetAllSupervisors()
+        {
             var query = new GetAllSupervisorsQuery();
             var result = await _mediator.Send(query);
             return Ok(result);
         }
 
         [HttpGet("id/{supervisorId}")]
-        public async Task<IActionResult> GetSupervisorById(Guid supervisorId) {
+        public async Task<IActionResult> GetSupervisorById(Guid supervisorId)
+        {
             var query = new GetSupervisorByIdQuery(supervisorId);
             var result = await _mediator.Send(query);
             return Ok(result);
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateSupervisor([FromForm] CreateSupervisorCommand cmd) {
+        public async Task<IActionResult> CreateSupervisor([FromForm] CreateSupervisorCommand cmd)
+        {
 
             var result = await _mediator.Send(cmd);
             return Ok(result);
         }
 
         [HttpPut("{supervisorId}")]
-        public async Task<IActionResult> UpdateSupervisor(Guid supervisorId, [FromBody] UpdateSupervisorCommand command) {
+        public async Task<IActionResult> UpdateSupervisor([FromForm] UpdateSupervisorCommand command)
+        {
             var result = await _mediator.Send(command);
             if (result.Contains("successfully"))
             {
@@ -55,7 +60,8 @@ namespace Api.Controllers
         }
 
         [HttpDelete("{supervisorId}")]
-        public async Task<IActionResult> DeleteSupervisor(Guid supervisorId) {
+        public async Task<IActionResult> DeleteSupervisor(Guid supervisorId)
+        {
             var command = new DeleteSupervisorCommand(supervisorId);
             await _mediator.Send(command);
             return NoContent();
