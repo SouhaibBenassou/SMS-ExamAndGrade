@@ -5,7 +5,7 @@ namespace Application.IRepository
     public interface IAsyncRepository<T> where T : class
     {
         Task<List<T>> GetAllAsNoTracking(Expression<Func<T, bool>>? filter = null);
-        Task<T> GetAsNoTracking(Expression<Func<T, bool>> filter);
+        Task<T> GetAsNoTracking(Expression<Func<T, bool>>? filter);
         Task<List<T>> GetAllAsTracking(Expression<Func<T, bool>>? filter = null);
         Task<T> GetAsTracking(Expression<Func<T, bool>> filter);
         Task CreateRangeAsync(ICollection<T> entities);

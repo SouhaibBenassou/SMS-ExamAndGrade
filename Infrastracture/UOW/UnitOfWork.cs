@@ -2,7 +2,6 @@
 using Application.Interfaces;
 using Application.IRepository;
 using Infrastructure.Data;
-using Infrastructure.Repositories;
 
 
 namespace Infrastracture;
@@ -10,11 +9,13 @@ namespace Infrastracture;
 public class UnitOfWork : IUnitOfWork
 {
     private readonly ApplicationDbContext _db;
+    public ISupervisorRepository SupervisorRepository { get; set; }
     public IExamRepository ExamRepository { get; set; }
     public IRoomRepository RoomRepository { get; set; }
 
-    public UnitOfWork(ApplicationDbContext db, IExamRepository examRepository) {
+    public UnitOfWork(ApplicationDbContext db, ISupervisorRepository supervisorRepository, IExamRepository examRepository, IRoomRepository roomRepository) {
         _db = db;
+        SupervisorRepository = supervisorRepository;
         ExamRepository = examRepository;
         RoomRepository = roomRepository;
     }
@@ -34,8 +35,7 @@ public class UnitOfWork : IUnitOfWork
     public async Task RollbackAsync() {
         await _db.SaveChangesAsync();
     }
-    public async Task<int> CompleteAsync()
-    {
+    public async Task<int> CompleteAsync() {
         return await _db.SaveChangesAsync();
     }
 }

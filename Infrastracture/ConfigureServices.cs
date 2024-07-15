@@ -8,20 +8,19 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-
 namespace Infrastructure
 {
-
     public static class ConfigureServices
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration) {
 
             string? con = configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(con));
-            //dependency injection contanaireS
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(con)); // Ensure this uses the correct connection string
+            //dependency injection 
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IExamRepository, ExamRepository>();
             services.AddScoped<IRoomRepository, RoomRepository>();
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<ISupervisorRepository, SupervisorRepository>();
 
             return services;
         }

@@ -12,7 +12,5 @@ namespace Infrastracture.Repositories
         public SupervisorRepository(ApplicationDbContext db) : base(db) {
             _db = db;
         }
-
-
     }
 }

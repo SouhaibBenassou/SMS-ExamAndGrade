@@ -8,7 +8,7 @@ namespace Domain.Entities
         public string LastName { get; set; }
         public string Title { get; set; }
         [JsonIgnore]
-        public ICollection<Exam> Exams { get; set; }
+        public ICollection<Exam>? Exams { get; set; }
     }
 }
 

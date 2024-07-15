@@ -1,17 +1,14 @@
-﻿using Domain.Dtos;
-using MediatR;
+﻿using MediatR;
 
 
 
 namespace Application.Features.Supervisor.command.Create
 {
-    public class CreateSupervisorCommand : IRequest<Domain.Entities.Supervisor>
+    public class CreateSupervisorCommand : IRequest<string>
     {
-        public SupervisorDto SupervisorDto { get; }
 
-        public CreateSupervisorCommand(SupervisorDto supervisorDto)
-        {
-            SupervisorDto = supervisorDto;
-        }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Title { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace Domain.Entities
         public string RoomName { get; set; }
         public RoomType RoomType { get; set; }
         [JsonIgnore]
-        public ICollection<Exam> Exams { get; set; }
+        public ICollection<Exam>? Exams { get; set; }
     }
 }
 

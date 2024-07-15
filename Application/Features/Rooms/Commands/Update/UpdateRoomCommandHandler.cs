@@ -1,5 +1,6 @@
 ﻿using Application.Features.Rooms.Commands.Update;
-using Application.IServices;
+using Application.Interfaces;
+using AutoMapper;
 using Domain.Entities;
 using MediatR;
 
@@ -7,20 +8,25 @@ namespace Application.Features.Rooms.Handlers
 {
     public class UpdateRoomCommandHandler : IRequestHandler<UpdateRoomCommand, string>
     {
-        private readonly IRoomService _roomService;
+        private readonly IUnitOfService _unitOfService;
+        private readonly IMapper _mapper;
 
-        public UpdateRoomCommandHandler(IRoomService roomService) => _roomService = roomService;
+        public UpdateRoomCommandHandler(IUnitOfService unitOfService, IMapper mapper) {
+            _unitOfService = unitOfService;
+            _mapper = mapper;
+        }
 
-        public async Task<string> Handle(UpdateRoomCommand request, CancellationToken cancellationToken)
-        {
-            var room = new Room
+        public async Task<string> Handle(UpdateRoomCommand request, CancellationToken cancellationToken) {
+
+            Room updateRoom = new Room
             {
-                Id = request.RoomId,
+                Id = request.Id,
+                RoomType = request.RoomType,
                 Capacity = request.Capacity,
-                RoomType = request.RoomType
+                RoomName = request.RoomName,
             };
 
-            return await _roomService.UpdateRoomAsync(room);
+            return await _unitOfService.RoomService.UpdateRoomAsync(updateRoom);
         }
     }
 }

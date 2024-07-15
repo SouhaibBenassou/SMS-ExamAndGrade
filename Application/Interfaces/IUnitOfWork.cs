@@ -4,8 +4,9 @@ namespace Application.Interfaces
 {
     public interface IUnitOfWork
     {
+        public ISupervisorRepository SupervisorRepository { get; set; }
         public IExamRepository ExamRepository { get; set; }
-        public IRoomRepository RoomRepository { get; }
+        public IRoomRepository RoomRepository { get; set; }
         void Commit();
         Task CommitAsync();
         void Rollback();

@@ -1,5 +1,4 @@
-﻿using Domain;
-using Domain.Enums;
+﻿using Domain.Enums;
 using MediatR;
 
 namespace Application.Features.Rooms.Commands.Create
@@ -8,5 +7,6 @@ namespace Application.Features.Rooms.Commands.Create
     {
         public int Capacity { get; set; }
         public RoomType RoomType { get; set; }
+        public string RoomName { get; set; }
     }
 }

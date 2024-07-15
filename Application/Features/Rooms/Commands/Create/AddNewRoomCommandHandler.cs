@@ -1,5 +1,5 @@
 ﻿using Application.Features.Rooms.Commands.Create;
-using Application.IServices;
+using Application.Interfaces;
 using Domain.Entities;
 using MediatR;
 
@@ -7,19 +7,21 @@ namespace Application.Features.Rooms.Handlers
 {
     public class AddNewRoomCommandHandler : IRequestHandler<AddNewRoomCommand, string>
     {
-        private readonly IRoomService _roomService;
+        private readonly IUnitOfService _unitOfService;
 
-        public AddNewRoomCommandHandler(IRoomService roomService) => _roomService = roomService;
+        public AddNewRoomCommandHandler(IUnitOfService unitOfService) => _unitOfService = unitOfService;
 
-        public async Task<string> Handle(AddNewRoomCommand request, CancellationToken cancellationToken)
-        {
+        public async Task<string> Handle(AddNewRoomCommand request, CancellationToken cancellationToken) {
+
             var room = new Room
             {
                 Capacity = request.Capacity,
-                RoomType = request.RoomType
+                RoomType = request.RoomType,
+                RoomName = request.RoomName,
             };
 
-            return await _roomService.AddRoomAsync(room);
+
+            return await _unitOfService.RoomService.AddRoomAsync(room);
         }
     }
 }

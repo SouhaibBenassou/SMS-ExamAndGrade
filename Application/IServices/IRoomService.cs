@@ -1,5 +1,4 @@
-﻿using Domain.Dtos;
-using Domain.Entities;
+﻿using Domain.Entities;
 
 namespace Application.IServices
 {
@@ -7,9 +6,9 @@ namespace Application.IServices
     {
         Task<string> AddRoomAsync(Room room);
         Task<string> UpdateRoomAsync(Room room);
-        Task<string> DeleteRoomAsync(Guid roomId);
-        Task<IEnumerable<RoomDto>> GetListOfRoomsAsync();
-        Task<RoomDto> GetRoomByIdAsync(Guid roomId);
+        Task<string> DeleteRoomAsync(Guid id);
+        Task<List<Room>> GetListOfRoomsAsync();
+        Task<Room> GetRoomByIdAsync(Guid id);
 
     }
 }
