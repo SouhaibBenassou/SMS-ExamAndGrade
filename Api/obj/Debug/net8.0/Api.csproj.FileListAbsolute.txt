@@ -158,6 +158,7 @@ C:\Users\souhaib\Documents\GitHub\SMS-ExamAndGrade\Api\bin\Debug\net8.0\ru\Micro
 C:\Users\souhaib\Documents\GitHub\SMS-ExamAndGrade\Api\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\souhaib\Documents\GitHub\SMS-ExamAndGrade\Api\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\souhaib\Documents\GitHub\SMS-ExamAndGrade\Api\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+<<<<<<< HEAD
 C:\Users\souhaib\Documents\GitHub\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Predator\Desktop\Pfinale\SMS-ExamAndGrade\Api\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Predator\Desktop\Pfinale\SMS-ExamAndGrade\Api\bin\Debug\net8.0\appsettings.json
@@ -308,3 +309,5 @@ C:\Users\Predator\Desktop\Pfinale\SMS-ExamAndGrade\Api\obj\Debug\net8.0\refint\A
 C:\Users\Predator\Desktop\Pfinale\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.pdb
 C:\Users\Predator\Desktop\Pfinale\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.genruntimeconfig.cache
 C:\Users\Predator\Desktop\Pfinale\SMS-ExamAndGrade\Api\obj\Debug\net8.0\ref\Api.dll
+=======
+>>>>>>> ExamBranch

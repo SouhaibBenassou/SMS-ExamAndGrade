@@ -22,37 +22,44 @@ namespace Infrastructure.Data
             modelBuilder.Entity<Exam>()
                 .HasOne(e => e.Year)
                 .WithMany(y => y.Exams)
-                .HasForeignKey(e => e.YearId);
+                .HasForeignKey(e => e.YearId)
+                .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<Exam>()
                 .HasOne(e => e.Semester)
                 .WithMany(s => s.Exams)
-                .HasForeignKey(e => e.SemesterId);
+                .HasForeignKey(e => e.SemesterId)
+                .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<Exam>()
                 .HasOne(e => e.YearOfStudy)
                 .WithMany(yos => yos.Exams)
-                .HasForeignKey(e => e.YearOfStudyId);
+                .HasForeignKey(e => e.YearOfStudyId)
+                .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<Exam>()
                 .HasOne(e => e.Filiere)
                 .WithMany(f => f.Exams)
-                .HasForeignKey(e => e.FiliereId);
+                .HasForeignKey(e => e.FiliereId)
+                .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<Exam>()
                 .HasOne(e => e.UnitOfFormation)
                 .WithMany(uof => uof.Exams)
-                .HasForeignKey(e => e.UnitOfFormationId);
+                .HasForeignKey(e => e.UnitOfFormationId)
+                .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<Exam>()
                 .HasOne(e => e.Room)
                 .WithMany(r => r.Exams)
-                .HasForeignKey(e => e.RoomId);
+                .HasForeignKey(e => e.RoomId)
+                .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<Exam>()
                 .HasOne(e => e.Supervisor)
                 .WithMany(s => s.Exams)
-                .HasForeignKey(e => e.SupervisorId);
+                .HasForeignKey(e => e.SupervisorId)
+                .OnDelete(DeleteBehavior.SetNull);
 
             // Seed data
             var year2024Id = Guid.NewGuid();
@@ -117,7 +124,10 @@ namespace Infrastructure.Data
                     FiliereId = csFiliereId,
                     UnitOfFormationId = prog101Id,
                     RoomId = roomAId,
-                    SupervisorId = drSmithId
+                    SupervisorId = drSmithId,
+                    ExamDate = DateTime.Now,
+                    Duration = DateTime.Now,
+                    StartTime = DateTime.Now
                 },
                 new Exam
                 {
@@ -128,7 +138,10 @@ namespace Infrastructure.Data
                     FiliereId = meFiliereId,
                     UnitOfFormationId = thermoId,
                     RoomId = roomBId,
-                    SupervisorId = drJohnsonId
+                    SupervisorId = drJohnsonId,
+                    ExamDate = DateTime.Now,
+                    Duration = DateTime.Now,
+                    StartTime = DateTime.Now
                 }
             );
         }

@@ -4833,6 +4833,7 @@
       "Application >= 1.0.0",
       "Domain >= 1.0.0",
       "Infrastracture >= 1.0.0",
+      "MediatR >= 12.2.0",
       "Microsoft.EntityFrameworkCore >= 8.0.7",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.7",
@@ -4894,6 +4895,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "MediatR": {
+            "target": "Package",
+            "version": "[12.2.0, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.7, )"
