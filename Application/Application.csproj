@@ -20,5 +20,8 @@
 	<ItemGroup>
 		<ProjectReference Include="..\Domain\Domain.csproj" />
 	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Features\Exam\Command\Update\" />
+	</ItemGroup>
 
 </Project>

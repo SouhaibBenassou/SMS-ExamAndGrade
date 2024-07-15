@@ -1,22 +1,33 @@
-﻿//using Application.Interfaces;
-//using AutoMapper;
-//using Domain;
-//using MediatR;
+﻿using Application.Interfaces;
+using MediatR;
 
-//namespace Application.Features.Exam.Command.Create
-//{
-//    public class CreateExamCommandHandler : IRequestHandler<CreateExamCommand, string>
-//    {
-//        private readonly IUnitOfService _uos;
-//        private readonly IMapper _mapper;
-//        public CreateExamCommandHandler(IUnitOfService uos, IMapper mapper) {
-//            _mapper = mapper;
-//            _uos = uos;
-//        }
-//        public Task<string> Handle(CreateExamCommand request, CancellationToken cancellationToken) {
+namespace Application.Features.Exam.Command.Create
+{
+    public class CreateExamCommandHandler : IRequestHandler<CreateExamCommand, string>
+    {
+        private readonly IUnitOfService _unitOfServie;
 
-//            var res = _uos.
-//            return "bad Request";
-//        }
-//    }
-//}
+        public CreateExamCommandHandler(IUnitOfService unitOfServie) {
+            _unitOfServie = unitOfServie;
+        }
+
+
+        public async Task<string> Handle(CreateExamCommand request, CancellationToken cancellationToken) {
+
+            var Exam = new Domain.Entities.Exam
+            {
+                ExamDate = request.ExamDate,
+                Duration = new DateTime(),
+                StartTime = new DateTime(),
+                YearId = request.YearId,
+                SemesterId = request.SemesterId,
+                YearOfStudyId = request.YearOfStudyId,
+                FiliereId = request.FiliereId,
+                UnitOfFormationId = request.UnitOfFormationId,
+                RoomId = request.RoomId,
+                SupervisorId = request.SupervisorId,
+            };
+            return await _unitOfServie.ExamService.AddExamAsync(Exam);
+        }
+    }
+}

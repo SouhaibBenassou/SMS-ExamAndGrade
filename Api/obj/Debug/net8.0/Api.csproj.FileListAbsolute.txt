@@ -158,4 +158,3 @@ C:\Users\souhaib\Documents\GitHub\SMS-ExamAndGrade\Api\bin\Debug\net8.0\ru\Micro
 C:\Users\souhaib\Documents\GitHub\SMS-ExamAndGrade\Api\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\souhaib\Documents\GitHub\SMS-ExamAndGrade\Api\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\souhaib\Documents\GitHub\SMS-ExamAndGrade\Api\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\souhaib\Documents\GitHub\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.MvcApplicationPartsAssemblyInfo.cs

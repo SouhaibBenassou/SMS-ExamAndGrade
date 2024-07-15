@@ -40,13 +40,13 @@ namespace Infrastracture.Migrations
                     b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<TimeSpan>("Duration")
-                        .HasColumnType("time");
-
-                    b.Property<DateTime>("ExamDate")
+                    b.Property<DateTime?>("Duration")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("FiliereId")
+                    b.Property<DateTime?>("ExamDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("FiliereId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("IsDeleted")
@@ -55,28 +55,28 @@ namespace Infrastracture.Migrations
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("RoomId")
+                    b.Property<Guid?>("RoomId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("SemesterId")
+                    b.Property<Guid?>("SemesterId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<TimeSpan>("StartTime")
-                        .HasColumnType("time");
+                    b.Property<DateTime?>("StartTime")
+                        .HasColumnType("datetime2");
 
-                    b.Property<Guid>("SupervisorId")
+                    b.Property<Guid?>("SupervisorId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("UnitOfFormationId")
+                    b.Property<Guid?>("UnitOfFormationId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("YearId")
+                    b.Property<Guid?>("YearId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("YearOfStudyId")
+                    b.Property<Guid?>("YearOfStudyId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
@@ -100,35 +100,35 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("f9daf367-47f6-4677-9aaf-cbf09704ee43"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8908),
-                            Duration = new TimeSpan(0, 0, 0, 0, 0),
-                            ExamDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FiliereId = new Guid("723b06b8-cca1-4d8b-96ef-f5ce5ccb96a4"),
+                            Id = new Guid("376928d2-1449-4738-8e64-fdd351a8bfb3"),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(2212),
+                            Duration = new DateTime(2024, 7, 15, 11, 7, 33, 604, DateTimeKind.Local).AddTicks(2266),
+                            ExamDate = new DateTime(2024, 7, 15, 11, 7, 33, 604, DateTimeKind.Local).AddTicks(2220),
+                            FiliereId = new Guid("bba5cac6-1137-4de1-8730-ada291e022d7"),
                             IsDeleted = false,
-                            RoomId = new Guid("686c756d-9891-4047-9c18-7e198d67f2b1"),
-                            SemesterId = new Guid("b8ba9a2c-1d55-4245-a3fe-0a07fbe589b9"),
-                            StartTime = new TimeSpan(0, 0, 0, 0, 0),
-                            SupervisorId = new Guid("1a1b8644-9b79-4062-a378-1afcbf72caf4"),
-                            UnitOfFormationId = new Guid("6bf06c26-18a5-4168-bf47-ae0c2a11de88"),
-                            YearId = new Guid("f591d45f-0900-4a52-ad35-874d61790720"),
-                            YearOfStudyId = new Guid("ac02626c-55a6-484d-86da-4770144a76fd")
+                            RoomId = new Guid("7d2e9d3f-9a1a-4cae-9e5c-35599571f55d"),
+                            SemesterId = new Guid("f142e3d5-5dd0-489d-8b76-1e3f8b1ffc6d"),
+                            StartTime = new DateTime(2024, 7, 15, 11, 7, 33, 604, DateTimeKind.Local).AddTicks(2268),
+                            SupervisorId = new Guid("a1f5b552-7716-42ad-9ed0-7ca33eaa6d5f"),
+                            UnitOfFormationId = new Guid("7986fd89-577a-483a-a866-2ffa3d1a7967"),
+                            YearId = new Guid("14ee2101-00e4-44dc-85f2-9f4d97842871"),
+                            YearOfStudyId = new Guid("7f595bdf-45ec-4324-b15a-1b91991e5bc1")
                         },
                         new
                         {
-                            Id = new Guid("1aaf8797-8f33-4a0b-a4e9-7bda99104345"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8918),
-                            Duration = new TimeSpan(0, 0, 0, 0, 0),
-                            ExamDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FiliereId = new Guid("cac8ec54-4883-4880-bfc6-c99ebc30a44d"),
+                            Id = new Guid("dcd8fd1d-9e90-43c9-87eb-e343679099eb"),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(2271),
+                            Duration = new DateTime(2024, 7, 15, 11, 7, 33, 604, DateTimeKind.Local).AddTicks(2277),
+                            ExamDate = new DateTime(2024, 7, 15, 11, 7, 33, 604, DateTimeKind.Local).AddTicks(2275),
+                            FiliereId = new Guid("c4d20149-5c11-44d5-857f-e1f200ec23d4"),
                             IsDeleted = false,
-                            RoomId = new Guid("7e59257a-0ffb-451a-98a4-cc706c8abee3"),
-                            SemesterId = new Guid("296ad516-265c-4853-a4e7-44c4ce099677"),
-                            StartTime = new TimeSpan(0, 0, 0, 0, 0),
-                            SupervisorId = new Guid("6328e90e-3d32-45f3-b391-1beaa367cef7"),
-                            UnitOfFormationId = new Guid("9c6d916b-06c4-464d-b5c7-fe6339382f9d"),
-                            YearId = new Guid("b8871638-912e-44f9-b03d-86705fae0b4a"),
-                            YearOfStudyId = new Guid("d1f1303e-9cef-4ad2-ba20-d32bd4852774")
+                            RoomId = new Guid("632021de-0b43-4659-98ab-799008829b28"),
+                            SemesterId = new Guid("5ec0b7d8-fd8a-40c6-9377-0f8aaade684d"),
+                            StartTime = new DateTime(2024, 7, 15, 11, 7, 33, 604, DateTimeKind.Local).AddTicks(2279),
+                            SupervisorId = new Guid("c5ab09c1-a3b8-4582-a8d6-c9ae9df2168d"),
+                            UnitOfFormationId = new Guid("0e47f31c-c374-4c38-b42e-a6a5bce00b2d"),
+                            YearId = new Guid("cf1b1db5-671b-4ab8-8704-795a3121f50c"),
+                            YearOfStudyId = new Guid("d1dd8303-39e1-4445-80db-4a7619291c0b")
                         });
                 });
 
@@ -176,18 +176,18 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("686c756d-9891-4047-9c18-7e198d67f2b1"),
+                            Id = new Guid("7d2e9d3f-9a1a-4cae-9e5c-35599571f55d"),
                             Capacity = 30,
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8866),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(2160),
                             IsDeleted = false,
                             RoomName = "Room A",
                             RoomType = 1
                         },
                         new
                         {
-                            Id = new Guid("7e59257a-0ffb-451a-98a4-cc706c8abee3"),
+                            Id = new Guid("632021de-0b43-4659-98ab-799008829b28"),
                             Capacity = 25,
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8868),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(2163),
                             IsDeleted = false,
                             RoomName = "Room B",
                             RoomType = 0
@@ -232,15 +232,15 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("b8ba9a2c-1d55-4245-a3fe-0a07fbe589b9"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8775),
+                            Id = new Guid("f142e3d5-5dd0-489d-8b76-1e3f8b1ffc6d"),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(2046),
                             IsDeleted = false,
                             SemesterName = "Fall"
                         },
                         new
                         {
-                            Id = new Guid("296ad516-265c-4853-a4e7-44c4ce099677"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8778),
+                            Id = new Guid("5ec0b7d8-fd8a-40c6-9377-0f8aaade684d"),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(2048),
                             IsDeleted = false,
                             SemesterName = "Spring"
                         });
@@ -292,8 +292,8 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("1a1b8644-9b79-4062-a378-1afcbf72caf4"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8885),
+                            Id = new Guid("a1f5b552-7716-42ad-9ed0-7ca33eaa6d5f"),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(2185),
                             FirstName = "John",
                             IsDeleted = false,
                             LastName = "Smith",
@@ -301,8 +301,8 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("6328e90e-3d32-45f3-b391-1beaa367cef7"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8888),
+                            Id = new Guid("c5ab09c1-a3b8-4582-a8d6-c9ae9df2168d"),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(2190),
                             FirstName = "Emily",
                             IsDeleted = false,
                             LastName = "Johnson",
@@ -348,15 +348,15 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("f591d45f-0900-4a52-ad35-874d61790720"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8635),
+                            Id = new Guid("14ee2101-00e4-44dc-85f2-9f4d97842871"),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(1816),
                             IsDeleted = false,
                             YearName = "2024"
                         },
                         new
                         {
-                            Id = new Guid("b8871638-912e-44f9-b03d-86705fae0b4a"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8638),
+                            Id = new Guid("cf1b1db5-671b-4ab8-8704-795a3121f50c"),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(1822),
                             IsDeleted = false,
                             YearName = "2025"
                         });
@@ -400,15 +400,15 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("ac02626c-55a6-484d-86da-4770144a76fd"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8799),
+                            Id = new Guid("7f595bdf-45ec-4324-b15a-1b91991e5bc1"),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(2080),
                             IsDeleted = false,
                             Year = "First Year"
                         },
                         new
                         {
-                            Id = new Guid("d1f1303e-9cef-4ad2-ba20-d32bd4852774"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8800),
+                            Id = new Guid("d1dd8303-39e1-4445-80db-4a7619291c0b"),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(2085),
                             IsDeleted = false,
                             Year = "Second Year"
                         });
@@ -452,15 +452,15 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("723b06b8-cca1-4d8b-96ef-f5ce5ccb96a4"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8821),
+                            Id = new Guid("bba5cac6-1137-4de1-8730-ada291e022d7"),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(2108),
                             FiliereName = "Computer Science",
                             IsDeleted = false
                         },
                         new
                         {
-                            Id = new Guid("cac8ec54-4883-4880-bfc6-c99ebc30a44d"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8823),
+                            Id = new Guid("c4d20149-5c11-44d5-857f-e1f200ec23d4"),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(2110),
                             FiliereName = "Mechanical Engineering",
                             IsDeleted = false
                         });
@@ -504,15 +504,15 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("6bf06c26-18a5-4168-bf47-ae0c2a11de88"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8845),
+                            Id = new Guid("7986fd89-577a-483a-a866-2ffa3d1a7967"),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(2132),
                             IsDeleted = false,
                             UnitName = "Programming 101"
                         },
                         new
                         {
-                            Id = new Guid("9c6d916b-06c4-464d-b5c7-fe6339382f9d"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8847),
+                            Id = new Guid("0e47f31c-c374-4c38-b42e-a6a5bce00b2d"),
+                            CreatedAt = new DateTime(2024, 7, 15, 10, 7, 33, 604, DateTimeKind.Utc).AddTicks(2134),
                             IsDeleted = false,
                             UnitName = "Thermodynamics"
                         });
@@ -523,44 +523,37 @@ namespace Infrastracture.Migrations
                     b.HasOne("Domain.Filiere", "Filiere")
                         .WithMany("Exams")
                         .HasForeignKey("FiliereId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.HasOne("Domain.Entities.Room", "Room")
                         .WithMany("Exams")
                         .HasForeignKey("RoomId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.HasOne("Domain.Entities.Semester", "Semester")
                         .WithMany("Exams")
                         .HasForeignKey("SemesterId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.HasOne("Domain.Entities.Supervisor", "Supervisor")
                         .WithMany("Exams")
                         .HasForeignKey("SupervisorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.HasOne("Domain.UnitOfFormation", "UnitOfFormation")
                         .WithMany("Exams")
                         .HasForeignKey("UnitOfFormationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.HasOne("Domain.Entities.Year", "Year")
                         .WithMany("Exams")
                         .HasForeignKey("YearId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.HasOne("Domain.Entities.YearOfStudy", "YearOfStudy")
                         .WithMany("Exams")
                         .HasForeignKey("YearOfStudyId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Filiere");
 

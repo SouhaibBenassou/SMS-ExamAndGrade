@@ -4,11 +4,11 @@ namespace Application.IServices
 {
     public interface IExamService
     {
-        Task<string> AddRoomAsync(Exam exam);
-        Task<string> UpdateRoomAsync(Exam exam);
-        Task<string> DeleteRoomAsync(Guid id);
+        Task<string> AddExamAsync(Exam exam);
+        Task<string> UpdateExamAsync(Exam exam);
+        Task<string> DeleteExamAsync(Guid id);
         Task<List<Exam>> GetListOfExamWithEntityAsync();
-        Task<Room> GetRoomByIdAsync(Guid id);
+        Task<Room> GetExamByIdAsync(Guid id);
 
 
     }
