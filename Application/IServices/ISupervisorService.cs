@@ -9,7 +9,7 @@ namespace Application.IServices
         Task<string> AddSupervisorAsync(Supervisor supervisor);
         Task<string> UpdateSupervisorAsync(Supervisor supervisor);
         Task<string> DeleteSupervisorAsync(Guid id);
-        Task<List<SupervisorDto>> GetListOfSupervisorsAsync();
+        Task<List<Supervisor>> GetListOfSupervisorsAsync();
         Task<SupervisorDto> GetSupervisorByIdAsync(Guid Id);
 
     }

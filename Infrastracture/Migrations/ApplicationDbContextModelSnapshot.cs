@@ -100,35 +100,35 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("f9daf367-47f6-4677-9aaf-cbf09704ee43"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8908),
+                            Id = new Guid("93878d0b-0b86-4fc8-8533-3e784838723f"),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(7106),
                             Duration = new TimeSpan(0, 0, 0, 0, 0),
                             ExamDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FiliereId = new Guid("723b06b8-cca1-4d8b-96ef-f5ce5ccb96a4"),
+                            FiliereId = new Guid("eba0435d-8a9c-4d1b-a68c-ea9c27f8be20"),
                             IsDeleted = false,
-                            RoomId = new Guid("686c756d-9891-4047-9c18-7e198d67f2b1"),
-                            SemesterId = new Guid("b8ba9a2c-1d55-4245-a3fe-0a07fbe589b9"),
+                            RoomId = new Guid("80298b58-3bab-4004-ba8a-21b198af33c1"),
+                            SemesterId = new Guid("b9e9a8af-9aa1-428e-8912-0c0339057389"),
                             StartTime = new TimeSpan(0, 0, 0, 0, 0),
-                            SupervisorId = new Guid("1a1b8644-9b79-4062-a378-1afcbf72caf4"),
-                            UnitOfFormationId = new Guid("6bf06c26-18a5-4168-bf47-ae0c2a11de88"),
-                            YearId = new Guid("f591d45f-0900-4a52-ad35-874d61790720"),
-                            YearOfStudyId = new Guid("ac02626c-55a6-484d-86da-4770144a76fd")
+                            SupervisorId = new Guid("b6846ac2-3ccd-4846-8e85-b5c9d8f90cde"),
+                            UnitOfFormationId = new Guid("c77500d8-b67e-4b9d-bd73-c2ba969e8a7b"),
+                            YearId = new Guid("b19bcf7c-d23b-4b9b-9989-7bcbe222cdf5"),
+                            YearOfStudyId = new Guid("6a5b849b-9e52-4362-bbea-2242c425c922")
                         },
                         new
                         {
-                            Id = new Guid("1aaf8797-8f33-4a0b-a4e9-7bda99104345"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8918),
+                            Id = new Guid("e76094af-dd94-45df-adb2-dff295cee8da"),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(7162),
                             Duration = new TimeSpan(0, 0, 0, 0, 0),
                             ExamDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FiliereId = new Guid("cac8ec54-4883-4880-bfc6-c99ebc30a44d"),
+                            FiliereId = new Guid("5080fad5-cb86-4eb4-a1cd-e827678f5336"),
                             IsDeleted = false,
-                            RoomId = new Guid("7e59257a-0ffb-451a-98a4-cc706c8abee3"),
-                            SemesterId = new Guid("296ad516-265c-4853-a4e7-44c4ce099677"),
+                            RoomId = new Guid("10f8ef92-3dda-4f0d-a45c-7bea700b7853"),
+                            SemesterId = new Guid("181270d6-a5b3-4dc5-918e-7f78e3be3bb2"),
                             StartTime = new TimeSpan(0, 0, 0, 0, 0),
-                            SupervisorId = new Guid("6328e90e-3d32-45f3-b391-1beaa367cef7"),
-                            UnitOfFormationId = new Guid("9c6d916b-06c4-464d-b5c7-fe6339382f9d"),
-                            YearId = new Guid("b8871638-912e-44f9-b03d-86705fae0b4a"),
-                            YearOfStudyId = new Guid("d1f1303e-9cef-4ad2-ba20-d32bd4852774")
+                            SupervisorId = new Guid("d4b65fe7-e749-4f14-972a-b38236b24163"),
+                            UnitOfFormationId = new Guid("50da306a-61da-484e-9680-b69dbcf4b166"),
+                            YearId = new Guid("3cea7bfc-9e10-42f3-887e-961e0d25963c"),
+                            YearOfStudyId = new Guid("b3e65ba1-444c-4e25-a1a4-10b32b7c8919")
                         });
                 });
 
@@ -176,18 +176,18 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("686c756d-9891-4047-9c18-7e198d67f2b1"),
+                            Id = new Guid("80298b58-3bab-4004-ba8a-21b198af33c1"),
                             Capacity = 30,
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8866),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(7065),
                             IsDeleted = false,
                             RoomName = "Room A",
                             RoomType = 1
                         },
                         new
                         {
-                            Id = new Guid("7e59257a-0ffb-451a-98a4-cc706c8abee3"),
+                            Id = new Guid("10f8ef92-3dda-4f0d-a45c-7bea700b7853"),
                             Capacity = 25,
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8868),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(7069),
                             IsDeleted = false,
                             RoomName = "Room B",
                             RoomType = 0
@@ -232,15 +232,15 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("b8ba9a2c-1d55-4245-a3fe-0a07fbe589b9"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8775),
+                            Id = new Guid("b9e9a8af-9aa1-428e-8912-0c0339057389"),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(6970),
                             IsDeleted = false,
                             SemesterName = "Fall"
                         },
                         new
                         {
-                            Id = new Guid("296ad516-265c-4853-a4e7-44c4ce099677"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8778),
+                            Id = new Guid("181270d6-a5b3-4dc5-918e-7f78e3be3bb2"),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(6973),
                             IsDeleted = false,
                             SemesterName = "Spring"
                         });
@@ -292,8 +292,8 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("1a1b8644-9b79-4062-a378-1afcbf72caf4"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8885),
+                            Id = new Guid("b6846ac2-3ccd-4846-8e85-b5c9d8f90cde"),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(7085),
                             FirstName = "John",
                             IsDeleted = false,
                             LastName = "Smith",
@@ -301,8 +301,8 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("6328e90e-3d32-45f3-b391-1beaa367cef7"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8888),
+                            Id = new Guid("d4b65fe7-e749-4f14-972a-b38236b24163"),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(7087),
                             FirstName = "Emily",
                             IsDeleted = false,
                             LastName = "Johnson",
@@ -348,15 +348,15 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("f591d45f-0900-4a52-ad35-874d61790720"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8635),
+                            Id = new Guid("b19bcf7c-d23b-4b9b-9989-7bcbe222cdf5"),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(6760),
                             IsDeleted = false,
                             YearName = "2024"
                         },
                         new
                         {
-                            Id = new Guid("b8871638-912e-44f9-b03d-86705fae0b4a"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8638),
+                            Id = new Guid("3cea7bfc-9e10-42f3-887e-961e0d25963c"),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(6764),
                             IsDeleted = false,
                             YearName = "2025"
                         });
@@ -400,15 +400,15 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("ac02626c-55a6-484d-86da-4770144a76fd"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8799),
+                            Id = new Guid("6a5b849b-9e52-4362-bbea-2242c425c922"),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(6998),
                             IsDeleted = false,
                             Year = "First Year"
                         },
                         new
                         {
-                            Id = new Guid("d1f1303e-9cef-4ad2-ba20-d32bd4852774"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8800),
+                            Id = new Guid("b3e65ba1-444c-4e25-a1a4-10b32b7c8919"),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(6999),
                             IsDeleted = false,
                             Year = "Second Year"
                         });
@@ -452,15 +452,15 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("723b06b8-cca1-4d8b-96ef-f5ce5ccb96a4"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8821),
+                            Id = new Guid("eba0435d-8a9c-4d1b-a68c-ea9c27f8be20"),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(7018),
                             FiliereName = "Computer Science",
                             IsDeleted = false
                         },
                         new
                         {
-                            Id = new Guid("cac8ec54-4883-4880-bfc6-c99ebc30a44d"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8823),
+                            Id = new Guid("5080fad5-cb86-4eb4-a1cd-e827678f5336"),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(7022),
                             FiliereName = "Mechanical Engineering",
                             IsDeleted = false
                         });
@@ -504,15 +504,15 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("6bf06c26-18a5-4168-bf47-ae0c2a11de88"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8845),
+                            Id = new Guid("c77500d8-b67e-4b9d-bd73-c2ba969e8a7b"),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(7044),
                             IsDeleted = false,
                             UnitName = "Programming 101"
                         },
                         new
                         {
-                            Id = new Guid("9c6d916b-06c4-464d-b5c7-fe6339382f9d"),
-                            CreatedAt = new DateTime(2024, 7, 14, 19, 40, 56, 767, DateTimeKind.Utc).AddTicks(8847),
+                            Id = new Guid("50da306a-61da-484e-9680-b69dbcf4b166"),
+                            CreatedAt = new DateTime(2024, 7, 15, 0, 25, 57, 263, DateTimeKind.Utc).AddTicks(7045),
                             IsDeleted = false,
                             UnitName = "Thermodynamics"
                         });

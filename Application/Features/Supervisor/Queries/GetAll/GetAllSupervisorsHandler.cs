@@ -1,21 +1,30 @@
-﻿//using Application.Interfaces;
-//using Domain.Dtos;
-//using MediatR;
+﻿using Application.Interfaces;
+using AutoMapper;
+using Domain.Dtos;
+using Domain.Entities;
+using MediatR;
 
 
-//namespace Application.Features.Supervisor.Queries
-//{
-//    public class GetAllSupervisorsHandler : IRequestHandler<GetAllSupervisorsQuery, List<Supervisor>>
-//    {
-//        private readonly IUnitOfService _UnitOfService;
+namespace Application.Features.Supervisor.Queries
+{
+    public class GetAllSupervisorsHandler : IRequestHandler<GetAllSupervisorsQuery, List<Domain.Entities.Supervisor>>
+    {
+        private readonly IUnitOfService _unitofService;
+        private readonly IMapper _mapper;
 
-//        public GetAllSupervisorsHandler(IUnitOfService unitOfService) {
-//            _UnitOfService = unitOfService;
-//        }
+        public GetAllSupervisorsHandler(IUnitOfService unitofService, IMapper mapper)
+        {
+            _unitofService = unitofService;
+            _mapper = mapper;
+        }
 
-//        public async Task<List<SupervisorDto>> Handle(GetAllSupervisorsQuery request, CancellationToken cancellationToken) {
+        public async Task<List<Domain.Entities.Supervisor>> Handle(GetAllSupervisorsQuery request, CancellationToken cancellationToken)
+        {
 
-//            return await _UnitOfService.SupervisorService;
-//        }
-//    }
-//}
+
+            List<Domain.Entities.Supervisor> listSupervisor = await _unitofService.SupervisorService.GetListOfSupervisorsAsync();
+           
+            return listSupervisor;
+        }
+    }
+}

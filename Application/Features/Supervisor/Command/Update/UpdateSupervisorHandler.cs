@@ -1,26 +1,36 @@
 ﻿using Application.Interfaces;
 using Application.IRepository;
+using AutoMapper;
+using Domain.Dtos.SupervisorDto;
+using Domain.Entities;
 using MediatR;
 
 
 namespace Application.Features.Supervisor.Commands.Update
 {
-    public class UpdateSupervisorHandler : IRequestHandler<UpdateSupervisorCommand, Unit>
+    public class UpdateSupervisorHandler : IRequestHandler<UpdateSupervisorCommand, string>
     {
-        private readonly ISupervisorRepository _supervisorRepository;
-        private readonly IUnitOfWork _unitOfWork;
-        public UpdateSupervisorHandler(ISupervisorRepository supervisorRepository, IUnitOfWork unitOfWork)
+        private readonly IUnitOfService _unitOfService;
+        private readonly IMapper _mapper;
+
+        public UpdateSupervisorHandler(IUnitOfService unitOfService, IMapper mapper)
         {
-            _supervisorRepository = supervisorRepository;
-            _unitOfWork = unitOfWork;
+            _unitOfService = unitOfService;
+            _mapper = mapper;
         }
 
-        public async Task<Unit> Handle(UpdateSupervisorCommand request, CancellationToken cancellationToken)
+        public async Task<string> Handle(UpdateSupervisorCommand request, CancellationToken cancellationToken)
         {
-            var supervisor = request.Supervisor;
-            await _supervisorRepository.UpdateAsync(supervisor);
-            await _unitOfWork.CommitAsync();
-            return Unit.Value;
+            Domain.Entities.Supervisor updateSupervisor = new Domain.Entities.Supervisor
+      
+            {
+                Id = request.Id,
+                FirstName = request.FirstName,
+                LastName = request.LastName,
+                Title = request.Title,
+            };
+
+            return await _unitOfService.SupervisorService.UpdateSupervisorAsync(updateSupervisor);
         }
 
     }

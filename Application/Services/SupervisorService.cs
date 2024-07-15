@@ -25,20 +25,42 @@ namespace Application.Services
 
         }
 
-        public Task<string> DeleteSupervisorAsync(Guid id) {
-            throw new NotImplementedException();
+        public  async Task<string> DeleteSupervisorAsync(Guid id) {
+            var supervisor = await _unitOfWork.SupervisorRepository.GetAsNoTracking(r => r.Id == id);
+            if (supervisor == null)
+            {
+                return $"Supervisor with Id : {id} not found.";
+            }
+
+            await _unitOfWork.SupervisorRepository.RemoveAsync(supervisor);
+            await _unitOfWork.CompleteAsync();
+
+            return "Supervisor successfully deleted.";
         }
 
-        public Task<List<SupervisorDto>> GetListOfSupervisorsAsync() {
-            throw new NotImplementedException();
+        public async Task<List<Supervisor>> GetListOfSupervisorsAsync() {
+            var supervisors = await _unitOfWork.SupervisorRepository.GetAllAsTracking();
+            return supervisors;
         }
 
         public Task<SupervisorDto> GetSupervisorByIdAsync(Guid Id) {
             throw new NotImplementedException();
         }
 
-        public Task<string> UpdateSupervisorAsync(Supervisor supervisor) {
-            throw new NotImplementedException();
+        public async Task<string> UpdateSupervisorAsync(Supervisor supervisor) {
+            var existingSupervisor = await _unitOfWork.SupervisorRepository.GetAsNoTracking(r => r.Id == supervisor.Id);
+            if (existingSupervisor == null)
+            {
+                return $"Supervisor with Id {supervisor.Id} not found.";
+            }
+
+            existingSupervisor.FirstName = supervisor.FirstName;
+            existingSupervisor.LastName = supervisor.LastName;
+            existingSupervisor.Title = supervisor.Title;
+            await _unitOfWork.SupervisorRepository.UpdateAsync(existingSupervisor);
+            await _unitOfWork.CompleteAsync();
+
+            return "Supervisor successfully updated.";
         }
     }
 }

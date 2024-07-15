@@ -44,15 +44,14 @@ namespace Api.Controllers
         }
 
         [HttpPut("{supervisorId}")]
-        public async Task<IActionResult> UpdateSupervisor(Guid supervisorId, [FromBody] Supervisor supervisorDto) {
-            if (supervisorId != supervisorDto.Id)
+        public async Task<IActionResult> UpdateSupervisor(Guid supervisorId, [FromBody] UpdateSupervisorCommand command) {
+            var result = await _mediator.Send(command);
+            if (result.Contains("successfully"))
             {
-                return BadRequest("Supervisor ID mismatch");
+                return Ok(result);
             }
 
-            var command = new UpdateSupervisorCommand(supervisorDto);
-            await _mediator.Send(command);
-            return NoContent();
+            return BadRequest(result);
         }
 
         [HttpDelete("{supervisorId}")]

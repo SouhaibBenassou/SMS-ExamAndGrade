@@ -1,29 +1,23 @@
 ﻿using Application.Interfaces;
 using Application.IRepository;
+using Application.IServices;
 using MediatR;
 
 namespace Application.Features.Supervisor.Commands.Delete
 {
     public class DeleteSupervisorHandler : IRequestHandler<DeleteSupervisorCommand, string>
     {
-        private readonly ISupervisorRepository _supervisorRepository;
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IUnitOfService _unitOfService;
 
-        public DeleteSupervisorHandler(ISupervisorRepository supervisorRepository, IUnitOfWork unitOfWork)
+        public DeleteSupervisorHandler(IUnitOfService unitOfService)
         {
-            _supervisorRepository = supervisorRepository;
-            _unitOfWork = unitOfWork;
+            _unitOfService = unitOfService;
         }
 
         public async Task<string> Handle(DeleteSupervisorCommand request, CancellationToken cancellationToken)
         {
-            var supervisor = await _supervisorRepository.GetAsTracking(s => s.Id == request.SupervisorId);
-            if (supervisor != null)
-            {
-                await _supervisorRepository.RemoveAsync(supervisor);
-                await _unitOfWork.CommitAsync();
-            }
-            return "delete success";
+            
+            return await _unitOfService.SupervisorService.DeleteSupervisorAsync(request.SupervisorId);
         }
     }
 
