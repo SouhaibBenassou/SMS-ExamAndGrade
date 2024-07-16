@@ -311,3 +311,4 @@ C:\Users\Predator\Desktop\Pfinale\SMS-ExamAndGrade\Api\obj\Debug\net8.0\Api.genr
 C:\Users\Predator\Desktop\Pfinale\SMS-ExamAndGrade\Api\obj\Debug\net8.0\ref\Api.dll
 =======
 >>>>>>> ExamBranch
+C:\Users\souhaib\Documents\GitHub\SMS-ExamAndGrade\Api\bin\Debug\net8.0\launchSettings.json

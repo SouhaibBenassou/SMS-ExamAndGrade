@@ -3,6 +3,11 @@
 *.obj
 *.lo
 *.d
+*.dll
+*.exe
+*.pdb
+**/bin/
+**/obj/
 
 # Compiled Dynamic libraries
 *.so

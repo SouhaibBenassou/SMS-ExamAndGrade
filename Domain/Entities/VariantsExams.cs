@@ -4,13 +4,13 @@ namespace Domain.Entities
 {
     public class VariantsExams : AuditableEntity
     {
-        public Guid IdExam { get; set; }
+
         public string Description { get; set; }
-        public VariantType Variant { get; set; }
         public string VariantName { get; set; }
-        public string Answers { get; set; }
-
-
+        public string? ExamStatement { get; set; }
+        public string? ExamCorrection { get; set; }
+        public int NoteMax { get; set; }
+        public bool IsValid { get; set; }
 
     }
 }

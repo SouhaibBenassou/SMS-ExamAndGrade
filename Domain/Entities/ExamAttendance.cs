@@ -2,8 +2,9 @@
 {
     public class ExamAttendance : AuditableEntity
     {
-        public Guid IdExam { get; set; }
+        public Guid ExamId { get; set; }
         public bool Attendance { get; set; }
-        public Guid IdTrainee { get; set; }
+        public Guid StagiaireId { get; set; }
+        public Stagiaire Stagiaire { get; set; }
     }
 }
