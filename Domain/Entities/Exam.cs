@@ -20,7 +20,8 @@
         public Room? Room { get; set; }
         public Guid? SupervisorId { get; set; }
         public Supervisor? Supervisor { get; set; }
-        public ICollection<VariantsExams>? VariantsExams { get; set; }
+        public ICollection<VariantsExams> VariantsExams { get; set; }
+
 
     }
 }

@@ -5,8 +5,6 @@ public class Test : AuditableEntity
 {
     public string? Name { get; set; }
     public string? Description { get; set; }
-    public Guid? StagiaireId { get; set; }
-    public Stagiaire? Stagiaire { get; set; }
     public string? TestStatement { get; set; }
     public string? TestCorrection { get; set; }
     public double? Note { get; set; }

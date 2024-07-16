@@ -7,7 +7,6 @@ namespace Domain.Entities
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Title { get; set; }
-        [JsonIgnore]
         public ICollection<Exam>? Exams { get; set; }
     }
 }
