@@ -7,21 +7,21 @@ namespace Application.Features.Exam.Command.Create
     {
         private readonly IUnitOfService _unitOfServie;
 
-        public CreateExamCommandHandler(IUnitOfService unitOfServie) {
+        public CreateExamCommandHandler(IUnitOfService unitOfServie)
+        {
             _unitOfServie = unitOfServie;
         }
 
 
-        public async Task<string> Handle(CreateExamCommand request, CancellationToken cancellationToken) {
+        public async Task<string> Handle(CreateExamCommand request, CancellationToken cancellationToken)
+        {
 
             var Exam = new Domain.Entities.Exam
             {
-                ExamDate = request.ExamDate,
-                Duration = new DateTime(),
-                StartTime = new DateTime(),
+
                 YearId = request.YearId,
                 SemesterId = request.SemesterId,
-                YearOfStudyId = request.YearOfStudyId,
+
                 FiliereId = request.FiliereId,
                 UnitOfFormationId = request.UnitOfFormationId,
                 RoomId = request.RoomId,
