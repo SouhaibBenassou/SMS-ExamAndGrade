@@ -23,9 +23,20 @@ namespace Infrastructure.Data
         public DbSet<UnitOfFormationFiliere> UnitOfFormationFilieres { get; set; }
         public DbSet<Stagiaire> Stagiaires { get; set; }
 
+        public DbSet<AllResults> AllResults { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<AllResults>()
+                .HasOne(g => g.TestResults)
+                .WithMany() // Assuming TestResults doesn't have a collection of Grades
+                .HasForeignKey(g => g.TestResultsId);
+            modelBuilder.Entity<AllResults>()
+                .HasOne(g => g.ExamResult)
+                .WithMany() // Assuming ExamResult doesn't have a collection of Grades
+                .HasForeignKey(g => g.ExamResultId);
 
             // Stagiaire relationships
             modelBuilder.Entity<Stagiaire>()

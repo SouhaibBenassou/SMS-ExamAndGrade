@@ -12,4 +12,5 @@ public class ExamResult : AuditableEntity
     public double? Note { get; set; }
     public bool? IsValid { get; set; }
     public DateOnly? DateValidation { get; set; }
+
 }
