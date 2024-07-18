@@ -1,8 +1,9 @@
-﻿using MediatR;
+﻿using Domain.Dtos.ExamDto;
+using MediatR;
 
 namespace Application.Features.Exam.Queries.GetListExamQuery
 {
-    public class GetListExamQuery : IRequest<List<Domain.Entities.Exam>>
+    public class GetListExamQuery : IRequest<List<GetListExamDto>>
     {
     }
 }

@@ -4,9 +4,9 @@
     public class Exam : AuditableEntity
     {
 
-        public DateOnly? ExamDate { get; set; }
-        public TimeOnly? Duration { get; set; }
-        public TimeOnly? StartTime { get; set; }
+        public string? ExamDate { get; set; }
+        public string? Duration { get; set; }
+        public string? StartTime { get; set; }
         public ExamType? ExamType { get; set; }
         public Guid? YearId { get; set; }
         public Year? Year { get; set; }
@@ -25,3 +25,4 @@
         public ICollection<ExamResult>? ExamResults { get; set; }
     }
 }
+

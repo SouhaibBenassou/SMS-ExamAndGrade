@@ -1,4 +1,6 @@
 ﻿using Application.Interfaces;
+using AutoMapper;
+using Domain.Entities;
 using MediatR;
 
 namespace Application.Features.Exam.Command.Create
@@ -6,28 +8,19 @@ namespace Application.Features.Exam.Command.Create
     public class CreateExamCommandHandler : IRequestHandler<CreateExamCommand, string>
     {
         private readonly IUnitOfService _unitOfServie;
+        private readonly IMapper _mapper;
 
-        public CreateExamCommandHandler(IUnitOfService unitOfServie)
+        public CreateExamCommandHandler(IUnitOfService unitOfServie, IMapper mapper)
         {
             _unitOfServie = unitOfServie;
+            _mapper = mapper;
+
         }
 
 
         public async Task<string> Handle(CreateExamCommand request, CancellationToken cancellationToken)
         {
-
-            var Exam = new Domain.Entities.Exam
-            {
-
-                YearId = request.YearId,
-                SemesterId = request.SemesterId,
-
-                FiliereId = request.FiliereId,
-                UnitOfFormationId = request.UnitOfFormationId,
-                RoomId = request.RoomId,
-                SupervisorId = request.SupervisorId,
-            };
-            return await _unitOfServie.ExamService.AddExamAsync(Exam);
+            return await _unitOfServie.ExamService.AddExamAsync(_mapper.Map<Domain.Entities.Exam>(request));
         }
     }
 }

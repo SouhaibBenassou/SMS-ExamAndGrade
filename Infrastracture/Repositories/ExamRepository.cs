@@ -16,13 +16,13 @@ namespace Infrastracture.Repositories
         public async Task<List<Exam>> GetAllWithRelatedEntities()
         {
             return await _db.Exams
-                .AsNoTracking()
-                .Include(e => e.Year)
-                .Include(e => e.Filiere)
-                .Include(e => e.UnitOfFormation)
-                .Include(e => e.Room)
-                .Include(e => e.Supervisor)
-                .ToListAsync();
+        .AsNoTracking()
+        .Include(e => e.Year)
+        .Include(e => e.Filiere)
+        .Include(e => e.UnitOfFormation)
+        .Include(e => e.Room)
+        .Include(e => e.Supervisor)
+        .ToListAsync();
         }
 
 
