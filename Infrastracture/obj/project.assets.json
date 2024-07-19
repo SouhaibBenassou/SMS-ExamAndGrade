@@ -4314,19 +4314,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\souhaib\\.nuget\\packages\\": {}
+    "C:\\Users\\soukaina\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Infrastracture\\Infrastracture.csproj",
+      "projectUniqueName": "C:\\Users\\soukaina\\OneDrive\\Documents\\Project_final_jit\\LastUpdate\\SMS-ExamAndGrade\\Infrastracture\\Infrastracture.csproj",
       "projectName": "Infrastracture",
-      "projectPath": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Infrastracture\\Infrastracture.csproj",
-      "packagesPath": "C:\\Users\\souhaib\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Infrastracture\\obj\\",
+      "projectPath": "C:\\Users\\soukaina\\OneDrive\\Documents\\Project_final_jit\\LastUpdate\\SMS-ExamAndGrade\\Infrastracture\\Infrastracture.csproj",
+      "packagesPath": "C:\\Users\\soukaina\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\soukaina\\OneDrive\\Documents\\Project_final_jit\\LastUpdate\\SMS-ExamAndGrade\\Infrastracture\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\souhaib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\soukaina\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4340,11 +4345,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Application\\Application.csproj"
+            "C:\\Users\\soukaina\\OneDrive\\Documents\\Project_final_jit\\LastUpdate\\SMS-ExamAndGrade\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\soukaina\\OneDrive\\Documents\\Project_final_jit\\LastUpdate\\SMS-ExamAndGrade\\Application\\Application.csproj"
             },
-            "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\souhaib\\Documents\\GitHub\\SMS-ExamAndGrade\\Domain\\Domain.csproj"
+            "C:\\Users\\soukaina\\OneDrive\\Documents\\Project_final_jit\\LastUpdate\\SMS-ExamAndGrade\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\soukaina\\OneDrive\\Documents\\Project_final_jit\\LastUpdate\\SMS-ExamAndGrade\\Domain\\Domain.csproj"
             }
           }
         }
@@ -4405,7 +4410,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

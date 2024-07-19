@@ -21,6 +21,7 @@ namespace Infrastructure
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IExamRepository, ExamRepository>();
             services.AddScoped<IRoomRepository, RoomRepository>();
+            services.AddScoped<IVariantsExamRepository, VariantsExamRepository>();
             services.AddScoped<ISupervisorRepository, SupervisorRepository>();
 
             return services;

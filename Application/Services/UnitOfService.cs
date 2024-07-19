@@ -9,11 +9,14 @@ namespace Application.Services
         public ISupervisorService SupervisorService { get; set; }
         public IRoomService RoomService { get; set; }
         public IExamService ExamService { get; set; }
+        public IVariantsExamService VariantsExamService { get; set; }
 
-        public UnitOfService(ISupervisorService supervisorService, IRoomService roomService, IExamService examService) {
+        public UnitOfService(ISupervisorService supervisorService, IRoomService roomService, IExamService examService, IVariantsExamService variantsExamService)
+        {
             SupervisorService = supervisorService;
             RoomService = roomService;
             ExamService = examService;
+            VariantsExamService = variantsExamService;
         }
     }
 }
