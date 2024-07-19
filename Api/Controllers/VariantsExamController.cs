@@ -4,6 +4,7 @@ using MediatR;
 using Application.Features.VariantsExams.Queries.GetVariantsExamById;
 using Application.Features.VariantsExam.Queries.GetAllVariantsExams;
 using Application.Features.VariantsExam.Commands.Delete;
+using Application.Features.VariantsExam.Commands.Update;
 
 namespace Api.Controllers
 {
@@ -39,6 +40,18 @@ namespace Api.Controllers
         {
             return await _mediator.Send(command);
         }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateVariantsExam([FromForm] UpdateVariantsExamCommand command)
+        {
+            var result = await _mediator.Send(command);
+            if (result.Contains("successfully"))
+            {
+                return Ok(result);
+            }
+
+            return BadRequest(result);
+
+        }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteVariantsExam(Guid id)
@@ -52,6 +65,6 @@ namespace Api.Controllers
 
             return BadRequest(result);
         }
-
+        
     }
 }

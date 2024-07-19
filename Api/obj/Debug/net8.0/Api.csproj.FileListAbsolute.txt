@@ -462,3 +462,4 @@ C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastUpdate\SMS-ExamAndGra
 C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastUpdate\SMS-ExamAndGrade\api\obj\Debug\net8.0\Api.pdb
 C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastUpdate\SMS-ExamAndGrade\api\obj\Debug\net8.0\Api.genruntimeconfig.cache
 C:\Users\soukaina\OneDrive\Documents\Project_final_jit\LastUpdate\SMS-ExamAndGrade\api\obj\Debug\net8.0\ref\Api.dll
+C:\Users\Predator\Desktop\Pfinale\SMS-ExamAndGrade\Api\bin\Debug\net8.0\launchSettings.json

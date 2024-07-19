@@ -111,3 +111,5 @@ StyleCopReport.xml
 *.lnk
 /.vs
 .vs/EditionDesDocuments/v17/DocumentLayout.json
+*.dll
+/Domain/bin/Debug/net8.0

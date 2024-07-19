@@ -23,7 +23,6 @@
 	<ItemGroup>
 	  <Folder Include="Features\Exam\Command\Update\" />
 	  <Folder Include="Features\UpdateIdExam\" />
-	  <Folder Include="Features\VariantsExam\Commands\Update\" />
 	</ItemGroup>
 
 </Project>
