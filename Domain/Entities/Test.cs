@@ -1,5 +1,5 @@
 ﻿
-namespace Domain;
+namespace Domain.Entities;
 
 public class Test : AuditableEntity
 {

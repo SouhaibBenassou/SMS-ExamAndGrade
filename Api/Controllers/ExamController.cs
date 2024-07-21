@@ -30,7 +30,7 @@ namespace Api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteExam(Guid id)
         {
-            var command = new DeleteExamCommand(id);
+            var command = new DeleteTestCommand(id);
             var result = await _mediator.Send(command);
             if (result.Contains("successfully"))
             {

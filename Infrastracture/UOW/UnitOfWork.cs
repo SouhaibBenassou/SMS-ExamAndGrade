@@ -12,12 +12,14 @@ public class UnitOfWork : IUnitOfWork
     public ISupervisorRepository SupervisorRepository { get; set; }
     public IExamRepository ExamRepository { get; set; }
     public IRoomRepository RoomRepository { get; set; }
+    public ITestRepository TestRepository { get; set; }
 
-    public UnitOfWork(ApplicationDbContext db, ISupervisorRepository supervisorRepository, IExamRepository examRepository, IRoomRepository roomRepository) {
+    public UnitOfWork(ApplicationDbContext db, ISupervisorRepository supervisorRepository, IExamRepository examRepository, IRoomRepository roomRepository,ITestRepository testRepository) {
         _db = db;
         SupervisorRepository = supervisorRepository;
         ExamRepository = examRepository;
         RoomRepository = roomRepository;
+        TestRepository = testRepository;
     }
 
     public void Commit() {

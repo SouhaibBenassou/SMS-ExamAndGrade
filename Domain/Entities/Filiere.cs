@@ -5,6 +5,8 @@ namespace Domain;
 
 public class Filiere : AuditableEntity
 {
+    public Guid? FiliereId { get; set; }
+
     public string? FiliereName { get; set; }
 
     public ICollection<Exam>? Exams { get; set; }

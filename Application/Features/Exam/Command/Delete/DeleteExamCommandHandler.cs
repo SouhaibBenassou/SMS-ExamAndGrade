@@ -3,7 +3,7 @@ using MediatR;
 
 namespace Application.Features.Exam.Command.Delete
 {
-    public class DeleteExamCommandHandler : IRequestHandler<DeleteExamCommand, string>
+    public class DeleteExamCommandHandler : IRequestHandler<DeleteTestCommand, string>
     {
         private readonly IUnitOfService _unitOfService;
 
@@ -11,7 +11,7 @@ namespace Application.Features.Exam.Command.Delete
             _unitOfService = unitOfService;
         }
 
-        public Task<string> Handle(DeleteExamCommand request, CancellationToken cancellationToken) {
+        public Task<string> Handle(DeleteTestCommand request, CancellationToken cancellationToken) {
             return _unitOfService.ExamService.DeleteExamAsync(request.ExamId);
         }
     }

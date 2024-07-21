@@ -14,6 +14,7 @@ namespace Application
             services.AddScoped<IExamService, ExamService>();
             services.AddScoped<IRoomService, RoomService>();
             services.AddScoped<ISupervisorService, SupervisorService>();
+            services.AddScoped<ITestService, TestService>();
             //configuration of mediator
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
             //configuration of auto mapper
