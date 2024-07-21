@@ -9,7 +9,7 @@ namespace Application
     public static class ConfigureServices
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services) {
-
+            services.AddScoped<ITestService, TestService>();
             services.AddScoped<IUnitOfService, UnitOfService>();
             services.AddScoped<IExamService, ExamService>();
             services.AddScoped<IRoomService, RoomService>();
