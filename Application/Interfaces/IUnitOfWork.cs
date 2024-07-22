@@ -4,6 +4,7 @@ namespace Application.Interfaces
 {
     public interface IUnitOfWork
     {
+        public ITestRepository TestRepository { get; }
         public ISupervisorRepository SupervisorRepository { get; set; }
         public IExamRepository ExamRepository { get; set; }
         public IRoomRepository RoomRepository { get; set; }

@@ -22,7 +22,7 @@ namespace Api.Controllers
             return Ok(res);
         }
         [HttpPost]
-        public async Task<string> CreateExam([FromBody] CreateExamCommand command)
+        public async Task<string> CreateExam([FromForm] CreateExamCommand command)
         {
             return await _mediator.Send(command);
         }
