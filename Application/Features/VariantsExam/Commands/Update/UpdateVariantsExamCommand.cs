@@ -7,7 +7,7 @@ namespace Application.Features.VariantsExam.Commands.Update
 {
     public class UpdateVariantsExamCommand : IRequest<string>
     {
-        
+        public Guid Id { get; set; }
         public Guid? ExamId { get; set; }
         public string? Description { get; set; }
         public string? VariantName { get; set; }

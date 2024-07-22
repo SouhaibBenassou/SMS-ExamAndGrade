@@ -1,4 +1,5 @@
 ﻿using Application.Features.VariantsExam.Commands.Delete;
+using Application.Features.VariantsExam.Commands.Update;
 using Application.Features.VariantsExams.Commands.Create;
 using Application.Features.VariantsExams.Queries.GetVariantsExamById;
 using AutoMapper;
@@ -13,11 +14,11 @@ namespace Application.Profiles
         {
             CreateMap<CreateVariantsExamCommand, VariantsExamDto>().ReverseMap();
             CreateMap<VariantsExams, DeleteVariantsExamsCommand>().ReverseMap();
-            CreateMap<VariantsExamDto, VariantsExams>().ReverseMap();
+            CreateMap<VariantsExams, UpdateVariantsExamCommand>().ReverseMap();
             // Query Handlers
             CreateMap<VariantsExams, VariantsExamDto>().ReverseMap();
             CreateMap<VariantsExams, GetVariantsExamByIdQuery>().ReverseMap();
-            
+
         }
     }
 }

@@ -40,8 +40,8 @@ namespace Api.Controllers
         {
             return await _mediator.Send(command);
         }
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateVariantsExam([FromForm] UpdateVariantsExamCommand command)
+        [HttpPut("{id:Guid}")]
+        public async Task<IActionResult> UpdateVariantsExam(Guid id, [FromForm] UpdateVariantsExamCommand command)
         {
             var result = await _mediator.Send(command);
             if (result.Contains("successfully"))
@@ -65,6 +65,6 @@ namespace Api.Controllers
 
             return BadRequest(result);
         }
-        
+
     }
 }

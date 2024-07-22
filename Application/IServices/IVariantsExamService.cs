@@ -6,7 +6,7 @@ namespace Application.IServices
     public interface IVariantsExamService
     {
         Task<string> AddVariantsExamAsync(VariantsExamDto variantsExams);
-        Task<string> UpdateVariantsExamAsync(VariantsExamDto variantsExams);
+        Task<string> UpdateVariantsExamAsync(VariantsExams variantsExams);
         Task<List<VariantsExams>> GetAllVariantsExamsAsync();
         Task<VariantsExams> GetVariantsExamAsync(Guid id);
         Task<string> DeleteVariantsExamAsync(Guid id);

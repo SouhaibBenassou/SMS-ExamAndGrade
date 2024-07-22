@@ -21,20 +21,15 @@ namespace Application.Features.VariantsExam.Commands.Update
 
         public async Task<string> Handle(UpdateVariantsExamCommand request, CancellationToken cancellationToken)
         {
-            VariantsExamDto updateVariantsExam = new VariantsExamDto
-            {
-                
-                Description = request.Description,
-                ExamId = request.ExamId,
-                TrainerId = request.TrainerId,
-                VariantName = request.VariantName,
-                VariantType = request.VariantType,
-                ExamStatement = request.ExamStatement,
-                ExamCorrection = request.ExamCorrection,
-                IsValid = (bool)request.IsValid
-            };
+            var variantsExam = _unitOfService.VariantsExamService.GetVariantsExamAsync(request.Id);
 
-            return await _unitOfService.VariantsExamService.UpdateVariantsExamAsync(updateVariantsExam);
+            if (variantsExam == null)
+            {
+                return "VariantsExam not found";
+            }
+
+            var variantsExams = _mapper.Map<Domain.Entities.VariantsExams>(request);
+            return await _unitOfService.VariantsExamService.UpdateVariantsExamAsync(variantsExams);
         }
     }
 }

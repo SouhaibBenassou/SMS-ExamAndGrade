@@ -30,29 +30,10 @@ namespace Application.Services
             var variantsExam = await _unitOfWork.VariantsExamRepository.GetAllAsNoTracking();
             return variantsExam;
         }
-        public async Task<string> UpdateVariantsExamAsync(VariantsExamDto variantsExamsDto)
+        public async Task<string> UpdateVariantsExamAsync(VariantsExams variantsExams)
         {
-            var variantsExams = _mapper.Map<VariantsExams>(variantsExamsDto);
-            var existingVariantsExam = await _unitOfWork.VariantsExamRepository.GetAsNoTracking(v => v.Id == variantsExams.Id);
-            if (existingVariantsExam == null)
-            {
-                return  $"VariantsExam with Id {variantsExamsDto.Id} not found."; ;
-            }
-
-            existingVariantsExam.Description = variantsExams.Description;
-            existingVariantsExam.ExamId = variantsExams.ExamId;
-            existingVariantsExam.Id = variantsExams.Id;
-            existingVariantsExam.TrainerId = variantsExams.TrainerId;
-            existingVariantsExam.VariantName = variantsExams.VariantName;
-            existingVariantsExam.VariantType = variantsExams.VariantType;
-            existingVariantsExam.ExamStatement = variantsExams.ExamStatement;
-            existingVariantsExam.ExamCorrection = variantsExams.ExamCorrection;
-            existingVariantsExam.IsValid = variantsExams.IsValid;
-
-            await _unitOfWork.VariantsExamRepository.UpdateAsync(existingVariantsExam);
+            await _unitOfWork.VariantsExamRepository.UpdateAsync(variantsExams);
             await _unitOfWork.CompleteAsync();
-
-            var Result = _mapper.Map<VariantsExamDto>(existingVariantsExam);
             return "Variants exam successfully updated.";
         }
 
@@ -79,7 +60,7 @@ namespace Application.Services
 
             return "Variants exam successfully deleted.";
         }
-        
+
 
     }
 }
