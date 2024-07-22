@@ -1,6 +1,8 @@
-﻿namespace Application;
+﻿using MediatR;
 
-public class DeleteTestCommand
+namespace Application;
+
+public class DeleteTestCommand(Guid id) : IRequest<string>
 {
-
+    public Guid TestId { get; set; } = id;
 }

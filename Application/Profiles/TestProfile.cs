@@ -6,8 +6,11 @@ namespace Application.Profiles
 {
     public class TestProfile : Profile
     {
-        public TestProfile() {
+        public TestProfile()
+        {
             CreateMap<Test, ListTestDtos>().ReverseMap();
+            CreateMap<Test, AddTestCommand>().ReverseMap();
+            CreateMap<Test, TestDto>().ReverseMap();
         }
     }
 }
