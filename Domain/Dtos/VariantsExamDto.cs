@@ -4,6 +4,7 @@ namespace Domain.Dtos
 {
     public class VariantsExamDto
     {
+        public Guid Id { get; set; }
         public Guid? ExamId { get; set; }
         public string? Description { get; set; }
         public string? VariantName { get; set; }

@@ -2,6 +2,7 @@
 using AutoMapper;
 using Domain;
 using Domain.Dtos.ExamDto;
+using Domain.Dtos.FiliereDto;
 using Domain.Entities;
 
 namespace Application.Profiles
@@ -13,8 +14,8 @@ namespace Application.Profiles
             CreateMap<Exam, GetListExamDto>().ReverseMap().ForMember(x => x.Year, opt => opt.MapFrom(src => src.Year));
             CreateMap<Year, YearDto>().ReverseMap();
             CreateMap<CreateExamCommand, Exam>().ReverseMap();
-
-
+            CreateMap<Exam, ExamResultDto>().ReverseMap();
+            CreateMap<Filiere, FiliereNameDto>().ReverseMap();
         }
     }
 }

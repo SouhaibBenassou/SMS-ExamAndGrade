@@ -1,7 +1,6 @@
 ﻿using Application.Interfaces;
 using Application.IServices;
 using Application.Services;
-using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 namespace Application
@@ -15,6 +14,7 @@ namespace Application
             services.AddScoped<IRoomService, RoomService>();
             services.AddScoped<ISupervisorService, SupervisorService>();
             services.AddScoped<IVariantsExamService, VariantsExamService>();
+            services.AddScoped<IExamResultsService, ExamResultsService>();
             //configuration of mediator
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
             //configuration of auto mapper

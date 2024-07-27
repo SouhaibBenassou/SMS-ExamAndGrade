@@ -9,6 +9,7 @@ namespace Application.Interfaces
         ISupervisorService SupervisorService { get; }
         IRoomService RoomService { get; }
         IVariantsExamService VariantsExamService { get; }
+        IExamResultsService ExamResultsService { get; }
 
     }
 }

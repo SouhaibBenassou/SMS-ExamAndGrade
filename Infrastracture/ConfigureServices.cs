@@ -25,7 +25,7 @@ namespace Infrastructure
             services.AddScoped<IVariantsExamRepository, VariantsExamRepository>();
             services.AddScoped<ISupervisorRepository, SupervisorRepository>();
             services.AddScoped<ITestRepository, TestRepository>();
-
+            services.AddScoped<IExamResultRepository, ExamResultRepository>();
             return services;
         }
     }

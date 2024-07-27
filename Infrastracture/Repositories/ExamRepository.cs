@@ -22,9 +22,9 @@ namespace Infrastracture.Repositories
         .Include(e => e.UnitOfFormation)
         .Include(e => e.Room)
         .Include(e => e.Supervisor)
+        .Include(e => e.VariantsExams)
+        .Include(e => e.ExamResults)
         .ToListAsync();
         }
-
-
     }
 }

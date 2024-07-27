@@ -1,6 +1,5 @@
 ﻿using Domain;
 using Domain.Entities;
-using Domain.Enums;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data
@@ -22,12 +21,24 @@ namespace Infrastructure.Data
         public DbSet<Exam> Exams { get; set; }
         public DbSet<UnitOfFormationFiliere> UnitOfFormationFilieres { get; set; }
         public DbSet<Stagiaire> Stagiaires { get; set; }
-
         public DbSet<AllResults> AllResults { get; set; }
+        public DbSet<IndividualWork> IndividualWorks { get; set; }
+        public DbSet<IndividualWorkUOF> IndividualWorkUOFs { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<IndividualWork>()
+                 .HasOne(iw => iw.Stagiaire)
+                 .WithMany(s => s.IndividualWorks)
+                 .HasForeignKey(iw => iw.StagiaireId);
+
+            modelBuilder.Entity<IndividualWorkUOF>()
+                .HasOne(iwuof => iwuof.IndividualWork)
+                .WithMany(iw => iw.individualWorkUOFs)
+                .HasForeignKey(iwuof => iwuof.IndividualWorkId);
 
             modelBuilder.Entity<AllResults>()
                 .HasOne(g => g.TestResults)
@@ -113,6 +124,11 @@ namespace Infrastructure.Data
                 .WithOne(tr => tr.Test)
                 .HasForeignKey(tr => tr.TestId);
 
+            modelBuilder.Entity<Test>()
+                .HasOne(t => t.UnitOfFormation)
+                .WithMany(t => t.Tests)
+                .HasForeignKey(t => t.UnitOfFormationId);
+
             // UnitOfFormationFiliere relationships
             modelBuilder.Entity<UnitOfFormationFiliere>()
                 .HasKey(uf => new { uf.FiliereId, uf.UnitFormationId });
@@ -160,6 +176,18 @@ namespace Infrastructure.Data
                 .HasMany(r => r.Exams)
                 .WithOne(e => e.Room)
                 .HasForeignKey(e => e.RoomId);
+
+            modelBuilder.Entity<VariantsExams>()
+                .HasOne(r => r.UnitOfFormation)
+                .WithMany()
+                .HasForeignKey(r => r.UnitOfFormationId);
+
+            modelBuilder.Entity<VariantsExams>()
+                .HasOne(t => t.Trainer)
+                .WithMany(t => t.VariantsExams)
+                .HasForeignKey(t => t.TrainerId);
+
+
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Application.IServices
         Task<string> UpdateExamAsync(Exam exam);
         Task<string> DeleteExamAsync(Guid id);
         Task<List<Exam>> GetListOfExamWithEntityAsync();
-        Task<Room> GetExamByIdAsync(Guid id);
+        Task<Exam> GetExamByIdAsync(Guid id);
 
 
     }

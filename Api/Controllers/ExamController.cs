@@ -1,6 +1,7 @@
 ﻿using Application.Features.Exam.Command.Create;
 using Application.Features.Exam.Command.Delete;
 using Application.Features.Exam.Queries.GetListExamQuery;
+using Application.Features.Exam.Queries.GetExamResult;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -40,6 +41,13 @@ namespace Api.Controllers
             return BadRequest(result);
         }
 
+        [HttpGet("ExamResult/{id}")]
+        public async Task<IActionResult> GetExamResult(Guid id)
+        {
+            var query = new GetExamResultQuery(id);
+            var Result = await _mediator.Send(query);
+            return Ok(Result);
+        }
 
     }
 }

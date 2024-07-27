@@ -9,17 +9,20 @@ namespace Application.Services
     {
         private readonly IUnitOfWork _unitOfWork;
 
-        public ExamService(IUnitOfWork unitOfWork) {
+        public ExamService(IUnitOfWork unitOfWork)
+        {
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<string> AddExamAsync(Exam exam) {
+        public async Task<string> AddExamAsync(Exam exam)
+        {
             await _unitOfWork.ExamRepository.CreateAsync(exam);
             await _unitOfWork.CompleteAsync();
             return "Exam successfully added.";
         }
 
-        public async Task<string> DeleteExamAsync(Guid id) {
+        public async Task<string> DeleteExamAsync(Guid id)
+        {
             var exam = await _unitOfWork.ExamRepository.GetAsNoTracking(r => r.Id == id);
             if (exam == null)
             {
@@ -32,19 +35,29 @@ namespace Application.Services
             return "Exam successfully deleted.";
         }
 
-        public async Task<List<Exam>> GetListOfExamWithEntityAsync() {
+        public async Task<List<Exam>> GetListOfExamWithEntityAsync()
+        {
 
             return await _unitOfWork.ExamRepository.GetAllWithRelatedEntities();
         }
 
 
 
-        Task<string> IExamService.UpdateExamAsync(Exam exam) {
+        Task<string> IExamService.UpdateExamAsync(Exam exam)
+        {
             throw new NotImplementedException();
         }
 
-        public Task<Room> GetExamByIdAsync(Guid id) {
-            throw new NotImplementedException();
+        public async Task<Exam> GetExamByIdAsync(Guid id)
+        {
+            Exam exam = await _unitOfWork.ExamRepository.GetAsNoTracking(r => r.Id == id);
+
+            if (exam == null)
+            {
+                return null;
+            }
+            return exam;
+
         }
     }
 }
