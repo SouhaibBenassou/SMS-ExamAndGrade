@@ -8,8 +8,11 @@
 
 	<ItemGroup>
 		<Compile Remove="Features\Room\**" />
+		<Compile Remove="Features\UpdateIdExam\**" />
 		<EmbeddedResource Remove="Features\Room\**" />
+		<EmbeddedResource Remove="Features\UpdateIdExam\**" />
 		<None Remove="Features\Room\**" />
+		<None Remove="Features\UpdateIdExam\**" />
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="13.0.1" />
@@ -22,8 +25,6 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Features\Exam\Command\Update\" />
-	  <Folder Include="Features\Results\Queries\" />
-	  <Folder Include="Features\UpdateIdExam\" />
 	</ItemGroup>
 
 </Project>

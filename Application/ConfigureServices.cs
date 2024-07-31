@@ -1,6 +1,7 @@
 ﻿using Application.Interfaces;
 using Application.IServices;
 using Application.Services;
+using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 namespace Application

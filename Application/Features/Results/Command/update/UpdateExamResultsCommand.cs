@@ -1,11 +1,11 @@
-﻿using MediatR;
+﻿using Domain.Dtos.ResultsDto;
+using MediatR;
 
 namespace Application.Features.Results.Command.update
 {
-    public class UpdateExamResultsCommand(Guid id) : IRequest<string>
+    public class UpdateExamResultsCommand : IRequest<string>
     {
-        public Guid ExamResutlId { get; set; } = id;
-        public double? PracticalNote { get; set; }
-        public double? TheoreticalNote { get; set; }
+        public Guid ExamId { get; set; }
+        public List<StagiaireNoteDetailDto> StagiaireNoteDetails { get; set; }
     }
 }

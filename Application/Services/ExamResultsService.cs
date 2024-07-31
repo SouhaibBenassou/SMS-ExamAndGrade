@@ -12,30 +12,23 @@ namespace Application.Services
             _unitOfWork = unitOfWork;
         }
 
-        public Task<string> AddExamResultAsync(ExamResult examResult) {
-            throw new NotImplementedException();
-        }
-
-        public Task<string> DeleteExamResultAsync(Guid id) {
-            throw new NotImplementedException();
-        }
-
-        public async Task<ExamResult> GetExamResultByIdAsync(Guid id) {
-            ExamResult examResult = await _unitOfWork.ExamResultRepository.GetAsTracking(r => r.Id == id);
-            if (examResult == null)
-            {
-                return null;
-            }
+        public async Task<ExamResult> FindStagiere(Guid CheckStagiereid, Guid CheckExamId) {
+            ExamResult examResult = await _unitOfWork.ExamResultRepository.FindStagiere(CheckStagiereid, CheckExamId);
             return examResult;
         }
 
-        public Task<List<ExamResult>> GetListOfExamResultsAsync() {
-            throw new NotImplementedException();
+        public async Task<ExamResult> FindStagiereAsync(Guid stagiaireId, Guid examId) {
+            return await _unitOfWork.ExamResultRepository.FindStagiere(stagiaireId, examId);
         }
 
-        public async Task<string> UpdateExamResultAsync(ExamResult examResult) {
+        public async Task<List<ExamResult>> GetListExamResultByIdAsync(Guid id) {
+            List<ExamResult> examResult = await _unitOfWork.ExamResultRepository.GetExamResultByExamI(id);
+            return examResult;
+        }
+
+        public async Task<string> UpdateStagiaireNotes(ExamResult examResult) {
             await _unitOfWork.ExamResultRepository.UpdateAsync(examResult);
-            await _unitOfWork.CommitAsync();
+            await _unitOfWork.CompleteAsync();
             return "The Resutls has Been updated";
         }
     }
