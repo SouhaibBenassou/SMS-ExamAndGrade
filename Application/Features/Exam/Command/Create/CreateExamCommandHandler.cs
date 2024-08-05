@@ -17,7 +17,6 @@ namespace Application.Features.Exam.Command.Create
 
         }
 
-
         public async Task<string> Handle(CreateExamCommand request, CancellationToken cancellationToken)
         {
             return await _unitOfServie.ExamService.AddExamAsync(_mapper.Map<Domain.Entities.Exam>(request));

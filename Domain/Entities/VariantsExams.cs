@@ -11,12 +11,10 @@ namespace Domain.Entities
         public string? ExamStatement { get; set; }
         public string? ExamCorrection { get; set; }
         public Guid? UnitOfFormationId { get; set; }
-        public UnitOfFormation? UnitOfFormation { get; set; }
         public VariantType? VariantType { get; set; }
         public int? NoteMax { get; set; }
         public bool? IsValid { get; set; }
         public Guid? TrainerId { get; set; }
-        public Trainer? Trainer { get; set; }
 
     }
 }
