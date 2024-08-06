@@ -759,9 +759,6 @@ namespace Infrastracture.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float?>("NoteExam")
-                        .HasColumnType("real");
-
                     b.Property<int?>("SemesterType")
                         .HasColumnType("int");
 
