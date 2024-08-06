@@ -1,15 +1,15 @@
 ﻿using Application;
 using Application.Interfaces;
 using Application.IRepository;
-using Infrastracture;
 using Infrastracture.Repositories;
+using Infrastracture.UOW;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Infrastructure
+namespace Infrastracture
 {
     public static class ConfigureServices
     {
@@ -26,6 +26,8 @@ namespace Infrastructure
             services.AddScoped<ISupervisorRepository, SupervisorRepository>();
             services.AddScoped<ITestRepository, TestRepository>();
             services.AddScoped<IExamResultRepository, ExamResultRepository>();
+            services.AddScoped<ITestResultRepository, TestResultRepository >();
+            
             return services;
         }
     }

@@ -1,6 +1,8 @@
-﻿using Application;
+﻿using System.Linq.Expressions;
+using Application;
 using Domain;
 using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastracture.Repositories
 {
@@ -13,5 +15,17 @@ namespace Infrastracture.Repositories
         }
 
 
+        public async Task<Test> GetTestWithResults(Expression<Func<Test, bool>> filter = null)
+        {
+            IQueryable<Test> query = dbSet.Include(t=>t.TestResults);
+            if (filter is not null)
+            {
+                query = query.Where(filter);
+            }
+            return await query.FirstOrDefaultAsync();
+        }
+        
+        
+        
     }
 }

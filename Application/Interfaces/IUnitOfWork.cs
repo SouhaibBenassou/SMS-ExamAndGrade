@@ -10,6 +10,7 @@ namespace Application.Interfaces
         public IRoomRepository RoomRepository { get; set; }
         public IVariantsExamRepository VariantsExamRepository { get; set; }
         public IExamResultRepository ExamResultRepository { get; set; }
+        public ITestResultRepository TestResultRepository { get; set; }
         void Commit();
         Task CommitAsync();
         void Rollback();

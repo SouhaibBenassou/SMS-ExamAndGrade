@@ -53,4 +53,14 @@ public class TestService : ITestService
     {
         throw new NotImplementedException();
     }
+    
+    
+    public async Task<Test> GetTestByIdWithResults(Guid id)
+    {
+        Test test = await _unitOfWork.TestRepository.GetTestWithResults(t => t.Id == id);
+        return test;
+    }
+    
+    
+    
 }

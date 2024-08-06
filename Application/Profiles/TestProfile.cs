@@ -11,6 +11,7 @@ namespace Application.Profiles
             CreateMap<Test, ListTestDtos>().ReverseMap();
             CreateMap<Test, AddTestCommand>().ReverseMap();
             CreateMap<Test, TestDto>().ReverseMap();
+            CreateMap<Test, TestWithListResultsDto>().ReverseMap();
         }
     }
 }

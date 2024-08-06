@@ -3,8 +3,7 @@ using Application.Interfaces;
 using Application.IRepository;
 using Infrastructure.Data;
 
-
-namespace Infrastracture;
+namespace Infrastracture.UOW;
 
 public class UnitOfWork : IUnitOfWork
 {
@@ -15,16 +14,18 @@ public class UnitOfWork : IUnitOfWork
     public IExamRepository ExamRepository { get; set; }
     public IRoomRepository RoomRepository { get; set; }
     public IExamResultRepository ExamResultRepository { get; set; }
+    public ITestResultRepository TestResultRepository { get; set; }
 
-    public UnitOfWork(ApplicationDbContext db, ISupervisorRepository supervisorRepository, IVariantsExamRepository variantsExamRepository, IExamRepository examRepository, IRoomRepository roomRepository, ITestRepository testRepository, IExamResultRepository examResultRepository) {
+    public UnitOfWork(ApplicationDbContext db, IVariantsExamRepository variantsExamRepository, ITestRepository testRepository, ISupervisorRepository supervisorRepository, IExamRepository examRepository, IRoomRepository roomRepository, IExamResultRepository examResultRepository, ITestResultRepository testResultRepository)
+    {
         _db = db;
+        VariantsExamRepository = variantsExamRepository;
+        TestRepository = testRepository;
         SupervisorRepository = supervisorRepository;
         ExamRepository = examRepository;
         RoomRepository = roomRepository;
-        TestRepository = testRepository;
-        VariantsExamRepository = variantsExamRepository;
         ExamResultRepository = examResultRepository;
-
+        TestResultRepository = testResultRepository;
     }
 
     public void Commit() {

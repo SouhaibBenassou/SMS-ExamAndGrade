@@ -1,4 +1,6 @@
-﻿namespace Domain.Dtos.TestDtos
+﻿using Domain.Entities;
+
+namespace Domain.Dtos.TestDtos
 {
     public class ListTestDtos
     {
@@ -9,6 +11,6 @@
         public string? TestCorrection { get; set; }
         public Guid TrainerId { get; set; }
         public Guid UnitOfFormationId { get; set; }
-        public ICollection<TestResults>? TestResults { get; set; }
+        public ICollection<TestResult>? TestResults { get; set; }
     }
 }

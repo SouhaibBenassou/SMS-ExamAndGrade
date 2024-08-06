@@ -1,6 +1,6 @@
-﻿namespace Domain;
+﻿namespace Domain.Entities;
 
-public class TestResults : AuditableEntity
+public class TestResult : AuditableEntity
 {
     public Guid? TestId { get; set; }
     public Test? Test { get; set; }

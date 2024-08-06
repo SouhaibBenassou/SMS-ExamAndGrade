@@ -10,4 +10,5 @@ public interface ITestService
     Task<string> DeleteTestAsync(Guid id);
     Task<List<Test>> GetListOfTestsAsync();
     Task<Test> GetTestByIdAsync(Guid Id);
+    Task<Test> GetTestByIdWithResults(Guid id);
 }

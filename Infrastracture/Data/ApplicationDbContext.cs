@@ -11,7 +11,7 @@ namespace Infrastructure.Data
         public DbSet<ExamAttendance> ExamAttendances { get; set; }
         public DbSet<ExamResult> ExamResults { get; set; }
         public DbSet<Test> Tests { get; set; }
-        public DbSet<TestResults> TestResults { get; set; }
+        public DbSet<TestResult> TestResults { get; set; }
         public DbSet<VariantsExams> VariantsExams { get; set; }
         public DbSet<Room> Rooms { get; set; }
         public DbSet<Supervisor> Supervisors { get; set; }
@@ -31,7 +31,7 @@ namespace Infrastructure.Data
 
             modelBuilder.Entity<AllResults>()
                 .HasOne(g => g.TestResults)
-                .WithMany() // Assuming TestResults doesn't have a collection of Grades
+                .WithMany() // Assuming TestResult doesn't have a collection of Grades
                 .HasForeignKey(g => g.TestResultsId);
             modelBuilder.Entity<AllResults>()
                 .HasOne(g => g.ExamResult)
