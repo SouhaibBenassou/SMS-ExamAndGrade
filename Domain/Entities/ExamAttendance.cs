@@ -6,6 +6,5 @@
         public Exam? Exam { get; set; }
         public bool? Attendance { get; set; }
         public Guid? StagiaireId { get; set; }
-        public Stagiaire? Stagiaire { get; set; }
     }
 }
