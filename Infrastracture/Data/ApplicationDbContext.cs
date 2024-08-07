@@ -19,6 +19,7 @@ namespace Infrastructure.Data
         public DbSet<AllResults> AllResults { get; set; }
         public DbSet<IndividualWork> IndividualWorks { get; set; }
         public DbSet<IndividualWorkUOF> IndividualWorkUOFs { get; set; }
+        public DbSet<ExamSession> ExamSessions { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
@@ -43,11 +44,6 @@ namespace Infrastructure.Data
                 .HasMany(e => e.VariantsExams)
                 .WithOne(ve => ve.Exam)
                 .HasForeignKey(ve => ve.ExamId);
-
-            modelBuilder.Entity<Exam>()
-                .HasOne(e => e.Room)
-                .WithMany(r => r.Exams)
-                .HasForeignKey(e => e.RoomId);
 
             modelBuilder.Entity<Exam>()
                 .HasOne(e => e.Supervisor)
@@ -85,14 +81,17 @@ namespace Infrastructure.Data
                 .HasOne(ve => ve.Exam)
                 .WithMany(e => e.VariantsExams)
                 .HasForeignKey(ve => ve.ExamId);
-
-            // Room relationships
-            modelBuilder.Entity<Room>()
-                .HasMany(r => r.Exams)
-                .WithOne(e => e.Room)
-                .HasForeignKey(e => e.RoomId);
-
-
+            
+            //ExamSession relationships
+            modelBuilder.Entity<ExamSession>()
+                .HasOne(es => es.Exam)
+                .WithOne(e => e.ExamSession)
+                .HasForeignKey<ExamSession>(es => es.ExamId);
+            
+            modelBuilder.Entity<ExamSession>()
+                .HasOne(es => es.Room)
+                .WithMany(e => e.ExamSessions)
+                .HasForeignKey(es => es.RoomId);
 
         }
     }

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastracture.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240806125003_Initial")]
+    [Migration("20240807130635_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -103,9 +103,6 @@ namespace Infrastracture.Migrations
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("RoomId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("StartTime")
                         .HasColumnType("nvarchar(max)");
 
@@ -125,8 +122,6 @@ namespace Infrastracture.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("RoomId");
 
                     b.HasIndex("SupervisorId");
 
@@ -174,6 +169,55 @@ namespace Infrastracture.Migrations
                     b.HasIndex("ExamId");
 
                     b.ToTable("ExamAttendances");
+                });
+
+            modelBuilder.Entity("Domain.Entities.ExamSession", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("ExamId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("RoomId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ExamId")
+                        .IsUnique();
+
+                    b.HasIndex("RoomId");
+
+                    b.ToTable("ExamSession");
                 });
 
             modelBuilder.Entity("Domain.Entities.IndividualWork", b =>
@@ -338,6 +382,55 @@ namespace Infrastracture.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Supervisors");
+                });
+
+            modelBuilder.Entity("Domain.Entities.TestResult", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateOnly?>("DateValidation")
+                        .HasColumnType("date");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<bool?>("IsValid")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double?>("Note")
+                        .HasColumnType("float");
+
+                    b.Property<Guid?>("StagiaireId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("TestId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TestId");
+
+                    b.ToTable("TestResults");
                 });
 
             modelBuilder.Entity("Domain.Entities.VariantsExams", b =>
@@ -509,55 +602,6 @@ namespace Infrastracture.Migrations
                     b.ToTable("Tests");
                 });
 
-            modelBuilder.Entity("Domain.TestResult", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateOnly?>("DateValidation")
-                        .HasColumnType("date");
-
-                    b.Property<DateTime?>("DeletedAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("DeletedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("IsValid")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("ModifiedBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double?>("Note")
-                        .HasColumnType("float");
-
-                    b.Property<Guid?>("StagiaireId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid?>("TestId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("TestId");
-
-                    b.ToTable("TestResults");
-                });
-
             modelBuilder.Entity("Domain.AllResults", b =>
                 {
                     b.HasOne("Domain.ExamResult", "ExamResult")
@@ -566,7 +610,7 @@ namespace Infrastracture.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.TestResult", "TestResults")
+                    b.HasOne("Domain.Entities.TestResult", "TestResults")
                         .WithMany()
                         .HasForeignKey("TestResultsId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -579,15 +623,9 @@ namespace Infrastracture.Migrations
 
             modelBuilder.Entity("Domain.Entities.Exam", b =>
                 {
-                    b.HasOne("Domain.Entities.Room", "Room")
-                        .WithMany("Exams")
-                        .HasForeignKey("RoomId");
-
                     b.HasOne("Domain.Entities.Supervisor", "Supervisor")
                         .WithMany("Exams")
                         .HasForeignKey("SupervisorId");
-
-                    b.Navigation("Room");
 
                     b.Navigation("Supervisor");
                 });
@@ -601,6 +639,25 @@ namespace Infrastracture.Migrations
                     b.Navigation("Exam");
                 });
 
+            modelBuilder.Entity("Domain.Entities.ExamSession", b =>
+                {
+                    b.HasOne("Domain.Entities.Exam", "Exam")
+                        .WithOne("ExamSession")
+                        .HasForeignKey("Domain.Entities.ExamSession", "ExamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Entities.Room", "Room")
+                        .WithMany("ExamSessions")
+                        .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Exam");
+
+                    b.Navigation("Room");
+                });
+
             modelBuilder.Entity("Domain.Entities.IndividualWorkUOF", b =>
                 {
                     b.HasOne("Domain.Entities.IndividualWork", "IndividualWork")
@@ -610,6 +667,15 @@ namespace Infrastracture.Migrations
                         .IsRequired();
 
                     b.Navigation("IndividualWork");
+                });
+
+            modelBuilder.Entity("Domain.Entities.TestResult", b =>
+                {
+                    b.HasOne("Domain.Test", "Test")
+                        .WithMany("TestResults")
+                        .HasForeignKey("TestId");
+
+                    b.Navigation("Test");
                 });
 
             modelBuilder.Entity("Domain.Entities.VariantsExams", b =>
@@ -630,20 +696,14 @@ namespace Infrastracture.Migrations
                     b.Navigation("Exam");
                 });
 
-            modelBuilder.Entity("Domain.TestResult", b =>
-                {
-                    b.HasOne("Domain.Test", "Test")
-                        .WithMany("TestResults")
-                        .HasForeignKey("TestId");
-
-                    b.Navigation("Test");
-                });
-
             modelBuilder.Entity("Domain.Entities.Exam", b =>
                 {
                     b.Navigation("ExamAttendances");
 
                     b.Navigation("ExamResults");
+
+                    b.Navigation("ExamSession")
+                        .IsRequired();
 
                     b.Navigation("VariantsExams");
                 });
@@ -655,7 +715,7 @@ namespace Infrastracture.Migrations
 
             modelBuilder.Entity("Domain.Entities.Room", b =>
                 {
-                    b.Navigation("Exams");
+                    b.Navigation("ExamSessions");
                 });
 
             modelBuilder.Entity("Domain.Entities.Supervisor", b =>

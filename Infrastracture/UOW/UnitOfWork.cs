@@ -15,8 +15,10 @@ public class UnitOfWork : IUnitOfWork
     public IRoomRepository RoomRepository { get; set; }
     public IExamResultRepository ExamResultRepository { get; set; }
     public ITestResultRepository TestResultRepository { get; set; }
+    public IExamSessionRepository ExamSessionRepository { get; set; }
 
-    public UnitOfWork(ApplicationDbContext db, IVariantsExamRepository variantsExamRepository, ITestRepository testRepository, ISupervisorRepository supervisorRepository, IExamRepository examRepository, IRoomRepository roomRepository, IExamResultRepository examResultRepository, ITestResultRepository testResultRepository)
+
+    public UnitOfWork(ApplicationDbContext db, IVariantsExamRepository variantsExamRepository, ITestRepository testRepository, ISupervisorRepository supervisorRepository, IExamRepository examRepository, IRoomRepository roomRepository, IExamResultRepository examResultRepository, ITestResultRepository testResultRepository, IExamSessionRepository examSessionRepository)
     {
         _db = db;
         VariantsExamRepository = variantsExamRepository;
@@ -26,6 +28,7 @@ public class UnitOfWork : IUnitOfWork
         RoomRepository = roomRepository;
         ExamResultRepository = examResultRepository;
         TestResultRepository = testResultRepository;
+        ExamSessionRepository = examSessionRepository;
     }
 
     public void Commit() {
