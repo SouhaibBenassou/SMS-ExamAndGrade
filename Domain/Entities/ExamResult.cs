@@ -12,5 +12,4 @@ public class ExamResult : AuditableEntity
     public double? TheoreticalNote { get; set; }
     public bool? IsValid { get; set; }
     public DateOnly? DateValidation { get; set; }
-
 }

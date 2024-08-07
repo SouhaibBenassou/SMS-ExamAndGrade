@@ -12,6 +12,12 @@ namespace Application.Services
             _unitOfWork = unitOfWork;
         }
 
+        public async Task<string> AddListExamResults(List<ExamResult> examResult) {
+            await _unitOfWork.ExamResultRepository.CreateRangeAsync(examResult);
+            await _unitOfWork.CompleteAsync();
+            return "ExamResults has been add successfuly";
+        }
+
         public async Task<ExamResult> FindStagiere(Guid CheckStagiereid, Guid CheckExamId) {
             ExamResult examResult = await _unitOfWork.ExamResultRepository.FindStagiere(CheckStagiereid, CheckExamId);
             return examResult;

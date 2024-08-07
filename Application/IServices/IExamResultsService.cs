@@ -9,5 +9,6 @@ namespace Application.IServices
         Task<string> UpdateStagiaireNotes(ExamResult examResult);
         Task<ExamResult> FindStagiere(Guid CheckStagiereid, Guid CheckExamId);
         Task<ExamResult> FindStagiereAsync(Guid stagiaireId, Guid examId);
+        Task<string> AddListExamResults(List<ExamResult> examResult);
     }
 }
