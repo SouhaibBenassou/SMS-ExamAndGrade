@@ -11,6 +11,7 @@ namespace Application.Interfaces
         public IVariantsExamRepository VariantsExamRepository { get; set; }
         public IExamResultRepository ExamResultRepository { get; set; }
         public ITestResultRepository TestResultRepository { get; set; }
+        public IExamSessionRepository ExamSessionRepository { get; set; }
         void Commit();
         Task CommitAsync();
         void Rollback();

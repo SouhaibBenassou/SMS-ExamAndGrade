@@ -15,7 +15,7 @@ namespace Infrastracture.Repositories
         public async Task<List<Exam>> GetAllWithRelatedEntities() {
             return await _db.Exams
         .AsNoTracking()
-        .Include(e => e.Room)
+        .Include(e => e.ExamSession).ThenInclude(e=>e.Room)
         .Include(e => e.Supervisor)
         .Include(e => e.VariantsExams)
         .Include(e => e.ExamResults)
