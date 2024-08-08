@@ -14,6 +14,9 @@ namespace Application.Services
         }
 
         public async Task<string> AddExamAsync(Exam exam) {
+            
+            
+            
             await _unitOfWork.ExamRepository.CreateAsync(exam);
             await _unitOfWork.CompleteAsync();
             return "Exam successfully added.";

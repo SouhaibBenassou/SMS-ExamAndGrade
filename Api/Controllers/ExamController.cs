@@ -1,4 +1,5 @@
-﻿using Application.Features.Exam.Command.Create;
+﻿using Application.Exceptions;
+using Application.Features.Exam.Command.Create;
 using Application.Features.Exam.Command.Delete;
 using Application.Features.Exam.Queries.GetExamResult;
 using Application.Features.Exam.Queries.GetListExamQuery;
@@ -21,8 +22,20 @@ namespace Api.Controllers
             return Ok(res);
         }
         [HttpPost]
-        public async Task<string> CreateExam([FromBody] CreateExamCommand command) {
-            return await _mediator.Send(command);
+        public async Task<IActionResult> CreateExam([FromBody] CreateExamCommand command) {
+            try
+            {
+                return Ok(await _mediator.Send(command));
+            }
+            catch (RoomNotAvailableException e)
+            {
+                return Ok(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        
         }
 
         [HttpDelete("{id}")]

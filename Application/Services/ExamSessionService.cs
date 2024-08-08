@@ -24,4 +24,11 @@ public class ExamSessionService : IExamSessionService
         }
         return false;
     }
+
+    public DateTime CalculateEndTime(DateTime dateTime, string duratiom)
+    {
+        TimeSpan ts = TimeSpan.Parse(duratiom);
+        return dateTime.Add(ts);
+    }
+    
 }
