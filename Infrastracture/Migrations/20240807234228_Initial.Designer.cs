@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastracture.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240807130635_Initial")]
+    [Migration("20240807234228_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -85,8 +85,8 @@ namespace Infrastracture.Migrations
                     b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Duration")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<TimeSpan?>("Duration")
+                        .HasColumnType("time");
 
                     b.Property<string>("ExamDate")
                         .HasColumnType("nvarchar(max)");
@@ -103,8 +103,8 @@ namespace Infrastracture.Migrations
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("StartTime")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime?>("StartTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<Guid?>("SupervisorId")
                         .HasColumnType("uniqueidentifier");
@@ -189,7 +189,7 @@ namespace Infrastracture.Migrations
                     b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("EndDate")
+                    b.Property<DateTime>("EndTime")
                         .HasColumnType("datetime2");
 
                     b.Property<Guid>("ExamId")
@@ -204,7 +204,7 @@ namespace Infrastracture.Migrations
                     b.Property<Guid>("RoomId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("StartDate")
+                    b.Property<DateTime>("StartTime")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -217,7 +217,7 @@ namespace Infrastracture.Migrations
 
                     b.HasIndex("RoomId");
 
-                    b.ToTable("ExamSession");
+                    b.ToTable("ExamSessions");
                 });
 
             modelBuilder.Entity("Domain.Entities.IndividualWork", b =>

@@ -5,7 +5,7 @@
         public Guid Id { get; set; }
         public string? ExamDate { get; set; }
         public string? Duration { get; set; }
-        public string? StartTime { get; set; }
+        public DateTime? StartTime { get; set; }
         public ExamType? ExamType { get; set; }
         public YearType? YearType { get; set; }
         public Guid? YearId { get; set; }

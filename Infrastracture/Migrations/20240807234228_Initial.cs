@@ -131,8 +131,8 @@ namespace Infrastracture.Migrations
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ExamDate = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Duration = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    StartTime = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Duration = table.Column<TimeSpan>(type: "time", nullable: true),
+                    StartTime = table.Column<DateTime>(type: "datetime2", nullable: true),
                     ExamType = table.Column<int>(type: "int", nullable: true),
                     YearId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     YearType = table.Column<int>(type: "int", nullable: true),
@@ -241,12 +241,12 @@ namespace Infrastracture.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ExamSession",
+                name: "ExamSessions",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    StartTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    EndTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     RoomId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ExamId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -259,15 +259,15 @@ namespace Infrastracture.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ExamSession", x => x.Id);
+                    table.PrimaryKey("PK_ExamSessions", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ExamSession_Exams_ExamId",
+                        name: "FK_ExamSessions_Exams_ExamId",
                         column: x => x.ExamId,
                         principalTable: "Exams",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_ExamSession_Rooms_RoomId",
+                        name: "FK_ExamSessions_Rooms_RoomId",
                         column: x => x.RoomId,
                         principalTable: "Rooms",
                         principalColumn: "Id",
@@ -365,14 +365,14 @@ namespace Infrastracture.Migrations
                 column: "SupervisorId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ExamSession_ExamId",
-                table: "ExamSession",
+                name: "IX_ExamSessions_ExamId",
+                table: "ExamSessions",
                 column: "ExamId",
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_ExamSession_RoomId",
-                table: "ExamSession",
+                name: "IX_ExamSessions_RoomId",
+                table: "ExamSessions",
                 column: "RoomId");
 
             migrationBuilder.CreateIndex(
@@ -401,7 +401,7 @@ namespace Infrastracture.Migrations
                 name: "ExamAttendances");
 
             migrationBuilder.DropTable(
-                name: "ExamSession");
+                name: "ExamSessions");
 
             migrationBuilder.DropTable(
                 name: "IndividualWorkUOFs");
