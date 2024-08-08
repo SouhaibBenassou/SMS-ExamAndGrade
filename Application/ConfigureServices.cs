@@ -20,6 +20,7 @@ namespace Application
             services.AddScoped<IExamResultsService, ExamResultsService>();
             services.AddScoped<ITestResultService, TestResultService>();
             services.AddScoped<IStagiereNoteService, StagiereNoteService>();
+            services.AddScoped<IExamSessionService, ExamSessionService>();
             //configuration of mediator
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
             //configuration of auto mapper
