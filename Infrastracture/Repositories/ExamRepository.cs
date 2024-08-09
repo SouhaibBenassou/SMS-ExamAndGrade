@@ -16,7 +16,7 @@ namespace Infrastracture.Repositories
             return await _db.Exams
         .AsNoTracking()
         .Include(e => e.ExamSession).ThenInclude(e=>e.Room)
-        .Include(e => e.Supervisor)
+        .Include(e => e.ExamSession).ThenInclude(es => es.Supervisor) 
         .Include(e => e.VariantsExams)
         .Include(e => e.ExamResults)
         .ToListAsync();

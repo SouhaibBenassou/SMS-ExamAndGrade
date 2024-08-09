@@ -11,6 +11,7 @@ namespace Application.IServices
         Task<string> DeleteSupervisorAsync(Guid id);
         Task<List<Supervisor>> GetListOfSupervisorsAsync();
         Task<SupervisorDto> GetSupervisorByIdAsync(Guid Id);
+        Task<Supervisor> GetSupervisorById(Guid id);
 
     }
 }

@@ -25,10 +25,24 @@ public class ExamSessionService : IExamSessionService
         return false;
     }
 
+    public async Task<bool> CheckSupervisorAvailability(DateTime startDate, DateTime endDate, Guid supervisorId)
+    {
+        List<ExamSession> examSessions = await _unitOfWork.ExamSessionRepository.GetSessionsBetweenTimesForSupervisor(startDate,endDate,supervisorId);
+        if (examSessions is null || !examSessions.Any())
+        {
+            return true;
+        }
+        return false;
+    }
+    
+    
+    
     public DateTime CalculateEndTime(DateTime dateTime, string duratiom)
     {
         TimeSpan ts = TimeSpan.Parse(duratiom);
         return dateTime.Add(ts);
     }
+    
+    
     
 }

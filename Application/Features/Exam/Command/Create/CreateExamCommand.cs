@@ -14,7 +14,7 @@ namespace Application.Features.Exam.Command.Create
         public Guid? FiliereId { get; set; }
         public Guid? UnitOfFormationId { get; set; }
         public Guid RoomId { get; set; }
-        public Guid? SupervisorId { get; set; }
+        public Guid SupervisorId { get; set; }
     }
 }
 
