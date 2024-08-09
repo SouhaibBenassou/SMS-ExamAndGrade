@@ -31,11 +31,14 @@ namespace Api.Controllers
             {
                 return Ok(e.Message);
             }
+            catch (SupervisorNotAvailableException e)
+            {
+                return Ok(e.Message);
+            }
             catch (Exception e)
             {
                 return BadRequest(e.Message);
             }
-        
         }
 
         [HttpDelete("{id}")]
