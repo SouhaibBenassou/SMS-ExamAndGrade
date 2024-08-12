@@ -1,4 +1,6 @@
 using Application.Features.TestResult.Command.Create;
+using Application.Features.TestResult.Command.Delete;
+using Application.Features.TestResult.Command.DeleteByTestId;
 using Application.Features.TestResult.Queries.GetTestResultsByTestIdQuery;
 using Domain;
 using Domain.Dtos.TestDtos;
@@ -32,7 +34,7 @@ public class TestResultController : ControllerBase
         }
     }
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetTestResults(Guid id) {
+    public async Task<IActionResult> GetTestResultsOfTest(Guid id) {
         try
         {
             return Ok(await _mediator.Send(new GetTestResultsByTestIdQuery(id)));
@@ -42,4 +44,33 @@ public class TestResultController : ControllerBase
             return BadRequest(e.Message);
         }
     }
+    
+    [HttpDelete("deleteOneTestResult/{id}")]
+    public async Task<IActionResult> DeleteOneTestResult(Guid id) {
+        try
+        {
+            await _mediator.Send(new DeleteTestResultCommand(id));
+            return NoContent();
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
+    
+    
+    [HttpDelete("deleteTestResultByTest/{idTest}")]
+    public async Task<IActionResult> DeleteTestResultByTest(Guid idTest) {
+        try
+        {
+            await _mediator.Send(new DeleteTestResultByTestIdCommand(idTest));
+            return NoContent();
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
+    
+    
 }
