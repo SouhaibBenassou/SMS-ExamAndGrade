@@ -32,7 +32,7 @@ public class TestResultController : ControllerBase
         }
     }
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetExamResults(Guid id) {
+    public async Task<IActionResult> GetTestResults(Guid id) {
         try
         {
             return Ok(await _mediator.Send(new GetTestResultsByTestIdQuery(id)));
