@@ -21,4 +21,11 @@ public class ExamSessionRepository : AsyncRepository<ExamSession> , IExamSession
             .ToListAsync();;
     } 
     
+    public async Task<List<ExamSession>?> GetSessionsBetweenTimesForSupervisor(DateTime startDate, DateTime endDate, Guid supervisorId)
+    {
+        return await _db.ExamSessions.AsNoTracking()
+            .Where(es => es.SupervisorId == supervisorId && es.StartTime < endDate &&  es.EndTime > startDate)
+            .ToListAsync();;
+    } 
+    
 }

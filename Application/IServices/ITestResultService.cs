@@ -5,5 +5,6 @@ namespace Application.IServices;
 
 public interface ITestResultService
 {
-    public Task AddRangeTestResult(List<TestResult> testResults);
-}
+    Task AddRangeTestResult(List<TestResult> testResults);
+    Task<List<TestResult>> GetResultsByTest(Guid testId);
+} 

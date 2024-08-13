@@ -62,5 +62,12 @@ namespace Application.Services
 
             return "Supervisor successfully updated.";
         }
+        
+        
+        
+        public async Task<Supervisor> GetSupervisorById(Guid id)
+        {
+            return await _unitOfWork.SupervisorRepository.GetAsNoTracking(s => s.Id == id);
+        }
     }
 }

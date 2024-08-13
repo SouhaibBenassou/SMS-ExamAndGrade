@@ -1,3 +1,4 @@
+using Application.Exceptions;
 using Application.Interfaces;
 using Application.IServices;
 using Domain;
@@ -18,5 +19,12 @@ public class TestResultService : ITestResultService
     {
         await _unitOfWork.TestResultRepository.CreateRangeAsync(testResults);
         await _unitOfWork.CommitAsync();
+    }
+    
+    public async Task<List<TestResult>> GetResultsByTest(Guid testId)
+    {
+        Test test = await _unitOfWork.TestRepository.GetAsNoTracking(t => t.Id == testId) ??
+                    throw new TestNotFoundException();
+        return await _unitOfWork.TestResultRepository.GetAllAsNoTracking(tr => tr.TestId == testId);
     }
 }

@@ -44,13 +44,7 @@ namespace Infrastructure.Data
                 .HasMany(e => e.VariantsExams)
                 .WithOne(ve => ve.Exam)
                 .HasForeignKey(ve => ve.ExamId);
-
-            modelBuilder.Entity<Exam>()
-                .HasOne(e => e.Supervisor)
-                .WithMany(s => s.Exams)
-                .HasForeignKey(e => e.SupervisorId);
-
-
+            
 
             // Test relationships
             modelBuilder.Entity<Test>()
@@ -92,6 +86,11 @@ namespace Infrastructure.Data
                 .HasOne(es => es.Room)
                 .WithMany(e => e.ExamSessions)
                 .HasForeignKey(es => es.RoomId);
+            
+            modelBuilder.Entity<ExamSession>()
+                .HasOne(es => es.Supervisor)
+                .WithMany(s => s.ExamSessions)
+                .HasForeignKey(es => es.SupervisorId);
 
         }
     }

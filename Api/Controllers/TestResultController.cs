@@ -1,4 +1,5 @@
 using Application.Features.TestResult.Command.Create;
+using Application.Features.TestResult.Queries.GetTestResultsByTestIdQuery;
 using Domain;
 using Domain.Dtos.TestDtos;
 using MediatR;
@@ -30,7 +31,15 @@ public class TestResultController : ControllerBase
             return BadRequest(e.Message);
         }
     }
-
-
-
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetTestResults(Guid id) {
+        try
+        {
+            return Ok(await _mediator.Send(new GetTestResultsByTestIdQuery(id)));
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
 }
