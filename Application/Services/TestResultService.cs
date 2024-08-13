@@ -27,4 +27,26 @@ public class TestResultService : ITestResultService
                     throw new TestNotFoundException();
         return await _unitOfWork.TestResultRepository.GetAllAsNoTracking(tr => tr.TestId == testId);
     }
+
+    
+    public async Task<TestResult> GetOneTestResult(Guid id)
+    {
+        return await _unitOfWork.TestResultRepository.GetAsTracking(tr => tr.Id == id);
+    }
+    
+    public async Task DeleteOneTestResult(Guid id)
+    {
+        TestResult testResult = await GetOneTestResult(id);
+        await _unitOfWork.TestResultRepository.RemoveAsync(testResult);
+        await _unitOfWork.CommitAsync();
+    }
+    public async Task DeleteTestResultOfTest(Guid testId)
+    {
+        List<TestResult> testResults = await GetResultsByTest(testId);
+        foreach (TestResult tr in testResults)
+        {
+            await _unitOfWork.TestResultRepository.RemoveAsync(tr);
+        }
+        await _unitOfWork.CommitAsync();
+    }
 }
