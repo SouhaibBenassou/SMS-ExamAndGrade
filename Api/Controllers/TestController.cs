@@ -1,5 +1,4 @@
 ﻿using Application;
-using Application.Features.Rooms.Commands.Delete;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,6 +22,7 @@ namespace Api.Controllers
             var response = await _mediator.Send(query);
             return Ok(response);
         }
+
         [HttpGet("{id:guid}")]
         public async Task<IActionResult> GetTestById(Guid id)
         {
@@ -32,19 +32,26 @@ namespace Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateTest([FromForm] AddTestCommand command)
+        public async Task<IActionResult> CreateTest([FromBody] AddTestCommand command)
         {
             var result = await _mediator.Send(command);
             return Ok(result);
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateTest([FromForm] UpdateTestCommand command)
+        [HttpPut("{id:guid}")]
+        public async Task<IActionResult> UpdateTest(Guid id, [FromBody] UpdateTestCommand command)
         {
-            var result = await _mediator.Send(command);
-            return Ok(result);
+            command.Id = id;
 
+            var result = await _mediator.Send(command);
+            if (result == null)
+            {
+                return NotFound($"Test with Id : {id} not found.");
+            }
+
+            return Ok(result);
         }
+
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTest(Guid id)
@@ -58,7 +65,5 @@ namespace Api.Controllers
 
             return BadRequest(result);
         }
-
-
     }
 }

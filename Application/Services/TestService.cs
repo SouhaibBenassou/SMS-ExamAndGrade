@@ -1,10 +1,9 @@
 ﻿using Application.Interfaces;
 using Domain;
-
+ 
 namespace Application;
 
 public class TestService : ITestService
-
 {
     private readonly IUnitOfWork _unitOfWork;
 
@@ -22,11 +21,12 @@ public class TestService : ITestService
 
     public async Task<string> DeleteTestAsync(Guid id)
     {
-        var room = await _unitOfWork.TestRepository.GetAsNoTracking(r => r.Id == id);
-        if (room == null)
+        var test = await _unitOfWork.TestRepository.GetAsNoTracking(r => r.Id == id);
+        if (test == null)
         {
             return $"Test with Id : {id} not found.";
         }
+        await _unitOfWork.TestRepository.RemoveAsync(test);
         await _unitOfWork.CommitAsync();
         return "Test deleted successfully";
     }
@@ -39,7 +39,6 @@ public class TestService : ITestService
 
     public async Task<Test> GetTestByIdAsync(Guid Id)
     {
-
         Test test = await _unitOfWork.TestRepository.GetAsNoTracking(r => r.Id == Id);
         if (test == null)
         {
@@ -49,18 +48,23 @@ public class TestService : ITestService
         return test;
     }
 
-    public Task<string> UpdateTestAsync(Test test)
+    public async Task<string> UpdateTestAsync(Test test)
     {
-        throw new NotImplementedException();
+        var existingTest = await _unitOfWork.TestRepository.GetAsNoTracking(r => r.Id == test.Id);
+        if (existingTest == null)
+        {
+            return $"Test with Id : {test.Id} not found.";
+        }
+
+        await _unitOfWork.TestRepository.UpdateAsync(test);
+        await _unitOfWork.CommitAsync();
+
+        return "Test updated successfully";
     }
-    
-    
+
     public async Task<Test> GetTestByIdWithResults(Guid id)
     {
         Test test = await _unitOfWork.TestRepository.GetTestWithResults(t => t.Id == id);
         return test;
     }
-    
-    
-    
 }
