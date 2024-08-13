@@ -11,7 +11,7 @@
         public Guid? YearId { get; set; }
         public Guid? FiliereId { get; set; }
         public Guid? UnitOfFormationId { get; set; }
-        public Guid? RoomId { get; set; }
-        public Guid? SupervisorId { get; set; }
+        public ICollection<VariantsExamDto>? VariantsExams { get; set; }
+        public ExamSessionDto.ExamSessionDto ExamSession { get; set; }
     }
 }

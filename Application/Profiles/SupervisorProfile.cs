@@ -1,6 +1,7 @@
 ﻿
 using Application.Features.Supervisor.Commands.Update;
 using AutoMapper;
+using Domain.Dtos.SupervisorDto;
 using Domain.Entities;
 
 namespace Application.Profiles
@@ -10,6 +11,7 @@ namespace Application.Profiles
         public SupervisorProfile()
         {
             CreateMap<UpdateSupervisorCommand, Supervisor>().ReverseMap();
+            CreateMap<Supervisor, SupervisorDto>().ReverseMap();
         }
     }
 }
