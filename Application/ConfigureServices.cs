@@ -3,6 +3,9 @@ using Application.IServices;
 using Application.Services;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
+using Application.Broker.Consumers;
+using Application.Broker.Producers;
+using Application.Broker.Producers.Interafaces;
 using Application.IRepository;
 
 namespace Application
@@ -25,6 +28,15 @@ namespace Application
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
             //configuration of auto mapper
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            
+            
+            //KafkaProducers
+            services.AddSingleton<IListTraineeRequestProducer,ListTraineeRequestProducer>();
+            
+            //KafkaConsumers
+            services.AddHostedService<ListTraineesConsumer>();
+            
+            
             return services;
         }
     }
