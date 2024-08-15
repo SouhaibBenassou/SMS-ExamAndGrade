@@ -4,6 +4,7 @@ using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastracture.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240808155102_hhhjjjj")]
+    partial class hhhjjjj
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -100,8 +103,11 @@ namespace Infrastracture.Migrations
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("StartTime")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("StartTime")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("SupervisorId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid?>("UnitOfFormationId")
                         .HasColumnType("uniqueidentifier");
@@ -116,6 +122,8 @@ namespace Infrastracture.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("SupervisorId");
 
                     b.ToTable("Exams");
                 });
@@ -199,9 +207,6 @@ namespace Infrastracture.Migrations
                     b.Property<DateTime>("StartTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("SupervisorId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
@@ -211,8 +216,6 @@ namespace Infrastracture.Migrations
                         .IsUnique();
 
                     b.HasIndex("RoomId");
-
-                    b.HasIndex("SupervisorId");
 
                     b.ToTable("ExamSessions");
                 });
@@ -617,6 +620,15 @@ namespace Infrastracture.Migrations
                     b.Navigation("TestResults");
                 });
 
+            modelBuilder.Entity("Domain.Entities.Exam", b =>
+                {
+                    b.HasOne("Domain.Entities.Supervisor", "Supervisor")
+                        .WithMany("Exams")
+                        .HasForeignKey("SupervisorId");
+
+                    b.Navigation("Supervisor");
+                });
+
             modelBuilder.Entity("Domain.Entities.ExamAttendance", b =>
                 {
                     b.HasOne("Domain.Entities.Exam", "Exam")
@@ -640,17 +652,9 @@ namespace Infrastracture.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Entities.Supervisor", "Supervisor")
-                        .WithMany("ExamSessions")
-                        .HasForeignKey("SupervisorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Exam");
 
                     b.Navigation("Room");
-
-                    b.Navigation("Supervisor");
                 });
 
             modelBuilder.Entity("Domain.Entities.IndividualWork", b =>
@@ -715,7 +719,7 @@ namespace Infrastracture.Migrations
 
             modelBuilder.Entity("Domain.Entities.Supervisor", b =>
                 {
-                    b.Navigation("ExamSessions");
+                    b.Navigation("Exams");
                 });
 
             modelBuilder.Entity("Domain.Test", b =>

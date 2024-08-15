@@ -13,6 +13,9 @@ namespace Application.Interfaces
         ITestResultService TestResultService { get;}
         IStagiereNoteService StagiereNoteService { get;}
         IExamSessionService ExamSessionService { get; }
-        
+        ITestResultService TestResultService { get; }
+        IStagiereNoteService StagiereNoteService { get; }
+        IIndividualWorkUOFService IndividualWorkUOFService { get; }
+
     }
 }

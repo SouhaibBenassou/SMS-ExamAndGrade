@@ -19,11 +19,11 @@ namespace Api.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateVariantsExam([FromBody] UpdateExamResultsCommand command) {
             var result = await _mediator.Send(command);
-            if (result.Contains("successfully"))
+            if (result.Contains("ok"))
             {
                 return Ok(result);
             }
-            return BadRequest(result);
+            return BadRequest();
 
         }
         [HttpPost]

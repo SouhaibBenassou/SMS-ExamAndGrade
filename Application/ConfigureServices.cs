@@ -3,7 +3,6 @@ using Application.IServices;
 using Application.Services;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
-using Application.IRepository;
 
 namespace Application
 {
@@ -21,6 +20,7 @@ namespace Application
             services.AddScoped<ITestResultService, TestResultService>();
             services.AddScoped<IStagiereNoteService, StagiereNoteService>();
             services.AddScoped<IExamSessionService, ExamSessionService>();
+            services.AddScoped<IIndividualWorkUOFService, IndividualWorkUOFService>();
             //configuration of mediator
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
             //configuration of auto mapper
