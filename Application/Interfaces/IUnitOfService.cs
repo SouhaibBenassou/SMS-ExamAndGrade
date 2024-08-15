@@ -13,6 +13,7 @@ namespace Application.Interfaces
         ITestResultService TestResultService { get;}
         IStagiereNoteService StagiereNoteService { get;}
         IExamSessionService ExamSessionService { get; }
+        ITraineeService TraineeService { get; }
         
     }
 }

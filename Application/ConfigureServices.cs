@@ -36,7 +36,8 @@ namespace Application
             //KafkaConsumers
             services.AddHostedService<ListTraineesConsumer>();
             
-            
+            //KafkaConsumersServices
+            services.AddSingleton<ITraineeService, TraineeService>();
             return services;
         }
     }

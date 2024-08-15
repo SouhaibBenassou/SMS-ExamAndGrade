@@ -1,7 +1,11 @@
+using Application.Interfaces;
 using Confluent.Kafka;
+using Domain.EntitiesFromOtherServices;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
 namespace Application.Broker.Consumers;
 
@@ -63,6 +67,15 @@ public class ListTraineesConsumer : BackgroundService
             {
                 string message = consumeResult.Message.Value;
                 _logger.LogInformation($"Kafka message consumed: {message}");
+                List<Trainee> trainees = JsonConvert.DeserializeObject<List<Trainee>>(message);
+                using (var scope = _serviceProvider.CreateScope())
+                {
+                    IUnitOfService unitOfService = scope.ServiceProvider.GetRequiredService<IUnitOfService>();
+                    if (trainees is not null)
+                    {
+                        unitOfService.TraineeService.ResetAndSetTraineeList(trainees);
+                    }
+                }
 
             }
             else
