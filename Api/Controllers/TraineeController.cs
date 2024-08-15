@@ -8,19 +8,16 @@ namespace Api.Controllers;
 [ApiController]
 public class TraineeController : ControllerBase
 {
-    private readonly IListTraineeRequestProducer _listTraineeRequestProducer;
     private readonly ITraineeService _traineeService;
 
-    public TraineeController(IListTraineeRequestProducer listTraineeRequestProducer, ITraineeService traineeService)
+    public TraineeController(ITraineeService traineeService)
     {
-        _listTraineeRequestProducer = listTraineeRequestProducer;
         _traineeService = traineeService;
     }
 
     [HttpGet]
     public async Task<IActionResult> Test()
     {
-        await _listTraineeRequestProducer.ProduceAsync();
         return Ok(await _traineeService.GetAllTrainee());
     }
 }
