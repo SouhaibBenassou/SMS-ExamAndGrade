@@ -13,9 +13,9 @@ namespace Application.Services
         public IExamResultsService ExamResultsService { get; set; }
         public ITestResultService TestResultService { get; set; }
         public IStagiereNoteService StagiereNoteService { get; set; }
+        public IIndividualWorkUOFService IndividualWorkUOFService { get; set; }
 
-        public UnitOfService(ITestService testService, ISupervisorService supervisorService, IRoomService roomService, IExamService examService, IVariantsExamService variantsExamService, IExamResultsService examResultsService, ITestResultService testResultService, IStagiereNoteService stagiereNoteService)
-        {
+        public UnitOfService(ITestService testService, ISupervisorService supervisorService, IRoomService roomService, IExamService examService, IVariantsExamService variantsExamService, IExamResultsService examResultsService, ITestResultService testResultService, IStagiereNoteService stagiereNoteService, IIndividualWorkUOFService individualWorkUOFService) {
             TestService = testService;
             SupervisorService = supervisorService;
             RoomService = roomService;
@@ -24,6 +24,7 @@ namespace Application.Services
             ExamResultsService = examResultsService;
             TestResultService = testResultService;
             StagiereNoteService = stagiereNoteService;
+            IndividualWorkUOFService = individualWorkUOFService;
         }
     }
 }

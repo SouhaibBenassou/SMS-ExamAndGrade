@@ -12,6 +12,7 @@ namespace Application.Interfaces
         public IExamResultRepository ExamResultRepository { get; set; }
         public ITestResultRepository TestResultRepository { get; set; }
         public IExamSessionRepository ExamSessionRepository { get; set; }
+        public IIndividualWorkUOFRepository IndividualWorkUOFRepository { get; set; }
         void Commit();
         Task CommitAsync();
         void Rollback();

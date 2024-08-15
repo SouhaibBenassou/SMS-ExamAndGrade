@@ -10,8 +10,9 @@ namespace Application.Interfaces
         IRoomService RoomService { get; }
         IVariantsExamService VariantsExamService { get; }
         IExamResultsService ExamResultsService { get; }
-        ITestResultService TestResultService { get;}
-        IStagiereNoteService StagiereNoteService { get;}
+        ITestResultService TestResultService { get; }
+        IStagiereNoteService StagiereNoteService { get; }
+        IIndividualWorkUOFService IndividualWorkUOFService { get; }
 
     }
 }

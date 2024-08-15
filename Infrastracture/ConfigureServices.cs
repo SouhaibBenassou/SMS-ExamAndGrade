@@ -26,9 +26,10 @@ namespace Infrastracture
             services.AddScoped<ISupervisorRepository, SupervisorRepository>();
             services.AddScoped<ITestRepository, TestRepository>();
             services.AddScoped<IExamResultRepository, ExamResultRepository>();
-            services.AddScoped<ITestResultRepository, TestResultRepository >();
+            services.AddScoped<ITestResultRepository, TestResultRepository>();
             services.AddScoped<IExamSessionRepository, ExamSessionRepository>();
-            
+            services.AddScoped<IIndividualWorkUOFRepository, IndividualWorkUOFRepository>();
+
             return services;
         }
     }
