@@ -1,4 +1,5 @@
 using Application.Broker.Producers.Interafaces;
+using Application.Features.Trainee.Queries.GetListTraineeByFiliere;
 using Application.Features.Trainee.Queries.GetListTraineeQuery;
 using Application.IServices;
 using MediatR;
@@ -21,5 +22,11 @@ public class TraineeController : ControllerBase
     public async Task<IActionResult> GetAllTrainees()
     {
         return Ok(await _mediator.Send(new GetListTraineeQuery()));
+    }
+    
+    [HttpGet("{filiereId}")]
+    public async Task<IActionResult> GetAllTraineesInFiliere(Guid filiereId)
+    {
+        return Ok(await _mediator.Send(new GetListTraineeByFiliereQuery(filiereId)));
     }
 }
