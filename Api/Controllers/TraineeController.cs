@@ -1,5 +1,7 @@
 using Application.Broker.Producers.Interafaces;
+using Application.Features.Trainee.Queries.GetListTraineeQuery;
 using Application.IServices;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers;
@@ -8,16 +10,16 @@ namespace Api.Controllers;
 [ApiController]
 public class TraineeController : ControllerBase
 {
-    private readonly ITraineeService _traineeService;
+    private readonly IMediator _mediator;
 
-    public TraineeController(ITraineeService traineeService)
+    public TraineeController(IMediator mediator)
     {
-        _traineeService = traineeService;
+        _mediator = mediator;
     }
 
     [HttpGet]
-    public async Task<IActionResult> Test()
+    public async Task<IActionResult> GetAllTrainees()
     {
-        return Ok(await _traineeService.GetAllTrainee());
+        return Ok(await _mediator.Send(new GetListTraineeQuery()));
     }
 }

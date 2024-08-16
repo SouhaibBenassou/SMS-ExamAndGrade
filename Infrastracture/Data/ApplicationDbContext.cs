@@ -123,6 +123,64 @@ namespace Infrastructure.Data
                 .WithMany(s => s.ExamSessions)
                 .HasForeignKey(es => es.SupervisorId);
 
+            
+            /// adding  objects can delete later
+            
+            var units = new List<UnitOfFormation>();
+            var filieres = new List<Filiere>();
+            var filiereUnits = new List<FiliereUnitOfFormation>();
+
+            // Seed multiple UnitOfFormation entries
+            for (int i = 1; i <= 50; i++)
+            {
+                var unit = new UnitOfFormation
+                {
+                    Id = Guid.NewGuid(),
+                    Name = $"Unit {i}",
+                    Semestre = i % 2 == 0 ? "Semester 2" : "Semester 1",
+                    Duration = 45 + (i % 10),
+                    Coefficient = 2 + (i % 5)
+                };
+                units.Add(unit);
+            }
+
+            // Seed multiple Filiere entries and associate them with UnitOfFormation
+            for (int j = 1; j <= 20; j++)
+            {
+                var filiere = new Filiere
+                {
+                    Id = Guid.NewGuid(),
+                    NomFiliere = $"Filiere {j}",
+                    Description = $"Description for Filiere {j}",
+                    Niveau = j % 2 == 0 ? "Master" : "Bachelor",
+                    Duree = 2 + (j % 4),
+                    Capacite = 50 + (j * 5),
+                    GroupCapacity = 10 + (j * 2),
+                    FraisInscription = 3000 + (j * 200),
+                    MontantMensuel = 1000 + (j * 100),
+                    MontantAnnuel = 12000 + (j * 1000),
+                    MontantTrimestre = 3000 + (j * 250)
+                };
+                filieres.Add(filiere);
+
+                // Link each Filiere to random Units
+                foreach (var unit in units.OrderBy(u => Guid.NewGuid()).Take(5))
+                {
+                    var filiereUnit = new FiliereUnitOfFormation
+                    {
+                        FiliereId = filiere.Id,
+                        UnitOfFormationId = unit.Id
+                    };
+                    filiereUnits.Add(filiereUnit);
+                }
+            }
+
+            // Add seeded data to the modelBuilder
+            modelBuilder.Entity<UnitOfFormation>().HasData(units.ToArray());
+            modelBuilder.Entity<Filiere>().HasData(filieres.ToArray());
+            modelBuilder.Entity<FiliereUnitOfFormation>().HasData(filiereUnits.ToArray());
+            
+            
         }
     }
 }
