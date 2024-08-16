@@ -24,6 +24,8 @@ namespace Application
             services.AddScoped<ITestResultService, TestResultService>();
             services.AddScoped<IStagiereNoteService, StagiereNoteService>();
             services.AddScoped<IExamSessionService, ExamSessionService>();
+            services.AddScoped<IFiliereService, FiliereService>();
+            
             //configuration of mediator
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
             //configuration of auto mapper

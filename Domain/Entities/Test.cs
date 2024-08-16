@@ -1,5 +1,6 @@
 ﻿
 using Domain.Entities;
+using Domain.EntitiesFromOtherServices.FiliereService;
 
 namespace Domain;
 
@@ -12,6 +13,7 @@ public class Test : AuditableEntity
     public double? Note { get; set; }
     public Guid TrainerId { get; set; }
     public Guid UnitOfFormationId { get; set; }
+    public UnitOfFormation? UnitOfFormation { get; set; }
     public ICollection<TestResult>? TestResults { get; set; }
 
 }

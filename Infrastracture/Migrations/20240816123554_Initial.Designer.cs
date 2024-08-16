@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastracture.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240809160645_Initial")]
+    [Migration("20240816123554_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -119,6 +119,10 @@ namespace Infrastracture.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("FiliereId");
+
+                    b.HasIndex("UnitOfFormationId");
 
                     b.ToTable("Exams");
                 });
@@ -494,7 +498,135 @@ namespace Infrastracture.Migrations
 
                     b.HasIndex("ExamId");
 
+                    b.HasIndex("UnitOfFormationId");
+
                     b.ToTable("VariantsExams");
+                });
+
+            modelBuilder.Entity("Domain.EntitiesFromOtherServices.FiliereService.Filiere", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Capacite")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Duree")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("FraisInscription")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("GroupCapacity")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("MontantAnnuel")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MontantMensuel")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MontantTrimestre")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Niveau")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NomFiliere")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Filieres");
+                });
+
+            modelBuilder.Entity("Domain.EntitiesFromOtherServices.FiliereService.FiliereUnitOfFormation", b =>
+                {
+                    b.Property<Guid>("FiliereId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("UnitOfFormationId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("FiliereId", "UnitOfFormationId");
+
+                    b.HasIndex("UnitOfFormationId");
+
+                    b.ToTable("FiliereUnitOfFormations");
+                });
+
+            modelBuilder.Entity("Domain.EntitiesFromOtherServices.FiliereService.UnitOfFormation", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Coefficient")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Duration")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Semestre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UnitOfFormations");
                 });
 
             modelBuilder.Entity("Domain.ExamResult", b =>
@@ -599,6 +731,8 @@ namespace Infrastracture.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("UnitOfFormationId");
+
                     b.ToTable("Tests");
                 });
 
@@ -619,6 +753,21 @@ namespace Infrastracture.Migrations
                     b.Navigation("ExamResult");
 
                     b.Navigation("TestResults");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Exam", b =>
+                {
+                    b.HasOne("Domain.EntitiesFromOtherServices.FiliereService.Filiere", "Filiere")
+                        .WithMany("Exams")
+                        .HasForeignKey("FiliereId");
+
+                    b.HasOne("Domain.EntitiesFromOtherServices.FiliereService.UnitOfFormation", "UnitOfFormation")
+                        .WithMany("Exams")
+                        .HasForeignKey("UnitOfFormationId");
+
+                    b.Navigation("Filiere");
+
+                    b.Navigation("UnitOfFormation");
                 });
 
             modelBuilder.Entity("Domain.Entities.ExamAttendance", b =>
@@ -683,7 +832,32 @@ namespace Infrastracture.Migrations
                         .WithMany("VariantsExams")
                         .HasForeignKey("ExamId");
 
+                    b.HasOne("Domain.EntitiesFromOtherServices.FiliereService.UnitOfFormation", "UnitOfFormation")
+                        .WithMany("VariantsExams")
+                        .HasForeignKey("UnitOfFormationId");
+
                     b.Navigation("Exam");
+
+                    b.Navigation("UnitOfFormation");
+                });
+
+            modelBuilder.Entity("Domain.EntitiesFromOtherServices.FiliereService.FiliereUnitOfFormation", b =>
+                {
+                    b.HasOne("Domain.EntitiesFromOtherServices.FiliereService.Filiere", "Filiere")
+                        .WithMany("FiliereUnitOfFormations")
+                        .HasForeignKey("FiliereId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.EntitiesFromOtherServices.FiliereService.UnitOfFormation", "UnitOfFormation")
+                        .WithMany("FiliereUnitOfFormations")
+                        .HasForeignKey("UnitOfFormationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Filiere");
+
+                    b.Navigation("UnitOfFormation");
                 });
 
             modelBuilder.Entity("Domain.ExamResult", b =>
@@ -693,6 +867,17 @@ namespace Infrastracture.Migrations
                         .HasForeignKey("ExamId");
 
                     b.Navigation("Exam");
+                });
+
+            modelBuilder.Entity("Domain.Test", b =>
+                {
+                    b.HasOne("Domain.EntitiesFromOtherServices.FiliereService.UnitOfFormation", "UnitOfFormation")
+                        .WithMany("Tests")
+                        .HasForeignKey("UnitOfFormationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("UnitOfFormation");
                 });
 
             modelBuilder.Entity("Domain.Entities.Exam", b =>
@@ -720,6 +905,24 @@ namespace Infrastracture.Migrations
             modelBuilder.Entity("Domain.Entities.Supervisor", b =>
                 {
                     b.Navigation("ExamSessions");
+                });
+
+            modelBuilder.Entity("Domain.EntitiesFromOtherServices.FiliereService.Filiere", b =>
+                {
+                    b.Navigation("Exams");
+
+                    b.Navigation("FiliereUnitOfFormations");
+                });
+
+            modelBuilder.Entity("Domain.EntitiesFromOtherServices.FiliereService.UnitOfFormation", b =>
+                {
+                    b.Navigation("Exams");
+
+                    b.Navigation("FiliereUnitOfFormations");
+
+                    b.Navigation("Tests");
+
+                    b.Navigation("VariantsExams");
                 });
 
             modelBuilder.Entity("Domain.Test", b =>

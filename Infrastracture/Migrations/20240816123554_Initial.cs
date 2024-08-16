@@ -12,18 +12,20 @@ namespace Infrastracture.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Exams",
+                name: "Filieres",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    ExamDate = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Duration = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    StartTime = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    ExamType = table.Column<int>(type: "int", nullable: true),
-                    YearId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    YearType = table.Column<int>(type: "int", nullable: true),
-                    FiliereId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    UnitOfFormationId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    NomFiliere = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Niveau = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Duree = table.Column<int>(type: "int", nullable: false),
+                    Capacite = table.Column<int>(type: "int", nullable: false),
+                    GroupCapacity = table.Column<int>(type: "int", nullable: false),
+                    FraisInscription = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    MontantMensuel = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    MontantAnnuel = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    MontantTrimestre = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
                     DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
@@ -34,7 +36,7 @@ namespace Infrastracture.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Exams", x => x.Id);
+                    table.PrimaryKey("PK_Filieres", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -99,6 +101,116 @@ namespace Infrastracture.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "UnitOfFormations",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Semestre = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Duration = table.Column<int>(type: "int", nullable: false),
+                    Coefficient = table.Column<int>(type: "int", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UnitOfFormations", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "IndividualWorkUOFs",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Confusion = table.Column<int>(type: "int", nullable: false),
+                    Note = table.Column<int>(type: "int", nullable: false),
+                    IndividualWorkId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_IndividualWorkUOFs", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_IndividualWorkUOFs_IndividualWorks_IndividualWorkId",
+                        column: x => x.IndividualWorkId,
+                        principalTable: "IndividualWorks",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Exams",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ExamDate = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Duration = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    StartTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    ExamType = table.Column<int>(type: "int", nullable: true),
+                    YearId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    YearType = table.Column<int>(type: "int", nullable: true),
+                    FiliereId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    UnitOfFormationId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Exams", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Exams_Filieres_FiliereId",
+                        column: x => x.FiliereId,
+                        principalTable: "Filieres",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Exams_UnitOfFormations_UnitOfFormationId",
+                        column: x => x.UnitOfFormationId,
+                        principalTable: "UnitOfFormations",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "FiliereUnitOfFormations",
+                columns: table => new
+                {
+                    FiliereId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UnitOfFormationId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_FiliereUnitOfFormations", x => new { x.FiliereId, x.UnitOfFormationId });
+                    table.ForeignKey(
+                        name: "FK_FiliereUnitOfFormations_Filieres_FiliereId",
+                        column: x => x.FiliereId,
+                        principalTable: "Filieres",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_FiliereUnitOfFormations_UnitOfFormations_UnitOfFormationId",
+                        column: x => x.UnitOfFormationId,
+                        principalTable: "UnitOfFormations",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Tests",
                 columns: table => new
                 {
@@ -121,6 +233,12 @@ namespace Infrastracture.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Tests", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Tests_UnitOfFormations_UnitOfFormationId",
+                        column: x => x.UnitOfFormationId,
+                        principalTable: "UnitOfFormations",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -179,67 +297,6 @@ namespace Infrastracture.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "VariantsExams",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    ExamId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    VariantName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ExamStatement = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ExamCorrection = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UnitOfFormationId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    VariantType = table.Column<int>(type: "int", nullable: true),
-                    NoteMax = table.Column<int>(type: "int", nullable: true),
-                    IsValid = table.Column<bool>(type: "bit", nullable: true),
-                    TrainerId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
-                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_VariantsExams", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_VariantsExams_Exams_ExamId",
-                        column: x => x.ExamId,
-                        principalTable: "Exams",
-                        principalColumn: "Id");
-                });
-
-            migrationBuilder.CreateTable(
-                name: "IndividualWorkUOFs",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Confusion = table.Column<int>(type: "int", nullable: false),
-                    Note = table.Column<int>(type: "int", nullable: false),
-                    IndividualWorkId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
-                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_IndividualWorkUOFs", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_IndividualWorkUOFs_IndividualWorks_IndividualWorkId",
-                        column: x => x.IndividualWorkId,
-                        principalTable: "IndividualWorks",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "ExamSessions",
                 columns: table => new
                 {
@@ -278,6 +335,44 @@ namespace Infrastracture.Migrations
                         principalTable: "Supervisors",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "VariantsExams",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ExamId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    VariantName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ExamStatement = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ExamCorrection = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UnitOfFormationId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    VariantType = table.Column<int>(type: "int", nullable: true),
+                    NoteMax = table.Column<int>(type: "int", nullable: true),
+                    IsValid = table.Column<bool>(type: "bit", nullable: true),
+                    TrainerId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
+                    CreatedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ModifiedBy = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DeletedBy = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_VariantsExams", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_VariantsExams_Exams_ExamId",
+                        column: x => x.ExamId,
+                        principalTable: "Exams",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_VariantsExams_UnitOfFormations_UnitOfFormationId",
+                        column: x => x.UnitOfFormationId,
+                        principalTable: "UnitOfFormations",
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -361,6 +456,16 @@ namespace Infrastracture.Migrations
                 column: "ExamId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Exams_FiliereId",
+                table: "Exams",
+                column: "FiliereId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Exams_UnitOfFormationId",
+                table: "Exams",
+                column: "UnitOfFormationId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_ExamSessions_ExamId",
                 table: "ExamSessions",
                 column: "ExamId",
@@ -377,6 +482,11 @@ namespace Infrastracture.Migrations
                 column: "SupervisorId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_FiliereUnitOfFormations_UnitOfFormationId",
+                table: "FiliereUnitOfFormations",
+                column: "UnitOfFormationId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_IndividualWorkUOFs_IndividualWorkId",
                 table: "IndividualWorkUOFs",
                 column: "IndividualWorkId");
@@ -387,9 +497,19 @@ namespace Infrastracture.Migrations
                 column: "TestId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Tests_UnitOfFormationId",
+                table: "Tests",
+                column: "UnitOfFormationId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_VariantsExams_ExamId",
                 table: "VariantsExams",
                 column: "ExamId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_VariantsExams_UnitOfFormationId",
+                table: "VariantsExams",
+                column: "UnitOfFormationId");
         }
 
         /// <inheritdoc />
@@ -403,6 +523,9 @@ namespace Infrastracture.Migrations
 
             migrationBuilder.DropTable(
                 name: "ExamSessions");
+
+            migrationBuilder.DropTable(
+                name: "FiliereUnitOfFormations");
 
             migrationBuilder.DropTable(
                 name: "IndividualWorkUOFs");
@@ -430,6 +553,12 @@ namespace Infrastracture.Migrations
 
             migrationBuilder.DropTable(
                 name: "Tests");
+
+            migrationBuilder.DropTable(
+                name: "Filieres");
+
+            migrationBuilder.DropTable(
+                name: "UnitOfFormations");
         }
     }
 }

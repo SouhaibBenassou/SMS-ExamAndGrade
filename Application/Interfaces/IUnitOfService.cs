@@ -14,6 +14,6 @@ namespace Application.Interfaces
         IStagiereNoteService StagiereNoteService { get;}
         IExamSessionService ExamSessionService { get; }
         ITraineeService TraineeService { get; }
-        
+        IFiliereService FiliereService { get; set; }
     }
 }
