@@ -568,9 +568,25 @@ namespace Infrastracture.Migrations
                         new
                         {
                             Id = new Guid("c4677026-cb1e-4741-9685-0f56b9758e65"),
+                            Capacite = 50,
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(196),
+                            Description = "Description for Computer Science",
+                            Duree = 2,
+                            FraisInscription = 3000m,
+                            GroupCapacity = 10,
+                            IsDeleted = false,
+                            MontantAnnuel = 12000m,
+                            MontantMensuel = 1000m,
+                            MontantTrimestre = 3000m,
+                            Niveau = "Master",
+                            NomFiliere = "Computer Science"
+                        },
+                        new
+                        {
+                            Id = new Guid("21aef537-d19e-48bf-a523-23db8e193522"),
                             Capacite = 55,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1382),
-                            Description = "Description for Filiere 1",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(348),
+                            Description = "Description for Electrical Engineering",
                             Duree = 3,
                             FraisInscription = 3200m,
                             GroupCapacity = 12,
@@ -579,14 +595,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 1100m,
                             MontantTrimestre = 3250m,
                             Niveau = "Bachelor",
-                            NomFiliere = "Filiere 1"
+                            NomFiliere = "Electrical Engineering"
                         },
                         new
                         {
-                            Id = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
+                            Id = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
                             Capacite = 60,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1700),
-                            Description = "Description for Filiere 2",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(430),
+                            Description = "Description for Mechanical Engineering",
                             Duree = 4,
                             FraisInscription = 3400m,
                             GroupCapacity = 14,
@@ -595,14 +611,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 1200m,
                             MontantTrimestre = 3500m,
                             Niveau = "Master",
-                            NomFiliere = "Filiere 2"
+                            NomFiliere = "Mechanical Engineering"
                         },
                         new
                         {
-                            Id = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
+                            Id = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
                             Capacite = 65,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1830),
-                            Description = "Description for Filiere 3",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(509),
+                            Description = "Description for Civil Engineering",
                             Duree = 5,
                             FraisInscription = 3600m,
                             GroupCapacity = 16,
@@ -611,14 +627,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 1300m,
                             MontantTrimestre = 3750m,
                             Niveau = "Bachelor",
-                            NomFiliere = "Filiere 3"
+                            NomFiliere = "Civil Engineering"
                         },
                         new
                         {
-                            Id = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
+                            Id = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
                             Capacite = 70,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1954),
-                            Description = "Description for Filiere 4",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(664),
+                            Description = "Description for Chemical Engineering",
                             Duree = 2,
                             FraisInscription = 3800m,
                             GroupCapacity = 18,
@@ -627,14 +643,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 1400m,
                             MontantTrimestre = 4000m,
                             Niveau = "Master",
-                            NomFiliere = "Filiere 4"
+                            NomFiliere = "Chemical Engineering"
                         },
                         new
                         {
-                            Id = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
+                            Id = new Guid("bce4bd92-9359-4303-b629-513e17ccf10f"),
                             Capacite = 75,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(2151),
-                            Description = "Description for Filiere 5",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(735),
+                            Description = "Description for Biotechnology",
                             Duree = 3,
                             FraisInscription = 4000m,
                             GroupCapacity = 20,
@@ -643,14 +659,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 1500m,
                             MontantTrimestre = 4250m,
                             Niveau = "Bachelor",
-                            NomFiliere = "Filiere 5"
+                            NomFiliere = "Biotechnology"
                         },
                         new
                         {
-                            Id = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
+                            Id = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
                             Capacite = 80,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(2268),
-                            Description = "Description for Filiere 6",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(801),
+                            Description = "Description for Mathematics",
                             Duree = 4,
                             FraisInscription = 4200m,
                             GroupCapacity = 22,
@@ -659,14 +675,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 1600m,
                             MontantTrimestre = 4500m,
                             Niveau = "Master",
-                            NomFiliere = "Filiere 6"
+                            NomFiliere = "Mathematics"
                         },
                         new
                         {
-                            Id = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
+                            Id = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
                             Capacite = 85,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(2405),
-                            Description = "Description for Filiere 7",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(889),
+                            Description = "Description for Physics",
                             Duree = 5,
                             FraisInscription = 4400m,
                             GroupCapacity = 24,
@@ -675,14 +691,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 1700m,
                             MontantTrimestre = 4750m,
                             Niveau = "Bachelor",
-                            NomFiliere = "Filiere 7"
+                            NomFiliere = "Physics"
                         },
                         new
                         {
-                            Id = new Guid("39b26171-decb-43f1-bc6f-8b88622878f1"),
+                            Id = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
                             Capacite = 90,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(2525),
-                            Description = "Description for Filiere 8",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(970),
+                            Description = "Description for Chemistry",
                             Duree = 2,
                             FraisInscription = 4600m,
                             GroupCapacity = 26,
@@ -691,14 +707,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 1800m,
                             MontantTrimestre = 5000m,
                             Niveau = "Master",
-                            NomFiliere = "Filiere 8"
+                            NomFiliere = "Chemistry"
                         },
                         new
                         {
-                            Id = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
+                            Id = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
                             Capacite = 95,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(2772),
-                            Description = "Description for Filiere 9",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(1061),
+                            Description = "Description for Biology",
                             Duree = 3,
                             FraisInscription = 4800m,
                             GroupCapacity = 28,
@@ -707,14 +723,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 1900m,
                             MontantTrimestre = 5250m,
                             Niveau = "Bachelor",
-                            NomFiliere = "Filiere 9"
+                            NomFiliere = "Biology"
                         },
                         new
                         {
-                            Id = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
+                            Id = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
                             Capacite = 100,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(2916),
-                            Description = "Description for Filiere 10",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(1160),
+                            Description = "Description for Environmental Science",
                             Duree = 4,
                             FraisInscription = 5000m,
                             GroupCapacity = 30,
@@ -723,14 +739,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 2000m,
                             MontantTrimestre = 5500m,
                             Niveau = "Master",
-                            NomFiliere = "Filiere 10"
+                            NomFiliere = "Environmental Science"
                         },
                         new
                         {
-                            Id = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
+                            Id = new Guid("c1c6fbc9-2fde-4c9e-b6cf-78a06f299de7"),
                             Capacite = 105,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(3045),
-                            Description = "Description for Filiere 11",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(1223),
+                            Description = "Description for Economics",
                             Duree = 5,
                             FraisInscription = 5200m,
                             GroupCapacity = 32,
@@ -739,14 +755,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 2100m,
                             MontantTrimestre = 5750m,
                             Niveau = "Bachelor",
-                            NomFiliere = "Filiere 11"
+                            NomFiliere = "Economics"
                         },
                         new
                         {
-                            Id = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
+                            Id = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
                             Capacite = 110,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(3239),
-                            Description = "Description for Filiere 12",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(1303),
+                            Description = "Description for Psychology",
                             Duree = 2,
                             FraisInscription = 5400m,
                             GroupCapacity = 34,
@@ -755,14 +771,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 2200m,
                             MontantTrimestre = 6000m,
                             Niveau = "Master",
-                            NomFiliere = "Filiere 12"
+                            NomFiliere = "Psychology"
                         },
                         new
                         {
-                            Id = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
+                            Id = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
                             Capacite = 115,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(3362),
-                            Description = "Description for Filiere 13",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(1400),
+                            Description = "Description for Sociology",
                             Duree = 3,
                             FraisInscription = 5600m,
                             GroupCapacity = 36,
@@ -771,14 +787,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 2300m,
                             MontantTrimestre = 6250m,
                             Niveau = "Bachelor",
-                            NomFiliere = "Filiere 13"
+                            NomFiliere = "Sociology"
                         },
                         new
                         {
-                            Id = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
+                            Id = new Guid("c094c44b-cac4-4fb9-88e0-c29a43bb7edb"),
                             Capacite = 120,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(3485),
-                            Description = "Description for Filiere 14",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(1481),
+                            Description = "Description for History",
                             Duree = 4,
                             FraisInscription = 5800m,
                             GroupCapacity = 38,
@@ -787,14 +803,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 2400m,
                             MontantTrimestre = 6500m,
                             Niveau = "Master",
-                            NomFiliere = "Filiere 14"
+                            NomFiliere = "History"
                         },
                         new
                         {
-                            Id = new Guid("21aef537-d19e-48bf-a523-23db8e193522"),
+                            Id = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
                             Capacite = 125,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(3704),
-                            Description = "Description for Filiere 15",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(1549),
+                            Description = "Description for Philosophy",
                             Duree = 5,
                             FraisInscription = 6000m,
                             GroupCapacity = 40,
@@ -803,14 +819,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 2500m,
                             MontantTrimestre = 6750m,
                             Niveau = "Bachelor",
-                            NomFiliere = "Filiere 15"
+                            NomFiliere = "Philosophy"
                         },
                         new
                         {
-                            Id = new Guid("bce4bd92-9359-4303-b629-513e17ccf10f"),
+                            Id = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
                             Capacite = 130,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(3845),
-                            Description = "Description for Filiere 16",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(1652),
+                            Description = "Description for Political Science",
                             Duree = 2,
                             FraisInscription = 6200m,
                             GroupCapacity = 42,
@@ -819,14 +835,14 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 2600m,
                             MontantTrimestre = 7000m,
                             Niveau = "Master",
-                            NomFiliere = "Filiere 16"
+                            NomFiliere = "Political Science"
                         },
                         new
                         {
-                            Id = new Guid("c1c6fbc9-2fde-4c9e-b6cf-78a06f299de7"),
+                            Id = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
                             Capacite = 135,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(3984),
-                            Description = "Description for Filiere 17",
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(1728),
+                            Description = "Description for International Relations",
                             Duree = 3,
                             FraisInscription = 6400m,
                             GroupCapacity = 44,
@@ -835,55 +851,7 @@ namespace Infrastracture.Migrations
                             MontantMensuel = 2700m,
                             MontantTrimestre = 7250m,
                             Niveau = "Bachelor",
-                            NomFiliere = "Filiere 17"
-                        },
-                        new
-                        {
-                            Id = new Guid("e85aabb3-532c-44e7-909b-9c6fd7e9251c"),
-                            Capacite = 140,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(4147),
-                            Description = "Description for Filiere 18",
-                            Duree = 4,
-                            FraisInscription = 6600m,
-                            GroupCapacity = 46,
-                            IsDeleted = false,
-                            MontantAnnuel = 30000m,
-                            MontantMensuel = 2800m,
-                            MontantTrimestre = 7500m,
-                            Niveau = "Master",
-                            NomFiliere = "Filiere 18"
-                        },
-                        new
-                        {
-                            Id = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
-                            Capacite = 145,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(4261),
-                            Description = "Description for Filiere 19",
-                            Duree = 5,
-                            FraisInscription = 6800m,
-                            GroupCapacity = 48,
-                            IsDeleted = false,
-                            MontantAnnuel = 31000m,
-                            MontantMensuel = 2900m,
-                            MontantTrimestre = 7750m,
-                            Niveau = "Bachelor",
-                            NomFiliere = "Filiere 19"
-                        },
-                        new
-                        {
-                            Id = new Guid("c094c44b-cac4-4fb9-88e0-c29a43bb7edb"),
-                            Capacite = 150,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(4362),
-                            Description = "Description for Filiere 20",
-                            Duree = 2,
-                            FraisInscription = 7000m,
-                            GroupCapacity = 50,
-                            IsDeleted = false,
-                            MontantAnnuel = 32000m,
-                            MontantMensuel = 3000m,
-                            MontantTrimestre = 8000m,
-                            Niveau = "Master",
-                            NomFiliere = "Filiere 20"
+                            NomFiliere = "International Relations"
                         });
                 });
 
@@ -905,502 +873,452 @@ namespace Infrastracture.Migrations
                         new
                         {
                             FiliereId = new Guid("c4677026-cb1e-4741-9685-0f56b9758e65"),
-                            UnitOfFormationId = new Guid("46bdfbf2-d95f-4487-938c-373abd581afc")
+                            UnitOfFormationId = new Guid("22105920-ef53-452d-b5f5-ae48495f4abb")
                         },
                         new
                         {
                             FiliereId = new Guid("c4677026-cb1e-4741-9685-0f56b9758e65"),
-                            UnitOfFormationId = new Guid("2e347f2b-92ff-465b-a920-6bdafe76fce9")
+                            UnitOfFormationId = new Guid("cbf22d7b-01a9-4d8e-b0fc-ebda0e18a6f8")
                         },
                         new
                         {
                             FiliereId = new Guid("c4677026-cb1e-4741-9685-0f56b9758e65"),
-                            UnitOfFormationId = new Guid("09408396-133e-406b-abd7-c036c1c0f929")
+                            UnitOfFormationId = new Guid("aff588b9-d077-4f68-899b-2a6b24feea10")
                         },
                         new
                         {
                             FiliereId = new Guid("c4677026-cb1e-4741-9685-0f56b9758e65"),
-                            UnitOfFormationId = new Guid("4cc2938d-57f6-4ec6-9986-88cc81e30d11")
+                            UnitOfFormationId = new Guid("b56c7ac9-bc20-426e-9ab9-92e1c3c26991")
                         },
                         new
                         {
                             FiliereId = new Guid("c4677026-cb1e-4741-9685-0f56b9758e65"),
-                            UnitOfFormationId = new Guid("3b70b9c1-f588-44e5-a9eb-1aa941cbab10")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
-                            UnitOfFormationId = new Guid("1cd26635-c768-45e7-b67a-22d734d3eaac")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
-                            UnitOfFormationId = new Guid("3a40e288-d364-4a85-95ef-767f71d5b14a")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
-                            UnitOfFormationId = new Guid("5502ba60-4022-4537-af8e-ec09dc2ada35")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
-                            UnitOfFormationId = new Guid("47276ba0-7a72-43c6-ad70-d35197b6dd96")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
-                            UnitOfFormationId = new Guid("09408396-133e-406b-abd7-c036c1c0f929")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
-                            UnitOfFormationId = new Guid("62aceb55-3e34-4919-b289-50d0c4e8d95a")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
-                            UnitOfFormationId = new Guid("4c1d6ce0-f23e-4d61-a2c5-91fbd983e6e4")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
-                            UnitOfFormationId = new Guid("659e8e83-7614-4fc6-bf16-55b68848faaf")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
-                            UnitOfFormationId = new Guid("39b48c14-dc43-4666-bc1f-e253693d6475")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
-                            UnitOfFormationId = new Guid("3a40e288-d364-4a85-95ef-767f71d5b14a")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
-                            UnitOfFormationId = new Guid("1f10462d-0fef-4bb5-a6d9-d11b1ccfc9c9")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
-                            UnitOfFormationId = new Guid("f6f4e22c-c80f-439b-a333-4315cdbc1e77")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
-                            UnitOfFormationId = new Guid("e865d06b-3b55-45c9-af65-12eb86088778")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
-                            UnitOfFormationId = new Guid("39b48c14-dc43-4666-bc1f-e253693d6475")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
-                            UnitOfFormationId = new Guid("df23b698-cf9c-407b-ab0f-97a0c6c6981a")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
-                            UnitOfFormationId = new Guid("e06dc7bd-9527-4165-865f-fcdceb662c5b")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
-                            UnitOfFormationId = new Guid("46bdfbf2-d95f-4487-938c-373abd581afc")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
-                            UnitOfFormationId = new Guid("23f6687d-7025-4040-af7c-85c871803627")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
-                            UnitOfFormationId = new Guid("df23b698-cf9c-407b-ab0f-97a0c6c6981a")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
-                            UnitOfFormationId = new Guid("91d8b08f-6644-4695-93b8-c01b757c1f3b")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
-                            UnitOfFormationId = new Guid("659e8e83-7614-4fc6-bf16-55b68848faaf")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
-                            UnitOfFormationId = new Guid("56395327-fc14-4566-9c66-8caed4c39a1a")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
-                            UnitOfFormationId = new Guid("e2cc5fdd-6d0c-407d-8099-4ca50d811ad4")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
-                            UnitOfFormationId = new Guid("3ab693af-fa63-4e2b-aac7-fbf4e4d47ef6")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
-                            UnitOfFormationId = new Guid("4c1d6ce0-f23e-4d61-a2c5-91fbd983e6e4")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
-                            UnitOfFormationId = new Guid("1f8983ec-a58c-495c-a744-64ecdf8a51fe")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
-                            UnitOfFormationId = new Guid("3a40e288-d364-4a85-95ef-767f71d5b14a")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
-                            UnitOfFormationId = new Guid("60a7adf0-ac39-4597-89fd-8571deb77a92")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
-                            UnitOfFormationId = new Guid("05a37095-749c-45ba-8dec-2f0c4d44c7b3")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
-                            UnitOfFormationId = new Guid("4c1d6ce0-f23e-4d61-a2c5-91fbd983e6e4")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("39b26171-decb-43f1-bc6f-8b88622878f1"),
-                            UnitOfFormationId = new Guid("4c1d6ce0-f23e-4d61-a2c5-91fbd983e6e4")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("39b26171-decb-43f1-bc6f-8b88622878f1"),
-                            UnitOfFormationId = new Guid("2e347f2b-92ff-465b-a920-6bdafe76fce9")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("39b26171-decb-43f1-bc6f-8b88622878f1"),
-                            UnitOfFormationId = new Guid("62aceb55-3e34-4919-b289-50d0c4e8d95a")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("39b26171-decb-43f1-bc6f-8b88622878f1"),
-                            UnitOfFormationId = new Guid("1f8983ec-a58c-495c-a744-64ecdf8a51fe")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("39b26171-decb-43f1-bc6f-8b88622878f1"),
-                            UnitOfFormationId = new Guid("39b48c14-dc43-4666-bc1f-e253693d6475")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
-                            UnitOfFormationId = new Guid("e2cc5fdd-6d0c-407d-8099-4ca50d811ad4")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
-                            UnitOfFormationId = new Guid("e06dc7bd-9527-4165-865f-fcdceb662c5b")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
-                            UnitOfFormationId = new Guid("62aceb55-3e34-4919-b289-50d0c4e8d95a")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
-                            UnitOfFormationId = new Guid("e65242f7-e1d0-4794-a091-ffb151996a34")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
-                            UnitOfFormationId = new Guid("0fe0b0db-e61b-48c6-83e7-7bf2e3ae1305")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
-                            UnitOfFormationId = new Guid("1cd26635-c768-45e7-b67a-22d734d3eaac")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
-                            UnitOfFormationId = new Guid("39b48c14-dc43-4666-bc1f-e253693d6475")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
-                            UnitOfFormationId = new Guid("47276ba0-7a72-43c6-ad70-d35197b6dd96")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
-                            UnitOfFormationId = new Guid("2c87aa39-6e53-4d7d-9b1a-312f793d7ba9")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
-                            UnitOfFormationId = new Guid("e06dc7bd-9527-4165-865f-fcdceb662c5b")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
-                            UnitOfFormationId = new Guid("e65242f7-e1d0-4794-a091-ffb151996a34")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
-                            UnitOfFormationId = new Guid("e865d06b-3b55-45c9-af65-12eb86088778")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
-                            UnitOfFormationId = new Guid("cac8b83b-3528-49b7-aa56-3064100fd9ea")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
-                            UnitOfFormationId = new Guid("23f6687d-7025-4040-af7c-85c871803627")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
-                            UnitOfFormationId = new Guid("659e8e83-7614-4fc6-bf16-55b68848faaf")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
-                            UnitOfFormationId = new Guid("e865d06b-3b55-45c9-af65-12eb86088778")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
-                            UnitOfFormationId = new Guid("23f6687d-7025-4040-af7c-85c871803627")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
-                            UnitOfFormationId = new Guid("c84c0406-89ed-43eb-920d-0fd0cf92596b")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
-                            UnitOfFormationId = new Guid("4986dab7-78d7-48ed-8f6c-40563c09625f")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
-                            UnitOfFormationId = new Guid("47276ba0-7a72-43c6-ad70-d35197b6dd96")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
-                            UnitOfFormationId = new Guid("0106bd99-264d-494a-83c0-9bdcebfffa56")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
-                            UnitOfFormationId = new Guid("659e8e83-7614-4fc6-bf16-55b68848faaf")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
-                            UnitOfFormationId = new Guid("1f10462d-0fef-4bb5-a6d9-d11b1ccfc9c9")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
-                            UnitOfFormationId = new Guid("5502ba60-4022-4537-af8e-ec09dc2ada35")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
-                            UnitOfFormationId = new Guid("e2cc5fdd-6d0c-407d-8099-4ca50d811ad4")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
-                            UnitOfFormationId = new Guid("4c1d6ce0-f23e-4d61-a2c5-91fbd983e6e4")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
-                            UnitOfFormationId = new Guid("2f595d7e-d0c1-4fda-b83d-87faf0200c0a")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
-                            UnitOfFormationId = new Guid("df23b698-cf9c-407b-ab0f-97a0c6c6981a")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
-                            UnitOfFormationId = new Guid("1cd26635-c768-45e7-b67a-22d734d3eaac")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
-                            UnitOfFormationId = new Guid("0fe0b0db-e61b-48c6-83e7-7bf2e3ae1305")
+                            UnitOfFormationId = new Guid("4433a66f-3c0f-421e-94ab-5bcbbd6bb259")
                         },
                         new
                         {
                             FiliereId = new Guid("21aef537-d19e-48bf-a523-23db8e193522"),
-                            UnitOfFormationId = new Guid("e2cc5fdd-6d0c-407d-8099-4ca50d811ad4")
+                            UnitOfFormationId = new Guid("39f69cb4-fa6a-4413-8991-072f39ac2587")
                         },
                         new
                         {
                             FiliereId = new Guid("21aef537-d19e-48bf-a523-23db8e193522"),
-                            UnitOfFormationId = new Guid("6e0a9224-cfe9-428f-b34e-2d0374f088ae")
+                            UnitOfFormationId = new Guid("22105920-ef53-452d-b5f5-ae48495f4abb")
                         },
                         new
                         {
                             FiliereId = new Guid("21aef537-d19e-48bf-a523-23db8e193522"),
-                            UnitOfFormationId = new Guid("2c87aa39-6e53-4d7d-9b1a-312f793d7ba9")
+                            UnitOfFormationId = new Guid("c92538d1-ee3e-4e6a-94c8-bfe81bc3127d")
                         },
                         new
                         {
                             FiliereId = new Guid("21aef537-d19e-48bf-a523-23db8e193522"),
-                            UnitOfFormationId = new Guid("7f06b2a8-75f0-45ce-a14f-b48c8da9ee6d")
+                            UnitOfFormationId = new Guid("cbf22d7b-01a9-4d8e-b0fc-ebda0e18a6f8")
                         },
                         new
                         {
                             FiliereId = new Guid("21aef537-d19e-48bf-a523-23db8e193522"),
-                            UnitOfFormationId = new Guid("bfe72488-4235-460a-a9d3-8069a5d7977c")
+                            UnitOfFormationId = new Guid("7bb97700-c70f-4c29-86dc-285c3c08c98f")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
+                            UnitOfFormationId = new Guid("c040c2e2-7bcf-438d-9a57-4a8c4db32710")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
+                            UnitOfFormationId = new Guid("80f385d8-78a7-452b-86e0-90b51c048df4")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
+                            UnitOfFormationId = new Guid("ddbe9864-01a6-495c-8f23-5ba0ebd84f68")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
+                            UnitOfFormationId = new Guid("b8d0b66c-d031-48a7-ae86-aa90bb9109b6")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
+                            UnitOfFormationId = new Guid("1d35297d-32ee-42e9-92f1-2b7abb779109")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
+                            UnitOfFormationId = new Guid("70ca9d34-ce0c-4855-a654-2eed5d25921a")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
+                            UnitOfFormationId = new Guid("b8d0b66c-d031-48a7-ae86-aa90bb9109b6")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
+                            UnitOfFormationId = new Guid("f06e9631-fff9-43db-b218-eca32d5e4270")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
+                            UnitOfFormationId = new Guid("f0578c80-dbfb-44df-9f63-d15c06a3ead6")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
+                            UnitOfFormationId = new Guid("c92538d1-ee3e-4e6a-94c8-bfe81bc3127d")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
+                            UnitOfFormationId = new Guid("5b63d6a5-1953-4749-90f4-b28a39312b13")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
+                            UnitOfFormationId = new Guid("fc78bd31-fa21-45fb-ab89-ab928f155041")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
+                            UnitOfFormationId = new Guid("1c0bd733-0447-4351-b42a-6a595a73a87d")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
+                            UnitOfFormationId = new Guid("d4bf9b84-4a3f-45eb-bf9d-00c5b69f48bb")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
+                            UnitOfFormationId = new Guid("3358e7b2-03de-4973-a035-cf063663043a")
                         },
                         new
                         {
                             FiliereId = new Guid("bce4bd92-9359-4303-b629-513e17ccf10f"),
-                            UnitOfFormationId = new Guid("91d8b08f-6644-4695-93b8-c01b757c1f3b")
+                            UnitOfFormationId = new Guid("70ca9d34-ce0c-4855-a654-2eed5d25921a")
                         },
                         new
                         {
                             FiliereId = new Guid("bce4bd92-9359-4303-b629-513e17ccf10f"),
-                            UnitOfFormationId = new Guid("1f10462d-0fef-4bb5-a6d9-d11b1ccfc9c9")
+                            UnitOfFormationId = new Guid("02e39b46-c4a7-4d42-a9d6-1e3fd226c9cc")
                         },
                         new
                         {
                             FiliereId = new Guid("bce4bd92-9359-4303-b629-513e17ccf10f"),
-                            UnitOfFormationId = new Guid("e865d06b-3b55-45c9-af65-12eb86088778")
+                            UnitOfFormationId = new Guid("4996ea2f-2108-4867-a0e2-3e80d4e4243a")
                         },
                         new
                         {
                             FiliereId = new Guid("bce4bd92-9359-4303-b629-513e17ccf10f"),
-                            UnitOfFormationId = new Guid("6e0a9224-cfe9-428f-b34e-2d0374f088ae")
+                            UnitOfFormationId = new Guid("12729145-e357-4c4a-95be-fc5fd7cc1ff0")
                         },
                         new
                         {
                             FiliereId = new Guid("bce4bd92-9359-4303-b629-513e17ccf10f"),
-                            UnitOfFormationId = new Guid("3b70b9c1-f588-44e5-a9eb-1aa941cbab10")
+                            UnitOfFormationId = new Guid("22105920-ef53-452d-b5f5-ae48495f4abb")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
+                            UnitOfFormationId = new Guid("59f005c6-c7d4-485f-8562-83bbcf410f1b")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
+                            UnitOfFormationId = new Guid("f0578c80-dbfb-44df-9f63-d15c06a3ead6")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
+                            UnitOfFormationId = new Guid("c92538d1-ee3e-4e6a-94c8-bfe81bc3127d")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
+                            UnitOfFormationId = new Guid("86579e8d-e0bd-4452-a317-07185a7e3bbf")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
+                            UnitOfFormationId = new Guid("54c683d7-24a7-470b-94ba-1cf6566665a3")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
+                            UnitOfFormationId = new Guid("2df477a2-3532-4e56-82d9-4f81eb8b2e7f")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
+                            UnitOfFormationId = new Guid("7d8faff0-e229-4de9-90b8-edef5949f00a")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
+                            UnitOfFormationId = new Guid("3358e7b2-03de-4973-a035-cf063663043a")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
+                            UnitOfFormationId = new Guid("c00be947-6491-4240-acd2-24aa86c806ef")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
+                            UnitOfFormationId = new Guid("b2ab7da5-c4fc-404d-990c-d057a75b88d8")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
+                            UnitOfFormationId = new Guid("c040c2e2-7bcf-438d-9a57-4a8c4db32710")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
+                            UnitOfFormationId = new Guid("4996ea2f-2108-4867-a0e2-3e80d4e4243a")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
+                            UnitOfFormationId = new Guid("fc78bd31-fa21-45fb-ab89-ab928f155041")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
+                            UnitOfFormationId = new Guid("b2ab7da5-c4fc-404d-990c-d057a75b88d8")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
+                            UnitOfFormationId = new Guid("5d6432aa-bf15-4075-a6f5-878111716d31")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
+                            UnitOfFormationId = new Guid("b2ab7da5-c4fc-404d-990c-d057a75b88d8")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
+                            UnitOfFormationId = new Guid("59f005c6-c7d4-485f-8562-83bbcf410f1b")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
+                            UnitOfFormationId = new Guid("70ca9d34-ce0c-4855-a654-2eed5d25921a")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
+                            UnitOfFormationId = new Guid("7831768e-3318-4d88-80db-e5958e1e208c")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
+                            UnitOfFormationId = new Guid("3358e7b2-03de-4973-a035-cf063663043a")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
+                            UnitOfFormationId = new Guid("5d6432aa-bf15-4075-a6f5-878111716d31")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
+                            UnitOfFormationId = new Guid("8006677a-5c4e-43fc-8821-7f96bc1bf5cf")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
+                            UnitOfFormationId = new Guid("e8649f72-24b7-48da-b631-84f8f5abada6")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
+                            UnitOfFormationId = new Guid("12729145-e357-4c4a-95be-fc5fd7cc1ff0")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
+                            UnitOfFormationId = new Guid("74f4b891-170f-47ca-87b4-aca8c97a860d")
                         },
                         new
                         {
                             FiliereId = new Guid("c1c6fbc9-2fde-4c9e-b6cf-78a06f299de7"),
-                            UnitOfFormationId = new Guid("fe43314a-4eb4-4751-bfe2-f8a1363546b3")
+                            UnitOfFormationId = new Guid("542786a4-aa6a-4f6e-846e-c4905b2f831d")
                         },
                         new
                         {
                             FiliereId = new Guid("c1c6fbc9-2fde-4c9e-b6cf-78a06f299de7"),
-                            UnitOfFormationId = new Guid("c589f177-b4d5-4c09-be3d-3451711bd835")
+                            UnitOfFormationId = new Guid("b56c7ac9-bc20-426e-9ab9-92e1c3c26991")
                         },
                         new
                         {
                             FiliereId = new Guid("c1c6fbc9-2fde-4c9e-b6cf-78a06f299de7"),
-                            UnitOfFormationId = new Guid("5502ba60-4022-4537-af8e-ec09dc2ada35")
+                            UnitOfFormationId = new Guid("b8d0b66c-d031-48a7-ae86-aa90bb9109b6")
                         },
                         new
                         {
                             FiliereId = new Guid("c1c6fbc9-2fde-4c9e-b6cf-78a06f299de7"),
-                            UnitOfFormationId = new Guid("df23b698-cf9c-407b-ab0f-97a0c6c6981a")
+                            UnitOfFormationId = new Guid("e8649f72-24b7-48da-b631-84f8f5abada6")
                         },
                         new
                         {
                             FiliereId = new Guid("c1c6fbc9-2fde-4c9e-b6cf-78a06f299de7"),
-                            UnitOfFormationId = new Guid("60a7adf0-ac39-4597-89fd-8571deb77a92")
+                            UnitOfFormationId = new Guid("31abd8c8-dafb-4608-9f5b-8dd53941bd6b")
                         },
                         new
                         {
-                            FiliereId = new Guid("e85aabb3-532c-44e7-909b-9c6fd7e9251c"),
-                            UnitOfFormationId = new Guid("0fe0b0db-e61b-48c6-83e7-7bf2e3ae1305")
+                            FiliereId = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
+                            UnitOfFormationId = new Guid("b56c7ac9-bc20-426e-9ab9-92e1c3c26991")
                         },
                         new
                         {
-                            FiliereId = new Guid("e85aabb3-532c-44e7-909b-9c6fd7e9251c"),
-                            UnitOfFormationId = new Guid("09408396-133e-406b-abd7-c036c1c0f929")
+                            FiliereId = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
+                            UnitOfFormationId = new Guid("f4ca0c58-93ac-4e6f-8c3b-e732394d908d")
                         },
                         new
                         {
-                            FiliereId = new Guid("e85aabb3-532c-44e7-909b-9c6fd7e9251c"),
-                            UnitOfFormationId = new Guid("0106bd99-264d-494a-83c0-9bdcebfffa56")
+                            FiliereId = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
+                            UnitOfFormationId = new Guid("2df477a2-3532-4e56-82d9-4f81eb8b2e7f")
                         },
                         new
                         {
-                            FiliereId = new Guid("e85aabb3-532c-44e7-909b-9c6fd7e9251c"),
-                            UnitOfFormationId = new Guid("3ab693af-fa63-4e2b-aac7-fbf4e4d47ef6")
+                            FiliereId = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
+                            UnitOfFormationId = new Guid("45878b1e-7de5-4186-a4e7-d70f862f40ce")
                         },
                         new
                         {
-                            FiliereId = new Guid("e85aabb3-532c-44e7-909b-9c6fd7e9251c"),
-                            UnitOfFormationId = new Guid("2e347f2b-92ff-465b-a920-6bdafe76fce9")
+                            FiliereId = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
+                            UnitOfFormationId = new Guid("70ca9d34-ce0c-4855-a654-2eed5d25921a")
                         },
                         new
                         {
-                            FiliereId = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
-                            UnitOfFormationId = new Guid("46bdfbf2-d95f-4487-938c-373abd581afc")
+                            FiliereId = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
+                            UnitOfFormationId = new Guid("1fb74f8f-ca61-40d0-84d6-c339ff274343")
                         },
                         new
                         {
-                            FiliereId = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
-                            UnitOfFormationId = new Guid("62aceb55-3e34-4919-b289-50d0c4e8d95a")
+                            FiliereId = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
+                            UnitOfFormationId = new Guid("542786a4-aa6a-4f6e-846e-c4905b2f831d")
                         },
                         new
                         {
-                            FiliereId = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
-                            UnitOfFormationId = new Guid("1cd26635-c768-45e7-b67a-22d734d3eaac")
+                            FiliereId = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
+                            UnitOfFormationId = new Guid("59f005c6-c7d4-485f-8562-83bbcf410f1b")
                         },
                         new
                         {
-                            FiliereId = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
-                            UnitOfFormationId = new Guid("c589f177-b4d5-4c09-be3d-3451711bd835")
+                            FiliereId = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
+                            UnitOfFormationId = new Guid("cbf22d7b-01a9-4d8e-b0fc-ebda0e18a6f8")
                         },
                         new
                         {
-                            FiliereId = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
-                            UnitOfFormationId = new Guid("0106bd99-264d-494a-83c0-9bdcebfffa56")
-                        },
-                        new
-                        {
-                            FiliereId = new Guid("c094c44b-cac4-4fb9-88e0-c29a43bb7edb"),
-                            UnitOfFormationId = new Guid("1cd26635-c768-45e7-b67a-22d734d3eaac")
+                            FiliereId = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
+                            UnitOfFormationId = new Guid("f4ca0c58-93ac-4e6f-8c3b-e732394d908d")
                         },
                         new
                         {
                             FiliereId = new Guid("c094c44b-cac4-4fb9-88e0-c29a43bb7edb"),
-                            UnitOfFormationId = new Guid("c589f177-b4d5-4c09-be3d-3451711bd835")
+                            UnitOfFormationId = new Guid("59f005c6-c7d4-485f-8562-83bbcf410f1b")
                         },
                         new
                         {
                             FiliereId = new Guid("c094c44b-cac4-4fb9-88e0-c29a43bb7edb"),
-                            UnitOfFormationId = new Guid("b9a2526a-44e2-46be-b543-1b66ce2f4154")
+                            UnitOfFormationId = new Guid("4433a66f-3c0f-421e-94ab-5bcbbd6bb259")
                         },
                         new
                         {
                             FiliereId = new Guid("c094c44b-cac4-4fb9-88e0-c29a43bb7edb"),
-                            UnitOfFormationId = new Guid("3ab693af-fa63-4e2b-aac7-fbf4e4d47ef6")
+                            UnitOfFormationId = new Guid("f0578c80-dbfb-44df-9f63-d15c06a3ead6")
                         },
                         new
                         {
                             FiliereId = new Guid("c094c44b-cac4-4fb9-88e0-c29a43bb7edb"),
-                            UnitOfFormationId = new Guid("56395327-fc14-4566-9c66-8caed4c39a1a")
+                            UnitOfFormationId = new Guid("f4ca0c58-93ac-4e6f-8c3b-e732394d908d")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("c094c44b-cac4-4fb9-88e0-c29a43bb7edb"),
+                            UnitOfFormationId = new Guid("aff588b9-d077-4f68-899b-2a6b24feea10")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
+                            UnitOfFormationId = new Guid("2df477a2-3532-4e56-82d9-4f81eb8b2e7f")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
+                            UnitOfFormationId = new Guid("4433a66f-3c0f-421e-94ab-5bcbbd6bb259")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
+                            UnitOfFormationId = new Guid("ae939676-456a-4190-8223-3ea7d3563922")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
+                            UnitOfFormationId = new Guid("02e39b46-c4a7-4d42-a9d6-1e3fd226c9cc")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
+                            UnitOfFormationId = new Guid("8006677a-5c4e-43fc-8821-7f96bc1bf5cf")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
+                            UnitOfFormationId = new Guid("f4ca0c58-93ac-4e6f-8c3b-e732394d908d")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
+                            UnitOfFormationId = new Guid("1d35297d-32ee-42e9-92f1-2b7abb779109")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
+                            UnitOfFormationId = new Guid("fd8c3808-1799-49c4-be17-eacf53773a16")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
+                            UnitOfFormationId = new Guid("fc78bd31-fa21-45fb-ab89-ab928f155041")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
+                            UnitOfFormationId = new Guid("b2ab7da5-c4fc-404d-990c-d057a75b88d8")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
+                            UnitOfFormationId = new Guid("59f005c6-c7d4-485f-8562-83bbcf410f1b")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
+                            UnitOfFormationId = new Guid("39f69cb4-fa6a-4413-8991-072f39ac2587")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
+                            UnitOfFormationId = new Guid("1c0bd733-0447-4351-b42a-6a595a73a87d")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
+                            UnitOfFormationId = new Guid("ab5be28a-c494-4def-b58e-151dc8ff1767")
+                        },
+                        new
+                        {
+                            FiliereId = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
+                            UnitOfFormationId = new Guid("b56c7ac9-bc20-426e-9ab9-92e1c3c26991")
                         });
                 });
 
@@ -1452,502 +1370,532 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("1f8983ec-a58c-495c-a744-64ecdf8a51fe"),
-                            Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(302),
-                            Duration = 46,
-                            IsDeleted = false,
-                            Name = "Unit 1",
-                            Semestre = "Semester 1"
-                        },
-                        new
-                        {
-                            Id = new Guid("59c0ca51-e0ca-435a-84b5-c63d6180d943"),
-                            Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(708),
-                            Duration = 47,
-                            IsDeleted = false,
-                            Name = "Unit 2",
-                            Semestre = "Semester 2"
-                        },
-                        new
-                        {
-                            Id = new Guid("f6f4e22c-c80f-439b-a333-4315cdbc1e77"),
-                            Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(726),
-                            Duration = 48,
-                            IsDeleted = false,
-                            Name = "Unit 3",
-                            Semestre = "Semester 1"
-                        },
-                        new
-                        {
-                            Id = new Guid("91d8b08f-6644-4695-93b8-c01b757c1f3b"),
-                            Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(730),
-                            Duration = 49,
-                            IsDeleted = false,
-                            Name = "Unit 4",
-                            Semestre = "Semester 2"
-                        },
-                        new
-                        {
-                            Id = new Guid("0106bd99-264d-494a-83c0-9bdcebfffa56"),
+                            Id = new Guid("02e39b46-c4a7-4d42-a9d6-1e3fd226c9cc"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(735),
-                            Duration = 50,
-                            IsDeleted = false,
-                            Name = "Unit 5",
-                            Semestre = "Semester 1"
-                        },
-                        new
-                        {
-                            Id = new Guid("888d0f23-ae5d-4c8e-a38b-ac36575fe458"),
-                            Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(748),
-                            Duration = 51,
-                            IsDeleted = false,
-                            Name = "Unit 6",
-                            Semestre = "Semester 2"
-                        },
-                        new
-                        {
-                            Id = new Guid("0fe0b0db-e61b-48c6-83e7-7bf2e3ae1305"),
-                            Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(752),
-                            Duration = 52,
-                            IsDeleted = false,
-                            Name = "Unit 7",
-                            Semestre = "Semester 1"
-                        },
-                        new
-                        {
-                            Id = new Guid("df23b698-cf9c-407b-ab0f-97a0c6c6981a"),
-                            Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(756),
-                            Duration = 53,
-                            IsDeleted = false,
-                            Name = "Unit 8",
-                            Semestre = "Semester 2"
-                        },
-                        new
-                        {
-                            Id = new Guid("4c1d6ce0-f23e-4d61-a2c5-91fbd983e6e4"),
-                            Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(760),
-                            Duration = 54,
-                            IsDeleted = false,
-                            Name = "Unit 9",
-                            Semestre = "Semester 1"
-                        },
-                        new
-                        {
-                            Id = new Guid("fe43314a-4eb4-4751-bfe2-f8a1363546b3"),
-                            Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(768),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 326, DateTimeKind.Utc).AddTicks(9978),
                             Duration = 45,
                             IsDeleted = false,
-                            Name = "Unit 10",
+                            Name = "Français",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("6df75ed0-196e-49a6-bdcf-dc2ba3561615"),
+                            Id = new Guid("74f4b891-170f-47ca-87b4-aca8c97a860d"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(774),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 326, DateTimeKind.Utc).AddTicks(9985),
                             Duration = 46,
                             IsDeleted = false,
-                            Name = "Unit 11",
+                            Name = "English",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("56395327-fc14-4566-9c66-8caed4c39a1a"),
+                            Id = new Guid("f0578c80-dbfb-44df-9f63-d15c06a3ead6"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(778),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 326, DateTimeKind.Utc).AddTicks(9987),
                             Duration = 47,
                             IsDeleted = false,
-                            Name = "Unit 12",
+                            Name = "Math",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("2c87aa39-6e53-4d7d-9b1a-312f793d7ba9"),
+                            Id = new Guid("86579e8d-e0bd-4452-a317-07185a7e3bbf"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(782),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(4),
                             Duration = 48,
                             IsDeleted = false,
-                            Name = "Unit 13",
+                            Name = "History",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("3a40e288-d364-4a85-95ef-767f71d5b14a"),
+                            Id = new Guid("5816ef91-c7a5-471e-8691-350dfd91d36e"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(789),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(6),
                             Duration = 49,
                             IsDeleted = false,
-                            Name = "Unit 14",
+                            Name = "Geography",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("3ab693af-fa63-4e2b-aac7-fbf4e4d47ef6"),
+                            Id = new Guid("7831768e-3318-4d88-80db-e5958e1e208c"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(793),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(9),
                             Duration = 50,
                             IsDeleted = false,
-                            Name = "Unit 15",
+                            Name = "Biology",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("6e0a9224-cfe9-428f-b34e-2d0374f088ae"),
+                            Id = new Guid("d9d63f44-055b-449e-b532-93b7a30873d6"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(797),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(10),
                             Duration = 51,
                             IsDeleted = false,
-                            Name = "Unit 16",
+                            Name = "Chemistry",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("5502ba60-4022-4537-af8e-ec09dc2ada35"),
+                            Id = new Guid("ab5be28a-c494-4def-b58e-151dc8ff1767"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(800),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(46),
                             Duration = 52,
                             IsDeleted = false,
-                            Name = "Unit 17",
+                            Name = "Physics",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("23f6687d-7025-4040-af7c-85c871803627"),
+                            Id = new Guid("31abd8c8-dafb-4608-9f5b-8dd53941bd6b"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(809),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(47),
                             Duration = 53,
                             IsDeleted = false,
-                            Name = "Unit 18",
+                            Name = "Computer Science",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("39b48c14-dc43-4666-bc1f-e253693d6475"),
+                            Id = new Guid("c00be947-6491-4240-acd2-24aa86c806ef"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(813),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(50),
                             Duration = 54,
                             IsDeleted = false,
-                            Name = "Unit 19",
+                            Name = "Art",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("aac103e7-0409-45da-93c2-34fdf9518146"),
+                            Id = new Guid("1fb74f8f-ca61-40d0-84d6-c339ff274343"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(817),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(51),
                             Duration = 45,
                             IsDeleted = false,
-                            Name = "Unit 20",
+                            Name = "Music",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("47276ba0-7a72-43c6-ad70-d35197b6dd96"),
+                            Id = new Guid("b8d0b66c-d031-48a7-ae86-aa90bb9109b6"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(820),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(54),
                             Duration = 46,
                             IsDeleted = false,
-                            Name = "Unit 21",
+                            Name = "Physical Education",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("c589f177-b4d5-4c09-be3d-3451711bd835"),
+                            Id = new Guid("b56c7ac9-bc20-426e-9ab9-92e1c3c26991"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1230),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(56),
                             Duration = 47,
                             IsDeleted = false,
-                            Name = "Unit 22",
+                            Name = "Economics",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("cac8b83b-3528-49b7-aa56-3064100fd9ea"),
+                            Id = new Guid("3358e7b2-03de-4973-a035-cf063663043a"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1242),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(57),
                             Duration = 48,
                             IsDeleted = false,
-                            Name = "Unit 23",
+                            Name = "Psychology",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("3b70b9c1-f588-44e5-a9eb-1aa941cbab10"),
+                            Id = new Guid("54c683d7-24a7-470b-94ba-1cf6566665a3"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1246),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(58),
                             Duration = 49,
                             IsDeleted = false,
-                            Name = "Unit 24",
+                            Name = "Philosophy",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("b9a2526a-44e2-46be-b543-1b66ce2f4154"),
+                            Id = new Guid("f06e9631-fff9-43db-b218-eca32d5e4270"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1251),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(62),
                             Duration = 50,
                             IsDeleted = false,
-                            Name = "Unit 25",
+                            Name = "Sociology",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("4cc2938d-57f6-4ec6-9986-88cc81e30d11"),
+                            Id = new Guid("80f385d8-78a7-452b-86e0-90b51c048df4"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1258),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(63),
                             Duration = 51,
                             IsDeleted = false,
-                            Name = "Unit 26",
+                            Name = "Political Science",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("09408396-133e-406b-abd7-c036c1c0f929"),
+                            Id = new Guid("d4bf9b84-4a3f-45eb-bf9d-00c5b69f48bb"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1262),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(65),
                             Duration = 52,
                             IsDeleted = false,
-                            Name = "Unit 27",
+                            Name = "Statistics",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("05a37095-749c-45ba-8dec-2f0c4d44c7b3"),
+                            Id = new Guid("59f005c6-c7d4-485f-8562-83bbcf410f1b"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1266),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(67),
                             Duration = 53,
                             IsDeleted = false,
-                            Name = "Unit 28",
+                            Name = "Engineering",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("62aceb55-3e34-4919-b289-50d0c4e8d95a"),
+                            Id = new Guid("869901df-1465-4ee1-a456-dc781223b89b"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1269),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(70),
                             Duration = 54,
                             IsDeleted = false,
-                            Name = "Unit 29",
+                            Name = "Literature",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("60a7adf0-ac39-4597-89fd-8571deb77a92"),
+                            Id = new Guid("22105920-ef53-452d-b5f5-ae48495f4abb"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1276),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(71),
                             Duration = 45,
                             IsDeleted = false,
-                            Name = "Unit 30",
+                            Name = "Spanish",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("0bda9a33-6b0a-41ed-a1ea-99182da98b4c"),
+                            Id = new Guid("fc78bd31-fa21-45fb-ab89-ab928f155041"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1280),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(73),
                             Duration = 46,
                             IsDeleted = false,
-                            Name = "Unit 31",
+                            Name = "German",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("c84c0406-89ed-43eb-920d-0fd0cf92596b"),
+                            Id = new Guid("e8649f72-24b7-48da-b631-84f8f5abada6"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1284),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(74),
                             Duration = 47,
                             IsDeleted = false,
-                            Name = "Unit 32",
+                            Name = "Italian",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("46bdfbf2-d95f-4487-938c-373abd581afc"),
+                            Id = new Guid("ae939676-456a-4190-8223-3ea7d3563922"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1288),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(77),
                             Duration = 48,
                             IsDeleted = false,
-                            Name = "Unit 33",
+                            Name = "Chinese",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("2f957da3-ff9e-4598-bca1-584af705e6f0"),
+                            Id = new Guid("5d6432aa-bf15-4075-a6f5-878111716d31"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1299),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(79),
                             Duration = 49,
                             IsDeleted = false,
-                            Name = "Unit 34",
+                            Name = "Japanese",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("e65242f7-e1d0-4794-a091-ffb151996a34"),
+                            Id = new Guid("b3b5a92b-d6e9-4e79-aa78-1e1854173bf3"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1303),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(80),
                             Duration = 50,
                             IsDeleted = false,
-                            Name = "Unit 35",
+                            Name = "Arabic",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("4986dab7-78d7-48ed-8f6c-40563c09625f"),
+                            Id = new Guid("4433a66f-3c0f-421e-94ab-5bcbbd6bb259"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1307),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(82),
                             Duration = 51,
                             IsDeleted = false,
-                            Name = "Unit 36",
+                            Name = "Latin",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("e865d06b-3b55-45c9-af65-12eb86088778"),
+                            Id = new Guid("4996ea2f-2108-4867-a0e2-3e80d4e4243a"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1311),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(85),
                             Duration = 52,
                             IsDeleted = false,
-                            Name = "Unit 37",
+                            Name = "Greek",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("e2cc5fdd-6d0c-407d-8099-4ca50d811ad4"),
+                            Id = new Guid("aff588b9-d077-4f68-899b-2a6b24feea10"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1317),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(86),
                             Duration = 53,
                             IsDeleted = false,
-                            Name = "Unit 38",
+                            Name = "Religion",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("e6ac9df6-4244-4042-bc89-47f97df18c17"),
+                            Id = new Guid("f4ca0c58-93ac-4e6f-8c3b-e732394d908d"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1321),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(87),
                             Duration = 54,
                             IsDeleted = false,
-                            Name = "Unit 39",
+                            Name = "Astronomy",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("94c52e73-2d72-4943-b1f4-238a007793a7"),
+                            Id = new Guid("b92a1ca6-e08c-4d72-b218-87e4601915d8"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1325),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(89),
                             Duration = 45,
                             IsDeleted = false,
-                            Name = "Unit 40",
+                            Name = "Environmental Science",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("659e8e83-7614-4fc6-bf16-55b68848faaf"),
+                            Id = new Guid("fd8c3808-1799-49c4-be17-eacf53773a16"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1328),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(92),
                             Duration = 46,
                             IsDeleted = false,
-                            Name = "Unit 41",
+                            Name = "Health Education",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("c449cd72-5f8b-46d5-b387-c4ed45027973"),
+                            Id = new Guid("ddbe9864-01a6-495c-8f23-5ba0ebd84f68"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1335),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(93),
                             Duration = 47,
                             IsDeleted = false,
-                            Name = "Unit 42",
+                            Name = "Business Studies",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("7f06b2a8-75f0-45ce-a14f-b48c8da9ee6d"),
+                            Id = new Guid("c92538d1-ee3e-4e6a-94c8-bfe81bc3127d"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1339),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(96),
                             Duration = 48,
                             IsDeleted = false,
-                            Name = "Unit 43",
+                            Name = "Law",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("2e347f2b-92ff-465b-a920-6bdafe76fce9"),
+                            Id = new Guid("9276ebf7-81bb-49d6-a77f-bed83fb72c2a"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1342),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(97),
                             Duration = 49,
                             IsDeleted = false,
-                            Name = "Unit 44",
+                            Name = "Engineering Design",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("1ed92ec6-1014-49de-8c70-3cfa32c79c04"),
+                            Id = new Guid("45878b1e-7de5-4186-a4e7-d70f862f40ce"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1346),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(100),
                             Duration = 50,
                             IsDeleted = false,
-                            Name = "Unit 45",
+                            Name = "Information Technology",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("bfe72488-4235-460a-a9d3-8069a5d7977c"),
+                            Id = new Guid("474aebdb-309d-4ab8-8009-d7905b897a6c"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1353),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(102),
                             Duration = 51,
                             IsDeleted = false,
-                            Name = "Unit 46",
+                            Name = "Theater",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("1cd26635-c768-45e7-b67a-22d734d3eaac"),
+                            Id = new Guid("2df477a2-3532-4e56-82d9-4f81eb8b2e7f"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1357),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(103),
                             Duration = 52,
                             IsDeleted = false,
-                            Name = "Unit 47",
+                            Name = "Dance",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("1f10462d-0fef-4bb5-a6d9-d11b1ccfc9c9"),
+                            Id = new Guid("8006677a-5c4e-43fc-8821-7f96bc1bf5cf"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1361),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(105),
                             Duration = 53,
                             IsDeleted = false,
-                            Name = "Unit 48",
+                            Name = "Media Studies",
                             Semestre = "Semester 2"
                         },
                         new
                         {
-                            Id = new Guid("e06dc7bd-9527-4165-865f-fcdceb662c5b"),
+                            Id = new Guid("d50fe33b-a67d-467c-9a0f-cd3ddd718e71"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1365),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(108),
                             Duration = 54,
                             IsDeleted = false,
-                            Name = "Unit 49",
+                            Name = "Anthropology",
                             Semestre = "Semester 1"
                         },
                         new
                         {
-                            Id = new Guid("2f595d7e-d0c1-4fda-b83d-87faf0200c0a"),
+                            Id = new Guid("1d35297d-32ee-42e9-92f1-2b7abb779109"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 16, 16, 11, 40, 297, DateTimeKind.Utc).AddTicks(1371),
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(109),
                             Duration = 45,
                             IsDeleted = false,
-                            Name = "Unit 50",
+                            Name = "Ethics",
+                            Semestre = "Semester 2"
+                        },
+                        new
+                        {
+                            Id = new Guid("542786a4-aa6a-4f6e-846e-c4905b2f831d"),
+                            Coefficient = 3,
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(110),
+                            Duration = 46,
+                            IsDeleted = false,
+                            Name = "Mathematics",
+                            Semestre = "Semester 1"
+                        },
+                        new
+                        {
+                            Id = new Guid("39f69cb4-fa6a-4413-8991-072f39ac2587"),
+                            Coefficient = 4,
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(112),
+                            Duration = 47,
+                            IsDeleted = false,
+                            Name = "Statistics",
+                            Semestre = "Semester 2"
+                        },
+                        new
+                        {
+                            Id = new Guid("67481c6d-a50a-47a0-8ff1-79e1660ea2eb"),
+                            Coefficient = 5,
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(115),
+                            Duration = 48,
+                            IsDeleted = false,
+                            Name = "Cryptography",
+                            Semestre = "Semester 1"
+                        },
+                        new
+                        {
+                            Id = new Guid("c040c2e2-7bcf-438d-9a57-4a8c4db32710"),
+                            Coefficient = 6,
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(116),
+                            Duration = 49,
+                            IsDeleted = false,
+                            Name = "Pharmacology",
+                            Semestre = "Semester 2"
+                        },
+                        new
+                        {
+                            Id = new Guid("12729145-e357-4c4a-95be-fc5fd7cc1ff0"),
+                            Coefficient = 2,
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(118),
+                            Duration = 50,
+                            IsDeleted = false,
+                            Name = "Astrophysics",
+                            Semestre = "Semester 1"
+                        },
+                        new
+                        {
+                            Id = new Guid("7bb97700-c70f-4c29-86dc-285c3c08c98f"),
+                            Coefficient = 3,
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(119),
+                            Duration = 51,
+                            IsDeleted = false,
+                            Name = "Geology",
+                            Semestre = "Semester 2"
+                        },
+                        new
+                        {
+                            Id = new Guid("7d8faff0-e229-4de9-90b8-edef5949f00a"),
+                            Coefficient = 4,
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(122),
+                            Duration = 52,
+                            IsDeleted = false,
+                            Name = "Oceanography",
+                            Semestre = "Semester 1"
+                        },
+                        new
+                        {
+                            Id = new Guid("b2ab7da5-c4fc-404d-990c-d057a75b88d8"),
+                            Coefficient = 5,
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(123),
+                            Duration = 53,
+                            IsDeleted = false,
+                            Name = "Meteorology",
+                            Semestre = "Semester 2"
+                        },
+                        new
+                        {
+                            Id = new Guid("5b63d6a5-1953-4749-90f4-b28a39312b13"),
+                            Coefficient = 6,
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(125),
+                            Duration = 54,
+                            IsDeleted = false,
+                            Name = "Robotics",
+                            Semestre = "Semester 1"
+                        },
+                        new
+                        {
+                            Id = new Guid("cbf22d7b-01a9-4d8e-b0fc-ebda0e18a6f8"),
+                            Coefficient = 2,
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(126),
+                            Duration = 45,
+                            IsDeleted = false,
+                            Name = "Machine Learning",
+                            Semestre = "Semester 2"
+                        },
+                        new
+                        {
+                            Id = new Guid("1c0bd733-0447-4351-b42a-6a595a73a87d"),
+                            Coefficient = 3,
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(129),
+                            Duration = 46,
+                            IsDeleted = false,
+                            Name = "Data Science",
+                            Semestre = "Semester 1"
+                        },
+                        new
+                        {
+                            Id = new Guid("70ca9d34-ce0c-4855-a654-2eed5d25921a"),
+                            Coefficient = 4,
+                            CreatedAt = new DateTime(2024, 8, 17, 15, 53, 18, 327, DateTimeKind.Utc).AddTicks(131),
+                            Duration = 47,
+                            IsDeleted = false,
+                            Name = "Artificial Intelligence",
                             Semestre = "Semester 2"
                         });
                 });
