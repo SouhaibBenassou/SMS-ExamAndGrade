@@ -12,4 +12,5 @@ public class UpdateTestCommand : IRequest<string>
     public double? Note { get; set; }
     public Guid TrainerId { get; set; }
     public Guid UnitOfFormationId { get; set; }
+    public Guid FiliereId { get; set; }
 }

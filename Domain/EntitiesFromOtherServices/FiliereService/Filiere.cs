@@ -16,4 +16,5 @@ public class Filiere : FiliereBaseEntity
     public decimal MontantTrimestre { get; set; }
     public ICollection<FiliereUnitOfFormation> FiliereUnitOfFormations { get; set; }
     public ICollection<Exam?>? Exams { get; set; }
+    public ICollection<Test?>? Tests { get; set; }
 }

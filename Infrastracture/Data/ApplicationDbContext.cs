@@ -79,7 +79,10 @@ namespace Infrastructure.Data
                 .HasOne(t=>t.UnitOfFormation)
                 .WithMany(uof => uof.Tests)
                 .HasForeignKey(t => t.UnitOfFormationId);
-        
+            modelBuilder.Entity<Test>()
+                .HasOne(t => t.Filiere)
+                .WithMany(f => f.Tests)
+                .HasForeignKey(e => e.FiliereId);
 
             // ExamAttendance relationships
             modelBuilder.Entity<ExamAttendance>()

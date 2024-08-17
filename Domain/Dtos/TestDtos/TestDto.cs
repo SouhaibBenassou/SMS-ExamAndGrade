@@ -9,6 +9,6 @@ public class TestDto
     public string? TestCorrection { get; set; }
     public Guid TrainerId { get; set; }
     public Guid UnitOfFormationId { get; set; }
-
+    public Guid FiliereId { get; set; }
 
 }

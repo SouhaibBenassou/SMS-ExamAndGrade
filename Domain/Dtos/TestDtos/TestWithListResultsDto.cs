@@ -9,5 +9,6 @@ public class TestWithListResultsDto
     public string? TestCorrection { get; set; }
     public Guid TrainerId { get; set; }
     public Guid UnitOfFormationId { get; set; }
+    public Guid FiliereId { get; set; }
     public List<TestResultDto.TestResultDto> TestResults { get; set; }
 }
