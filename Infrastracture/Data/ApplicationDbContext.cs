@@ -25,9 +25,9 @@ namespace Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<IndividualWork>()
-                .HasOne(iwuof => iwuof.IndividualWorkUOF)
-                .WithMany(iw => iw.individualWork)
+            modelBuilder.Entity<IndividualWorkUOF>()
+                .HasMany(iwuof => iwuof.IndividualWork)
+                .WithOne(iw => iw.IndividualWorkUOF)
                 .HasForeignKey(iwuof => iwuof.IndividualWorkUOFId);
 
             modelBuilder.Entity<AllResults>()
@@ -44,7 +44,7 @@ namespace Infrastructure.Data
                 .HasMany(e => e.VariantsExams)
                 .WithOne(ve => ve.Exam)
                 .HasForeignKey(ve => ve.ExamId);
-            
+
 
             // Test relationships
             modelBuilder.Entity<Test>()
@@ -86,7 +86,7 @@ namespace Infrastructure.Data
                 .HasOne(es => es.Room)
                 .WithMany(e => e.ExamSessions)
                 .HasForeignKey(es => es.RoomId);
-            
+
             modelBuilder.Entity<ExamSession>()
                 .HasOne(es => es.Supervisor)
                 .WithMany(s => s.ExamSessions)

@@ -1,5 +1,6 @@
 ﻿using Application.Features.IndividualWorkUnitOfFormation.Command.Create;
 using Application.Features.IndividualWorkUnitOfFormation.Command.Update;
+using Application.Features.IndividualWorkUnitOfFormation.Queries.GetListIndividualWorkUOF;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -34,6 +35,12 @@ namespace Api.Controllers
             {
                 return BadRequest(ex.Message);
             }
+        }
+        [HttpGet]
+        public async Task<IActionResult> GetAllIndividualWorkUOF() {
+
+            var res = await _mediator.Send(new GetListIndividualWorkUOFQuery());
+            return Ok(res);
         }
 
     }

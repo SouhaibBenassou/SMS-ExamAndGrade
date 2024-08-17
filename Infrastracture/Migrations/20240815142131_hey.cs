@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Infrastracture.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class hey : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -38,11 +38,12 @@ namespace Infrastracture.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "IndividualWorks",
+                name: "IndividualWorkUOFs",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    StagiaireId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Confusion = table.Column<int>(type: "int", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
                     DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
@@ -53,7 +54,7 @@ namespace Infrastracture.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_IndividualWorks", x => x.Id);
+                    table.PrimaryKey("PK_IndividualWorkUOFs", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -212,14 +213,13 @@ namespace Infrastracture.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "IndividualWorkUOFs",
+                name: "IndividualWorks",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Confusion = table.Column<int>(type: "int", nullable: false),
+                    StagiaireId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Note = table.Column<int>(type: "int", nullable: false),
-                    IndividualWorkId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    IndividualWorkUOFId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
                     DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: true),
@@ -230,11 +230,11 @@ namespace Infrastracture.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_IndividualWorkUOFs", x => x.Id);
+                    table.PrimaryKey("PK_IndividualWorks", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_IndividualWorkUOFs_IndividualWorks_IndividualWorkId",
-                        column: x => x.IndividualWorkId,
-                        principalTable: "IndividualWorks",
+                        name: "FK_IndividualWorks_IndividualWorkUOFs_IndividualWorkUOFId",
+                        column: x => x.IndividualWorkUOFId,
+                        principalTable: "IndividualWorkUOFs",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -377,9 +377,9 @@ namespace Infrastracture.Migrations
                 column: "SupervisorId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_IndividualWorkUOFs_IndividualWorkId",
-                table: "IndividualWorkUOFs",
-                column: "IndividualWorkId");
+                name: "IX_IndividualWorks_IndividualWorkUOFId",
+                table: "IndividualWorks",
+                column: "IndividualWorkUOFId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TestResults_TestId",
@@ -405,7 +405,7 @@ namespace Infrastracture.Migrations
                 name: "ExamSessions");
 
             migrationBuilder.DropTable(
-                name: "IndividualWorkUOFs");
+                name: "IndividualWorks");
 
             migrationBuilder.DropTable(
                 name: "VariantsExams");
@@ -423,7 +423,7 @@ namespace Infrastracture.Migrations
                 name: "Supervisors");
 
             migrationBuilder.DropTable(
-                name: "IndividualWorks");
+                name: "IndividualWorkUOFs");
 
             migrationBuilder.DropTable(
                 name: "Exams");

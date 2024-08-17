@@ -656,7 +656,7 @@ namespace Infrastracture.Migrations
             modelBuilder.Entity("Domain.Entities.IndividualWork", b =>
                 {
                     b.HasOne("Domain.Entities.IndividualWorkUOF", "IndividualWorkUOF")
-                        .WithMany("individualWork")
+                        .WithMany("IndividualWork")
                         .HasForeignKey("IndividualWorkUOFId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -705,7 +705,7 @@ namespace Infrastracture.Migrations
 
             modelBuilder.Entity("Domain.Entities.IndividualWorkUOF", b =>
                 {
-                    b.Navigation("individualWork");
+                    b.Navigation("IndividualWork");
                 });
 
             modelBuilder.Entity("Domain.Entities.Room", b =>

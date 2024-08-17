@@ -7,5 +7,6 @@ namespace Application.IServices
         Task<IndividualWorkUOF> CreateIndividualWorkUOF(IndividualWorkUOF individualWorkUOF);
         Task<IndividualWorkUOF> UpdateIndividualWorkUOF(IndividualWorkUOF individualWorkUOF);
         Task<IndividualWorkUOF> GetIndividualWorkUOFByID(Guid id);
+        Task<List<IndividualWorkUOF>> GetAllIndividualWorkUOFs();
     }
 }

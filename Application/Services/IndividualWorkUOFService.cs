@@ -19,6 +19,10 @@ namespace Application.Services
 
 
         }
+        public async Task<List<IndividualWorkUOF>> GetAllIndividualWorkUOFs() {
+            return await _unitOfWork.IndividualWorkUOFRepository.GetAllAsNoTracking();
+        }
+
         public async Task<IndividualWorkUOF> GetIndividualWorkUOFByID(Guid id) {
             return await _unitOfWork.IndividualWorkUOFRepository.GetAsNoTracking(i => i.Id == id);
         }

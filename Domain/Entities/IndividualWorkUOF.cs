@@ -4,6 +4,6 @@
     {
         public string? Name { get; set; }
         public int? Confusion { get; set; }
-        public ICollection<IndividualWork>? individualWork { get; set; }
+        public ICollection<IndividualWork>? IndividualWork { get; set; }
     }
 }
