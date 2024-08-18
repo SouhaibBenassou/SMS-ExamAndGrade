@@ -18,6 +18,20 @@ namespace Application.Services
         public ITraineeService TraineeService { get; set; }
         public IFiliereService FiliereService { get; set; }
 
-
+        public UnitOfService(IIndividualWorkUOFService individualWorkUofService, ITestService testService, ISupervisorService supervisorService, IRoomService roomService, IExamService examService, IVariantsExamService variantsExamService, IExamResultsService examResultsService, ITestResultService testResultService, IStagiereNoteService stagiereNoteService, IExamSessionService examSessionService, ITraineeService traineeService, IFiliereService filiereService)
+        {
+            IndividualWorkUOFService = individualWorkUofService;
+            TestService = testService;
+            SupervisorService = supervisorService;
+            RoomService = roomService;
+            ExamService = examService;
+            VariantsExamService = variantsExamService;
+            ExamResultsService = examResultsService;
+            TestResultService = testResultService;
+            StagiereNoteService = stagiereNoteService;
+            ExamSessionService = examSessionService;
+            TraineeService = traineeService;
+            FiliereService = filiereService;
+        }
     }
 }
