@@ -13,7 +13,8 @@ namespace Infrastracture
 {
     public static class ConfigureServices
     {
-        public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration) {
+        public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
+        {
 
             string? con = configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(con)); // Ensure this uses the correct connection string
@@ -29,7 +30,7 @@ namespace Infrastracture
             services.AddScoped<ITestResultRepository, TestResultRepository>();
             services.AddScoped<IExamSessionRepository, ExamSessionRepository>();
             services.AddScoped<IIndividualWorkUOFRepository, IndividualWorkUOFRepository>();
-
+            services.AddScoped<IFiliereRepository, FiliereRepository>();
             return services;
         }
     }

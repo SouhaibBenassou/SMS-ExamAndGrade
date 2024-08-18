@@ -17,8 +17,16 @@ public class UnitOfWork : IUnitOfWork
     public ITestResultRepository TestResultRepository { get; set; }
     public IExamSessionRepository ExamSessionRepository { get; set; }
     public IIndividualWorkUOFRepository IndividualWorkUOFRepository { get; set; }
+    public IFiliereRepository FiliereRepository { get; set; }
 
-    public UnitOfWork(ApplicationDbContext db, IVariantsExamRepository variantsExamRepository, ITestRepository testRepository, ISupervisorRepository supervisorRepository, IExamRepository examRepository, IRoomRepository roomRepository, IExamResultRepository examResultRepository, ITestResultRepository testResultRepository, IExamSessionRepository examSessionRepository, IIndividualWorkUOFRepository individualWorkUOFRepository) {
+
+
+    public UnitOfWork(ApplicationDbContext db, IVariantsExamRepository variantsExamRepository, ITestRepository testRepository,
+                    ISupervisorRepository supervisorRepository, IExamRepository examRepository, IRoomRepository roomRepository, IExamResultRepository examResultRepository,
+                    IIndividualWorkUOFRepository individualWorkUOFRepository,
+                    ITestResultRepository testResultRepository, IExamSessionRepository examSessionRepository, IFiliereRepository filiereRepository
+                    )
+    {
         _db = db;
         VariantsExamRepository = variantsExamRepository;
         TestRepository = testRepository;
@@ -29,24 +37,30 @@ public class UnitOfWork : IUnitOfWork
         TestResultRepository = testResultRepository;
         ExamSessionRepository = examSessionRepository;
         IndividualWorkUOFRepository = individualWorkUOFRepository;
+        FiliereRepository = filiereRepository;
     }
 
-    public void Commit() {
+    public void Commit()
+    {
         _db.SaveChanges();
     }
 
-    public async Task CommitAsync() {
+    public async Task CommitAsync()
+    {
         await _db.SaveChangesAsync();
     }
 
-    public void Rollback() {
+    public void Rollback()
+    {
         _db.SaveChanges();
     }
 
-    public async Task RollbackAsync() {
+    public async Task RollbackAsync()
+    {
         await _db.SaveChangesAsync();
     }
-    public async Task<int> CompleteAsync() {
+    public async Task<int> CompleteAsync()
+    {
         return await _db.SaveChangesAsync();
     }
 }

@@ -4,6 +4,7 @@ using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastracture.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240817192736_a")]
+    partial class a
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -239,17 +242,11 @@ namespace Infrastracture.Migrations
                     b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("IndividualWorkUOFId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.Property<string>("ModifiedBy")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Note")
-                        .HasColumnType("int");
 
                     b.Property<Guid>("StagiaireId")
                         .HasColumnType("uniqueidentifier");
@@ -258,8 +255,6 @@ namespace Infrastracture.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("IndividualWorkUOFId");
 
                     b.ToTable("IndividualWorks");
                 });
@@ -270,7 +265,7 @@ namespace Infrastracture.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int?>("Confusion")
+                    b.Property<int>("Confusion")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
@@ -285,6 +280,9 @@ namespace Infrastracture.Migrations
                     b.Property<string>("DeletedBy")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<Guid>("IndividualWorkId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -292,12 +290,18 @@ namespace Infrastracture.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Note")
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("IndividualWorkId");
 
                     b.ToTable("IndividualWorkUOFs");
                 });
@@ -2081,15 +2085,15 @@ namespace Infrastracture.Migrations
                     b.Navigation("Supervisor");
                 });
 
-            modelBuilder.Entity("Domain.Entities.IndividualWork", b =>
+            modelBuilder.Entity("Domain.Entities.IndividualWorkUOF", b =>
                 {
-                    b.HasOne("Domain.Entities.IndividualWorkUOF", "IndividualWorkUOF")
-                        .WithMany("IndividualWork")
-                        .HasForeignKey("IndividualWorkUOFId")
+                    b.HasOne("Domain.Entities.IndividualWork", "IndividualWork")
+                        .WithMany("individualWorkUOFs")
+                        .HasForeignKey("IndividualWorkId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("IndividualWorkUOF");
+                    b.Navigation("IndividualWork");
                 });
 
             modelBuilder.Entity("Domain.Entities.TestResult", b =>
@@ -2173,9 +2177,9 @@ namespace Infrastracture.Migrations
                     b.Navigation("VariantsExams");
                 });
 
-            modelBuilder.Entity("Domain.Entities.IndividualWorkUOF", b =>
+            modelBuilder.Entity("Domain.Entities.IndividualWork", b =>
                 {
-                    b.Navigation("IndividualWork");
+                    b.Navigation("individualWorkUOFs");
                 });
 
             modelBuilder.Entity("Domain.Entities.Room", b =>

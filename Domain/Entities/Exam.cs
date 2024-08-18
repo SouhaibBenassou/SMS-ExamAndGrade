@@ -1,4 +1,6 @@
-﻿namespace Domain.Entities
+﻿using Domain.EntitiesFromOtherServices.FiliereService;
+
+namespace Domain.Entities
 {
 
     public class Exam : AuditableEntity
@@ -11,11 +13,15 @@
         public Guid? YearId { get; set; }
         public YearType? YearType { get; set; }
         public Guid? FiliereId { get; set; }
+        public Filiere? Filiere { get; set; }
         public Guid? UnitOfFormationId { get; set; }
+        public UnitOfFormation? UnitOfFormation { get; set; }
         public ICollection<VariantsExams>? VariantsExams { get; set; }
         public ICollection<ExamAttendance>? ExamAttendances { get; set; }
         public ICollection<ExamResult>? ExamResults { get; set; }
         public ExamSession ExamSession { get; set; }
+        
+
     }
 }
 
