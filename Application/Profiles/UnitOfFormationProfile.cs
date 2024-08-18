@@ -9,5 +9,6 @@ public class UnitOfFormationProfile : Profile
     public UnitOfFormationProfile()
     {
         CreateMap<UnitOfFormationDto, UnitOfFormation>().ReverseMap();
+        CreateMap<UnitOfFormation, UnitOfFormationMinimaleDto>().ReverseMap();
     }
 }

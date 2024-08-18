@@ -9,5 +9,6 @@ public class FiliereProfile : Profile
     public FiliereProfile()
     {
         CreateMap<Filiere, FiliereDto>().ReverseMap();
+        CreateMap<Filiere, FiliereMinimaleDto>().ReverseMap();
     }
 }

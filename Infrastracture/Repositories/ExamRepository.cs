@@ -19,6 +19,8 @@ namespace Infrastracture.Repositories
         .Include(e => e.ExamSession).ThenInclude(es => es.Supervisor) 
         .Include(e => e.VariantsExams)
         .Include(e => e.ExamResults)
+        .Include(e=>e.Filiere)
+        .Include(e=>e.UnitOfFormation)
         .ToListAsync();
         }
     }
