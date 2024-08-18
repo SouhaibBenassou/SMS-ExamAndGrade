@@ -18,7 +18,7 @@ builder.Services
             options.CacheProfiles.Add("CacheProfile",
                 new CacheProfile()
                 {
-                    Duration = 300
+                    Duration = 36000
                 });
         })
     .AddJsonOptions(options => options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);

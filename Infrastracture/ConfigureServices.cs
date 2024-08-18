@@ -1,6 +1,8 @@
 ﻿using Application;
 using Application.Interfaces;
 using Application.IRepository;
+using Application.IServices;
+using Application.Services;
 using Infrastracture.Repositories;
 using Infrastracture.UOW;
 using Infrastructure.Data;
@@ -31,6 +33,7 @@ namespace Infrastracture
             services.AddScoped<IExamSessionRepository, ExamSessionRepository>();
             services.AddScoped<IIndividualWorkUOFRepository, IndividualWorkUOFRepository>();
             services.AddScoped<IFiliereRepository, FiliereRepository>();
+            services.AddScoped<IFormateurRepository, FormateurRepository>();
             return services;
         }
     }

@@ -26,7 +26,7 @@ namespace Application
             services.AddScoped<IExamSessionService, ExamSessionService>();
             services.AddScoped<IIndividualWorkUOFService, IndividualWorkUOFService>();
             services.AddScoped<IFiliereService, FiliereService>();
-            
+            services.AddScoped<IFormateurService, FormateurService>();
             //configuration of mediator
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
             //configuration of auto mapper

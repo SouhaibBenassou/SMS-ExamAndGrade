@@ -14,6 +14,7 @@ namespace Application.Interfaces
         public IExamSessionRepository ExamSessionRepository { get; set; }
         public IIndividualWorkUOFRepository IndividualWorkUOFRepository { get; set; }
         public IFiliereRepository FiliereRepository { get; set; }
+        public IFormateurRepository FormateurRepository { get; set; }
         void Commit();
         Task CommitAsync();
         void Rollback();

@@ -18,14 +18,9 @@ public class UnitOfWork : IUnitOfWork
     public IExamSessionRepository ExamSessionRepository { get; set; }
     public IIndividualWorkUOFRepository IndividualWorkUOFRepository { get; set; }
     public IFiliereRepository FiliereRepository { get; set; }
+    public IFormateurRepository FormateurRepository { get; set; }
 
-
-
-    public UnitOfWork(ApplicationDbContext db, IVariantsExamRepository variantsExamRepository, ITestRepository testRepository,
-                    ISupervisorRepository supervisorRepository, IExamRepository examRepository, IRoomRepository roomRepository, IExamResultRepository examResultRepository,
-                    IIndividualWorkUOFRepository individualWorkUOFRepository,
-                    ITestResultRepository testResultRepository, IExamSessionRepository examSessionRepository, IFiliereRepository filiereRepository
-                    )
+    public UnitOfWork(ApplicationDbContext db, IVariantsExamRepository variantsExamRepository, ITestRepository testRepository, ISupervisorRepository supervisorRepository, IExamRepository examRepository, IRoomRepository roomRepository, IExamResultRepository examResultRepository, ITestResultRepository testResultRepository, IExamSessionRepository examSessionRepository, IIndividualWorkUOFRepository individualWorkUofRepository, IFiliereRepository filiereRepository, IFormateurRepository formateurRepository)
     {
         _db = db;
         VariantsExamRepository = variantsExamRepository;
@@ -36,8 +31,9 @@ public class UnitOfWork : IUnitOfWork
         ExamResultRepository = examResultRepository;
         TestResultRepository = testResultRepository;
         ExamSessionRepository = examSessionRepository;
-        IndividualWorkUOFRepository = individualWorkUOFRepository;
+        IndividualWorkUOFRepository = individualWorkUofRepository;
         FiliereRepository = filiereRepository;
+        FormateurRepository = formateurRepository;
     }
 
     public void Commit()

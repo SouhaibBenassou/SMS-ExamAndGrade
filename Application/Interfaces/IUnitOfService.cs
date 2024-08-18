@@ -15,6 +15,7 @@ namespace Application.Interfaces
                 IExamSessionService ExamSessionService { get; }
                 IIndividualWorkUOFService IndividualWorkUOFService { get; }
                 ITraineeService TraineeService { get; }
-                IFiliereService FiliereService { get; set; }
+                IFiliereService FiliereService { get;}
+                IFormateurService FormateurService { get;}
         }
 }

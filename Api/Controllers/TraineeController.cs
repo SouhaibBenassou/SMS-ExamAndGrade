@@ -31,4 +31,5 @@ public class TraineeController : ControllerBase
     {
         return Ok(await _mediator.Send(new GetListTraineeByFiliereQuery(filiereId)));
     }
+    
 }

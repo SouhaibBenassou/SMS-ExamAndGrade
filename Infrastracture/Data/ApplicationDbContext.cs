@@ -24,7 +24,7 @@ namespace Infrastructure.Data
         public DbSet<Filiere> Filieres { get; set; }
         public DbSet<FiliereUnitOfFormation> FiliereUnitOfFormations { get; set; }
         public DbSet<UnitOfFormation> UnitOfFormations { get; set; }
-        
+        public DbSet<Formateur> Formateurs { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
             base.OnModelCreating(modelBuilder);
 
@@ -174,7 +174,64 @@ namespace Infrastructure.Data
                 "Astrophysics", "Geology", "Oceanography", "Meteorology", "Robotics", "Machine Learning", 
                 "Data Science", "Artificial Intelligence"
             };
-            
+            var formateurs = new List<Formateur>
+            {
+                new Formateur
+                {
+                    Id = Guid.Parse("a1b2c3d4-e5f6-7a8b-9c0d-ef1234567890"),
+                    Nom = "Bennani",
+                    Prenom = "Mehdi",
+                    Email = "mehdi.bennani@example.com",
+                    Telephone = "0600123456",
+                    Type = "Permanent",
+                    Specialisation = "Intelligence Artificielle",
+                    Statut = "Actif"
+                },
+                new Formateur
+                {
+                    Id = Guid.Parse("b1c2d3e4-f5a6-7b8c-9d0e-ef0987654321"),
+                    Nom = "El Amrani",
+                    Prenom = "Yassine",
+                    Email = "yassine.elamrani@example.com",
+                    Telephone = "0600654321",
+                    Type = "Contractuel",
+                    Specialisation = "Développement Web",
+                    Statut = "Actif"
+                },
+                new Formateur
+                {
+                    Id = Guid.Parse("c1d2e3f4-a5b6-7c8d-9e0f-ef1234987654"),
+                    Nom = "Kabbaj",
+                    Prenom = "Nadia",
+                    Email = "nadia.kabbaj@example.com",
+                    Telephone = "0700123456",
+                    Type = "Permanent",
+                    Specialisation = "Big Data",
+                    Statut = "Actif"
+                },
+                new Formateur
+                {
+                    Id = Guid.Parse("d1e2f3a4-b5c6-7d8e-9f0a-ef6543210987"),
+                    Nom = "Alami",
+                    Prenom = "Karim",
+                    Email = "karim.alami@example.com",
+                    Telephone = "0700654321",
+                    Type = "Vacataire",
+                    Specialisation = "Sécurité Informatique",
+                    Statut = "Inactif"
+                },
+                new Formateur
+                {
+                    Id = Guid.Parse("e1f2a3b4-c5d6-7e8f-9a0b-ef5678901234"),
+                    Nom = "Fassi",
+                    Prenom = "Amina",
+                    Email = "amina.fassi@example.com",
+                    Telephone = "0800123456",
+                    Type = "Permanent",
+                    Specialisation = "Gestion de Projet",
+                    Statut = "Actif"
+                }
+            };
             
             
             for (int i = 0; i < matieres.Length; i++)
@@ -222,6 +279,9 @@ namespace Infrastructure.Data
             modelBuilder.Entity<UnitOfFormation>().HasData(units.ToArray());
             modelBuilder.Entity<Filiere>().HasData(filieres.ToArray());
             modelBuilder.Entity<FiliereUnitOfFormation>().HasData(filiereUnits.ToArray());
+            modelBuilder.Entity<Formateur>().HasData(formateurs);
+            
+            
             base.OnModelCreating(modelBuilder);
             
         }
