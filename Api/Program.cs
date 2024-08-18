@@ -2,6 +2,7 @@ using Application;
 using Infrastructure;
 using System.Text.Json.Serialization;
 using Infrastracture;
+using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,10 +12,16 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddInfrastructureServices(builder.Configuration); // Ensure this is correctly passing configuration
 builder.Services.AddApplicationServices();
-builder.Services.AddControllers().AddJsonOptions(options =>
-{
-    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
-});
+builder.Services
+    .AddControllers(options =>
+        {
+            options.CacheProfiles.Add("CacheProfile",
+                new CacheProfile()
+                {
+                    Duration = 300
+                });
+        })
+    .AddJsonOptions(options => options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigin",
@@ -23,6 +30,9 @@ builder.Services.AddCors(options =>
                                   .AllowAnyMethod()
                                   .AllowCredentials());
 });
+
+builder.Services.AddResponseCaching();
+
 
 var app = builder.Build();
 
@@ -34,7 +44,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseResponseCaching();
 // Use the CORS policy
 app.UseCors("AllowSpecificOrigin");
 

@@ -15,11 +15,13 @@ public class FiliereController : ControllerBase
         _mediator = mediator;
     }
     [HttpGet]
+    [ResponseCache(CacheProfileName = "CacheProfile")]
     public async Task<IActionResult> GetAllFiliere()
     {
         return Ok(await _mediator.Send(new GetListFiliereQuery()));
     }
     [HttpGet("{filiereId}")]
+    [ResponseCache(CacheProfileName = "CacheProfile")]
     public async Task<IActionResult> GetOneFiliere(Guid filiereId)
     {
         return Ok(await _mediator.Send(new GetOneFiliereQuery(filiereId)));

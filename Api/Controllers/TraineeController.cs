@@ -19,12 +19,14 @@ public class TraineeController : ControllerBase
     }
 
     [HttpGet]
+    [ResponseCache(CacheProfileName = "CacheProfile")]
     public async Task<IActionResult> GetAllTrainees()
     {
         return Ok(await _mediator.Send(new GetListTraineeQuery()));
     }
     
     [HttpGet("{filiereId}")]
+    [ResponseCache(CacheProfileName = "CacheProfile")]
     public async Task<IActionResult> GetAllTraineesInFiliere(Guid filiereId)
     {
         return Ok(await _mediator.Send(new GetListTraineeByFiliereQuery(filiereId)));
