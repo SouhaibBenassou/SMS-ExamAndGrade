@@ -33,13 +33,13 @@ public class TestService : ITestService
 
     public async Task<List<Test>> GetListOfTestsAsync()
     {
-        List<Test> Test = await _unitOfWork.TestRepository.GetAllAsNoTracking();
+        List<Test> Test = await _unitOfWork.TestRepository.GetAllTestWithResults();
         return Test;
     }
 
-    public async Task<Test> GetTestByIdAsync(Guid Id)
+    public async Task<Test> GetTestByIdAsync(Guid id)
     {
-        Test test = await _unitOfWork.TestRepository.GetAsNoTracking(r => r.Id == Id);
+        Test test = await _unitOfWork.TestRepository.GetTestWithResults(t => t.Id == id);
         if (test == null)
         {
             return null;

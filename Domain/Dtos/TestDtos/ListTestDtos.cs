@@ -1,4 +1,6 @@
-﻿using Domain.Entities;
+﻿using Domain.Dtos.FiliereDto;
+using Domain.Dtos.UnitOfFormationDto;
+using Domain.Entities;
 
 namespace Domain.Dtos.TestDtos
 {
@@ -9,9 +11,9 @@ namespace Domain.Dtos.TestDtos
         public string? Description { get; set; }
         public string? TestStatement { get; set; }
         public string? TestCorrection { get; set; }
-        public Guid TrainerId { get; set; }
-        public Guid UnitOfFormationId { get; set; }
-        public Guid FiliereId { get; set; }
+        public Guid TrainerId { get; set; }        
+        public FiliereMinimaleDto Filiere { get; set; }
+        public UnitOfFormationMinimaleDto? UnitOfFormation { get; set; }
         public ICollection<TestResult>? TestResults { get; set; }
     }
 }

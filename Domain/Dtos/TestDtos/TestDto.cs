@@ -1,4 +1,7 @@
-﻿namespace Domain;
+﻿using Domain.Dtos.FiliereDto;
+using Domain.Dtos.UnitOfFormationDto;
+
+namespace Domain;
 
 public class TestDto
 {
@@ -8,7 +11,7 @@ public class TestDto
     public string? TestStatement { get; set; }
     public string? TestCorrection { get; set; }
     public Guid TrainerId { get; set; }
-    public Guid UnitOfFormationId { get; set; }
-    public Guid FiliereId { get; set; }
+    public FiliereMinimaleDto Filiere { get; set; }
+    public UnitOfFormationMinimaleDto? UnitOfFormation { get; set; }
 
 }
