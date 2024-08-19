@@ -1,8 +1,7 @@
 using Application;
-using Infrastructure;
-using System.Text.Json.Serialization;
 using Infrastracture;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,7 +17,7 @@ builder.Services
             options.CacheProfiles.Add("CacheProfile",
                 new CacheProfile()
                 {
-                    Duration = 36000
+                    Duration = 3600
                 });
         })
     .AddJsonOptions(options => options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);

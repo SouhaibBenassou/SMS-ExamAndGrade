@@ -29,11 +29,11 @@ namespace Api.Controllers
             }
             catch (RoomNotAvailableException e)
             {
-                return Ok(e.Message);
+                return StatusCode(207, e.Message);
             }
             catch (SupervisorNotAvailableException e)
             {
-                return Ok(e.Message);
+                return StatusCode(207, e.Message);
             }
             catch (Exception e)
             {

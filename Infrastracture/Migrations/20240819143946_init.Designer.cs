@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infrastracture.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240818170228_Initial")]
-    partial class Initial
+    [Migration("20240819143946_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -571,7 +571,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("c4677026-cb1e-4741-9685-0f56b9758e65"),
                             Capacite = 50,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8347),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1895),
                             Description = "Description for Computer Science",
                             Duree = 2,
                             FraisInscription = 3000m,
@@ -587,7 +587,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("21aef537-d19e-48bf-a523-23db8e193522"),
                             Capacite = 55,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8492),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(2209),
                             Description = "Description for Electrical Engineering",
                             Duree = 3,
                             FraisInscription = 3200m,
@@ -603,7 +603,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
                             Capacite = 60,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8605),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(2376),
                             Description = "Description for Mechanical Engineering",
                             Duree = 4,
                             FraisInscription = 3400m,
@@ -619,7 +619,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
                             Capacite = 65,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8678),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(2507),
                             Description = "Description for Civil Engineering",
                             Duree = 5,
                             FraisInscription = 3600m,
@@ -635,7 +635,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
                             Capacite = 70,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8753),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(2682),
                             Description = "Description for Chemical Engineering",
                             Duree = 2,
                             FraisInscription = 3800m,
@@ -651,7 +651,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("bce4bd92-9359-4303-b629-513e17ccf10f"),
                             Capacite = 75,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8862),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(2799),
                             Description = "Description for Biotechnology",
                             Duree = 3,
                             FraisInscription = 4000m,
@@ -667,7 +667,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
                             Capacite = 80,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8933),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(2946),
                             Description = "Description for Mathematics",
                             Duree = 4,
                             FraisInscription = 4200m,
@@ -683,7 +683,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
                             Capacite = 85,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(9015),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(3129),
                             Description = "Description for Physics",
                             Duree = 5,
                             FraisInscription = 4400m,
@@ -699,7 +699,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
                             Capacite = 90,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(9132),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(3247),
                             Description = "Description for Chemistry",
                             Duree = 2,
                             FraisInscription = 4600m,
@@ -715,7 +715,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
                             Capacite = 95,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(9215),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(3379),
                             Description = "Description for Biology",
                             Duree = 3,
                             FraisInscription = 4800m,
@@ -731,7 +731,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
                             Capacite = 100,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(9274),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(3513),
                             Description = "Description for Environmental Science",
                             Duree = 4,
                             FraisInscription = 5000m,
@@ -747,7 +747,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("c1c6fbc9-2fde-4c9e-b6cf-78a06f299de7"),
                             Capacite = 105,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(9351),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(3708),
                             Description = "Description for Economics",
                             Duree = 5,
                             FraisInscription = 5200m,
@@ -763,7 +763,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
                             Capacite = 110,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(9467),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(3836),
                             Description = "Description for Psychology",
                             Duree = 2,
                             FraisInscription = 5400m,
@@ -779,7 +779,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
                             Capacite = 115,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(9543),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(3972),
                             Description = "Description for Sociology",
                             Duree = 3,
                             FraisInscription = 5600m,
@@ -795,7 +795,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("c094c44b-cac4-4fb9-88e0-c29a43bb7edb"),
                             Capacite = 120,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(9640),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(4285),
                             Description = "Description for History",
                             Duree = 4,
                             FraisInscription = 5800m,
@@ -811,7 +811,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
                             Capacite = 125,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(9726),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(4405),
                             Description = "Description for Philosophy",
                             Duree = 5,
                             FraisInscription = 6000m,
@@ -827,7 +827,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
                             Capacite = 130,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(9798),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(4548),
                             Description = "Description for Political Science",
                             Duree = 2,
                             FraisInscription = 6200m,
@@ -843,7 +843,7 @@ namespace Infrastracture.Migrations
                         {
                             Id = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
                             Capacite = 135,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(9876),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(4697),
                             Description = "Description for International Relations",
                             Duree = 3,
                             FraisInscription = 6400m,
@@ -875,452 +875,452 @@ namespace Infrastracture.Migrations
                         new
                         {
                             FiliereId = new Guid("c4677026-cb1e-4741-9685-0f56b9758e65"),
-                            UnitOfFormationId = new Guid("eed3160b-c071-4de8-a1be-f8c51a49b990")
+                            UnitOfFormationId = new Guid("08c7d265-8605-44f3-aa5e-0e8d67e47ac2")
                         },
                         new
                         {
                             FiliereId = new Guid("c4677026-cb1e-4741-9685-0f56b9758e65"),
-                            UnitOfFormationId = new Guid("b4517ec8-16c1-47a6-9fb0-418de08d2fa8")
+                            UnitOfFormationId = new Guid("dd7beea7-cf54-4f77-8c41-43a2ec8d87ba")
                         },
                         new
                         {
                             FiliereId = new Guid("c4677026-cb1e-4741-9685-0f56b9758e65"),
-                            UnitOfFormationId = new Guid("1d4672d3-266e-4128-afbf-ef7db1d2d768")
+                            UnitOfFormationId = new Guid("518056b9-e28c-427d-a02c-9241ad3442d4")
                         },
                         new
                         {
                             FiliereId = new Guid("c4677026-cb1e-4741-9685-0f56b9758e65"),
-                            UnitOfFormationId = new Guid("6edd67c4-5aea-49ad-af4e-429cde0a6694")
+                            UnitOfFormationId = new Guid("b0c0524e-9ab5-489f-9cde-c8df84d37443")
                         },
                         new
                         {
                             FiliereId = new Guid("c4677026-cb1e-4741-9685-0f56b9758e65"),
-                            UnitOfFormationId = new Guid("eba4be51-b10a-4c2f-a37b-114e40428b35")
+                            UnitOfFormationId = new Guid("a47f14d2-d321-4cf4-96e2-30193053069e")
                         },
                         new
                         {
                             FiliereId = new Guid("21aef537-d19e-48bf-a523-23db8e193522"),
-                            UnitOfFormationId = new Guid("02460a52-624a-4d97-8c19-e6b029224044")
+                            UnitOfFormationId = new Guid("9aa85501-1ca3-44b1-804d-a362c03c8f41")
                         },
                         new
                         {
                             FiliereId = new Guid("21aef537-d19e-48bf-a523-23db8e193522"),
-                            UnitOfFormationId = new Guid("2c53749d-c57f-4aa3-86e5-eb7ccbddbf37")
+                            UnitOfFormationId = new Guid("c05ccfef-0963-446a-8896-e52812f93c70")
                         },
                         new
                         {
                             FiliereId = new Guid("21aef537-d19e-48bf-a523-23db8e193522"),
-                            UnitOfFormationId = new Guid("b581e7a7-8779-4d59-bfb1-bbf0d0e0a9d3")
+                            UnitOfFormationId = new Guid("a60afdf6-2972-4204-b3e8-bc6301770b7b")
                         },
                         new
                         {
                             FiliereId = new Guid("21aef537-d19e-48bf-a523-23db8e193522"),
-                            UnitOfFormationId = new Guid("8a31ebae-7b20-42b8-99db-96b9c57433a4")
+                            UnitOfFormationId = new Guid("1239cc38-04cf-4430-9b92-aeb1e8dae76e")
                         },
                         new
                         {
                             FiliereId = new Guid("21aef537-d19e-48bf-a523-23db8e193522"),
-                            UnitOfFormationId = new Guid("a47fe0a8-e83e-4170-9fbd-34977a50b00f")
+                            UnitOfFormationId = new Guid("76845ab0-6aac-4873-9563-a5d723b47c90")
                         },
                         new
                         {
                             FiliereId = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
-                            UnitOfFormationId = new Guid("17f11d00-6a78-4823-96e2-4b775dda89fd")
+                            UnitOfFormationId = new Guid("ef617c46-ab87-4954-8d4e-934d9b257818")
                         },
                         new
                         {
                             FiliereId = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
-                            UnitOfFormationId = new Guid("ba1998ab-f9a9-4e13-a39d-c8d925dace08")
+                            UnitOfFormationId = new Guid("812b28ae-aad1-4788-9f87-fc648cfacde0")
                         },
                         new
                         {
                             FiliereId = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
-                            UnitOfFormationId = new Guid("3656ba7a-22d2-49c8-ac85-52620398c521")
+                            UnitOfFormationId = new Guid("03ce2b05-1bee-4823-8f09-ee8a54baff53")
                         },
                         new
                         {
                             FiliereId = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
-                            UnitOfFormationId = new Guid("159f42b6-5d53-4e17-ab46-035d438ff528")
+                            UnitOfFormationId = new Guid("a4e49c71-b1c3-4d35-b9df-2c5077bbaa5f")
                         },
                         new
                         {
                             FiliereId = new Guid("ed9a86d0-0ff8-4585-b8a9-2852465959c2"),
-                            UnitOfFormationId = new Guid("02460a52-624a-4d97-8c19-e6b029224044")
+                            UnitOfFormationId = new Guid("69210365-a437-4666-91c3-9fbf33e52904")
                         },
                         new
                         {
                             FiliereId = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
-                            UnitOfFormationId = new Guid("ce54dc15-b5a7-4f08-b0a0-48efbb7a6d69")
+                            UnitOfFormationId = new Guid("518056b9-e28c-427d-a02c-9241ad3442d4")
                         },
                         new
                         {
                             FiliereId = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
-                            UnitOfFormationId = new Guid("fa1a1430-e11a-460c-94fc-d64219babc3f")
+                            UnitOfFormationId = new Guid("a4e49c71-b1c3-4d35-b9df-2c5077bbaa5f")
                         },
                         new
                         {
                             FiliereId = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
-                            UnitOfFormationId = new Guid("2097b01b-88b1-417b-8f5f-65e44621c19f")
+                            UnitOfFormationId = new Guid("dd7beea7-cf54-4f77-8c41-43a2ec8d87ba")
                         },
                         new
                         {
                             FiliereId = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
-                            UnitOfFormationId = new Guid("a2b5749b-ae6d-4916-a5d7-66d39b1a5fab")
+                            UnitOfFormationId = new Guid("4b6e905c-2bd7-44d7-8391-32e75fd550de")
                         },
                         new
                         {
                             FiliereId = new Guid("fc17e25e-7453-4924-a4ca-2c036306622b"),
-                            UnitOfFormationId = new Guid("9b47dea2-98d6-4528-9349-1cac8f7d8bc7")
+                            UnitOfFormationId = new Guid("68c73084-72d8-47f7-8551-60bc6c563e32")
                         },
                         new
                         {
                             FiliereId = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
-                            UnitOfFormationId = new Guid("1d4672d3-266e-4128-afbf-ef7db1d2d768")
+                            UnitOfFormationId = new Guid("24e0b880-406e-4c87-a7ad-0ef89cd9a0bb")
                         },
                         new
                         {
                             FiliereId = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
-                            UnitOfFormationId = new Guid("17f11d00-6a78-4823-96e2-4b775dda89fd")
+                            UnitOfFormationId = new Guid("76845ab0-6aac-4873-9563-a5d723b47c90")
                         },
                         new
                         {
                             FiliereId = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
-                            UnitOfFormationId = new Guid("b4517ec8-16c1-47a6-9fb0-418de08d2fa8")
+                            UnitOfFormationId = new Guid("ded55607-3c83-40fb-923b-57cac2fa443e")
                         },
                         new
                         {
                             FiliereId = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
-                            UnitOfFormationId = new Guid("f3ff0e95-18fb-4417-8771-cb98685d272b")
+                            UnitOfFormationId = new Guid("dd7beea7-cf54-4f77-8c41-43a2ec8d87ba")
                         },
                         new
                         {
                             FiliereId = new Guid("a82c929f-5567-4248-b31b-3dac539c18c6"),
-                            UnitOfFormationId = new Guid("eed3160b-c071-4de8-a1be-f8c51a49b990")
+                            UnitOfFormationId = new Guid("d7cb4e59-ffe1-4d88-b025-936dfc26cb46")
                         },
                         new
                         {
                             FiliereId = new Guid("bce4bd92-9359-4303-b629-513e17ccf10f"),
-                            UnitOfFormationId = new Guid("42ff9ab6-5582-4f31-abb5-859efe27702f")
+                            UnitOfFormationId = new Guid("e3626f57-16f9-4e6d-85fc-6048035334d5")
                         },
                         new
                         {
                             FiliereId = new Guid("bce4bd92-9359-4303-b629-513e17ccf10f"),
-                            UnitOfFormationId = new Guid("aacbf1c3-ea65-4792-8779-89d7c5bfb799")
+                            UnitOfFormationId = new Guid("597422d1-9775-4777-a79c-b99bd43012e0")
                         },
                         new
                         {
                             FiliereId = new Guid("bce4bd92-9359-4303-b629-513e17ccf10f"),
-                            UnitOfFormationId = new Guid("25314fd0-5139-4c2d-a26a-eeb92f0394da")
+                            UnitOfFormationId = new Guid("9aa85501-1ca3-44b1-804d-a362c03c8f41")
                         },
                         new
                         {
                             FiliereId = new Guid("bce4bd92-9359-4303-b629-513e17ccf10f"),
-                            UnitOfFormationId = new Guid("cafc7c2d-fa6c-41fa-86a4-710c85d95359")
+                            UnitOfFormationId = new Guid("b0c0524e-9ab5-489f-9cde-c8df84d37443")
                         },
                         new
                         {
                             FiliereId = new Guid("bce4bd92-9359-4303-b629-513e17ccf10f"),
-                            UnitOfFormationId = new Guid("2e649385-a712-40b9-a796-61b3dddb4718")
+                            UnitOfFormationId = new Guid("ded55607-3c83-40fb-923b-57cac2fa443e")
                         },
                         new
                         {
                             FiliereId = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
-                            UnitOfFormationId = new Guid("506b0193-f003-41fa-b980-4a410416320b")
+                            UnitOfFormationId = new Guid("9aa85501-1ca3-44b1-804d-a362c03c8f41")
                         },
                         new
                         {
                             FiliereId = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
-                            UnitOfFormationId = new Guid("39ddf2b8-c2ac-4f3e-954d-227e8ae86cdc")
+                            UnitOfFormationId = new Guid("b0c0524e-9ab5-489f-9cde-c8df84d37443")
                         },
                         new
                         {
                             FiliereId = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
-                            UnitOfFormationId = new Guid("ce54dc15-b5a7-4f08-b0a0-48efbb7a6d69")
+                            UnitOfFormationId = new Guid("21ca9b68-f335-4533-a02f-b8583f0503f6")
                         },
                         new
                         {
                             FiliereId = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
-                            UnitOfFormationId = new Guid("fa1a1430-e11a-460c-94fc-d64219babc3f")
+                            UnitOfFormationId = new Guid("597422d1-9775-4777-a79c-b99bd43012e0")
                         },
                         new
                         {
                             FiliereId = new Guid("c42fa17d-e149-46a6-b2ae-53e972da0585"),
-                            UnitOfFormationId = new Guid("46ba8658-e724-459d-b470-857289287451")
+                            UnitOfFormationId = new Guid("24e0b880-406e-4c87-a7ad-0ef89cd9a0bb")
                         },
                         new
                         {
                             FiliereId = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
-                            UnitOfFormationId = new Guid("573ae136-2718-478b-8ef7-0e8db2d20a92")
+                            UnitOfFormationId = new Guid("69210365-a437-4666-91c3-9fbf33e52904")
                         },
                         new
                         {
                             FiliereId = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
-                            UnitOfFormationId = new Guid("ce54dc15-b5a7-4f08-b0a0-48efbb7a6d69")
+                            UnitOfFormationId = new Guid("d7cb4e59-ffe1-4d88-b025-936dfc26cb46")
                         },
                         new
                         {
                             FiliereId = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
-                            UnitOfFormationId = new Guid("ad4d428d-3b45-4d7c-baca-a7a6b6f8239e")
+                            UnitOfFormationId = new Guid("21ca9b68-f335-4533-a02f-b8583f0503f6")
                         },
                         new
                         {
                             FiliereId = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
-                            UnitOfFormationId = new Guid("13b9801a-4692-47ad-9098-acdd865de53d")
+                            UnitOfFormationId = new Guid("207dcd58-8e1d-4139-9d34-e12cad4d43b3")
                         },
                         new
                         {
                             FiliereId = new Guid("310b5fae-6446-4590-b08f-55047f4a78e9"),
-                            UnitOfFormationId = new Guid("1d4672d3-266e-4128-afbf-ef7db1d2d768")
+                            UnitOfFormationId = new Guid("9aa85501-1ca3-44b1-804d-a362c03c8f41")
                         },
                         new
                         {
                             FiliereId = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
-                            UnitOfFormationId = new Guid("3656ba7a-22d2-49c8-ac85-52620398c521")
+                            UnitOfFormationId = new Guid("73a70be3-32b5-4caf-9a0a-156ee1416793")
                         },
                         new
                         {
                             FiliereId = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
-                            UnitOfFormationId = new Guid("25314fd0-5139-4c2d-a26a-eeb92f0394da")
+                            UnitOfFormationId = new Guid("a272f4fa-fd4d-4963-9133-fb66d11a248f")
                         },
                         new
                         {
                             FiliereId = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
-                            UnitOfFormationId = new Guid("c474807b-d826-4f0a-b614-1a21d27a1969")
+                            UnitOfFormationId = new Guid("dd7beea7-cf54-4f77-8c41-43a2ec8d87ba")
                         },
                         new
                         {
                             FiliereId = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
-                            UnitOfFormationId = new Guid("35f2d025-9f4c-4df7-83d7-ee9fd383bcab")
+                            UnitOfFormationId = new Guid("03ce2b05-1bee-4823-8f09-ee8a54baff53")
                         },
                         new
                         {
                             FiliereId = new Guid("1c75a28a-7091-42d4-8a13-5b37515d7a4a"),
-                            UnitOfFormationId = new Guid("b3946977-e8e7-49c1-a79a-ee84afe0ae72")
+                            UnitOfFormationId = new Guid("e318506c-22fb-4de5-9056-ee1f8b1e9a79")
                         },
                         new
                         {
                             FiliereId = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
-                            UnitOfFormationId = new Guid("2097b01b-88b1-417b-8f5f-65e44621c19f")
+                            UnitOfFormationId = new Guid("a60afdf6-2972-4204-b3e8-bc6301770b7b")
                         },
                         new
                         {
                             FiliereId = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
-                            UnitOfFormationId = new Guid("6edd67c4-5aea-49ad-af4e-429cde0a6694")
+                            UnitOfFormationId = new Guid("a8d9ca92-a72c-4d82-a2dc-9f9109436fb6")
                         },
                         new
                         {
                             FiliereId = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
-                            UnitOfFormationId = new Guid("fb506553-5c27-46a2-970f-932d56f5fba1")
+                            UnitOfFormationId = new Guid("ef617c46-ab87-4954-8d4e-934d9b257818")
                         },
                         new
                         {
                             FiliereId = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
-                            UnitOfFormationId = new Guid("b581e7a7-8779-4d59-bfb1-bbf0d0e0a9d3")
+                            UnitOfFormationId = new Guid("a84528ba-767f-44eb-b42f-52ab30d6f46e")
                         },
                         new
                         {
                             FiliereId = new Guid("48bc9d15-e2bc-4741-97af-621693a1ebb5"),
-                            UnitOfFormationId = new Guid("17f11d00-6a78-4823-96e2-4b775dda89fd")
+                            UnitOfFormationId = new Guid("c7268c2a-47b9-4084-b76a-581b47de73f0")
                         },
                         new
                         {
                             FiliereId = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
-                            UnitOfFormationId = new Guid("159f42b6-5d53-4e17-ab46-035d438ff528")
+                            UnitOfFormationId = new Guid("dd7beea7-cf54-4f77-8c41-43a2ec8d87ba")
                         },
                         new
                         {
                             FiliereId = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
-                            UnitOfFormationId = new Guid("b581e7a7-8779-4d59-bfb1-bbf0d0e0a9d3")
+                            UnitOfFormationId = new Guid("f07a95f9-d2c0-4f31-b8f8-21e994263b5f")
                         },
                         new
                         {
                             FiliereId = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
-                            UnitOfFormationId = new Guid("b3946977-e8e7-49c1-a79a-ee84afe0ae72")
+                            UnitOfFormationId = new Guid("f20ca1a9-ed53-4963-815f-1cb43b6fda94")
                         },
                         new
                         {
                             FiliereId = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
-                            UnitOfFormationId = new Guid("39fa0a0c-55b5-4870-820f-369336293ea4")
+                            UnitOfFormationId = new Guid("5e2afd75-7cc1-40ea-a292-61d0aad3b977")
                         },
                         new
                         {
                             FiliereId = new Guid("e817e565-faad-42b8-9dca-70e03d67bdfd"),
-                            UnitOfFormationId = new Guid("cafc7c2d-fa6c-41fa-86a4-710c85d95359")
+                            UnitOfFormationId = new Guid("207dcd58-8e1d-4139-9d34-e12cad4d43b3")
                         },
                         new
                         {
                             FiliereId = new Guid("c1c6fbc9-2fde-4c9e-b6cf-78a06f299de7"),
-                            UnitOfFormationId = new Guid("35f2d025-9f4c-4df7-83d7-ee9fd383bcab")
+                            UnitOfFormationId = new Guid("7d12a3a0-38b9-4dbb-848b-161d3a973df9")
                         },
                         new
                         {
                             FiliereId = new Guid("c1c6fbc9-2fde-4c9e-b6cf-78a06f299de7"),
-                            UnitOfFormationId = new Guid("6edd67c4-5aea-49ad-af4e-429cde0a6694")
+                            UnitOfFormationId = new Guid("c7268c2a-47b9-4084-b76a-581b47de73f0")
                         },
                         new
                         {
                             FiliereId = new Guid("c1c6fbc9-2fde-4c9e-b6cf-78a06f299de7"),
-                            UnitOfFormationId = new Guid("c474807b-d826-4f0a-b614-1a21d27a1969")
+                            UnitOfFormationId = new Guid("08c7d265-8605-44f3-aa5e-0e8d67e47ac2")
                         },
                         new
                         {
                             FiliereId = new Guid("c1c6fbc9-2fde-4c9e-b6cf-78a06f299de7"),
-                            UnitOfFormationId = new Guid("a47fe0a8-e83e-4170-9fbd-34977a50b00f")
+                            UnitOfFormationId = new Guid("f07a95f9-d2c0-4f31-b8f8-21e994263b5f")
                         },
                         new
                         {
                             FiliereId = new Guid("c1c6fbc9-2fde-4c9e-b6cf-78a06f299de7"),
-                            UnitOfFormationId = new Guid("159f42b6-5d53-4e17-ab46-035d438ff528")
+                            UnitOfFormationId = new Guid("f20ca1a9-ed53-4963-815f-1cb43b6fda94")
                         },
                         new
                         {
                             FiliereId = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
-                            UnitOfFormationId = new Guid("b58180cb-eaa3-4d99-ad89-6f7ff3d48fba")
+                            UnitOfFormationId = new Guid("21ca9b68-f335-4533-a02f-b8583f0503f6")
                         },
                         new
                         {
                             FiliereId = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
-                            UnitOfFormationId = new Guid("ba1998ab-f9a9-4e13-a39d-c8d925dace08")
+                            UnitOfFormationId = new Guid("03ce2b05-1bee-4823-8f09-ee8a54baff53")
                         },
                         new
                         {
                             FiliereId = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
-                            UnitOfFormationId = new Guid("159f42b6-5d53-4e17-ab46-035d438ff528")
+                            UnitOfFormationId = new Guid("cee2f638-2b57-4853-9ce4-d13ac61c664d")
                         },
                         new
                         {
                             FiliereId = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
-                            UnitOfFormationId = new Guid("3656ba7a-22d2-49c8-ac85-52620398c521")
+                            UnitOfFormationId = new Guid("c7268c2a-47b9-4084-b76a-581b47de73f0")
                         },
                         new
                         {
                             FiliereId = new Guid("08ce7b0a-5642-4337-80ce-aef919a0b2d9"),
-                            UnitOfFormationId = new Guid("a47fe0a8-e83e-4170-9fbd-34977a50b00f")
+                            UnitOfFormationId = new Guid("f07a95f9-d2c0-4f31-b8f8-21e994263b5f")
                         },
                         new
                         {
                             FiliereId = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
-                            UnitOfFormationId = new Guid("ce54dc15-b5a7-4f08-b0a0-48efbb7a6d69")
+                            UnitOfFormationId = new Guid("51370ef7-f646-4445-9c8d-c00ba25abca3")
                         },
                         new
                         {
                             FiliereId = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
-                            UnitOfFormationId = new Guid("46ba8658-e724-459d-b470-857289287451")
+                            UnitOfFormationId = new Guid("518056b9-e28c-427d-a02c-9241ad3442d4")
                         },
                         new
                         {
                             FiliereId = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
-                            UnitOfFormationId = new Guid("34395123-6532-464b-ac54-f70c286e75e1")
+                            UnitOfFormationId = new Guid("a47f14d2-d321-4cf4-96e2-30193053069e")
                         },
                         new
                         {
                             FiliereId = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
-                            UnitOfFormationId = new Guid("89cf38a6-2383-4ca6-a3d6-df75e587722c")
+                            UnitOfFormationId = new Guid("68b0cb87-46b1-4129-91f2-8f50ff2de83c")
                         },
                         new
                         {
                             FiliereId = new Guid("16822560-9848-4a88-80f2-bb716ce8c18d"),
-                            UnitOfFormationId = new Guid("573ae136-2718-478b-8ef7-0e8db2d20a92")
+                            UnitOfFormationId = new Guid("9aa85501-1ca3-44b1-804d-a362c03c8f41")
                         },
                         new
                         {
                             FiliereId = new Guid("c094c44b-cac4-4fb9-88e0-c29a43bb7edb"),
-                            UnitOfFormationId = new Guid("ad4d428d-3b45-4d7c-baca-a7a6b6f8239e")
+                            UnitOfFormationId = new Guid("dd7beea7-cf54-4f77-8c41-43a2ec8d87ba")
                         },
                         new
                         {
                             FiliereId = new Guid("c094c44b-cac4-4fb9-88e0-c29a43bb7edb"),
-                            UnitOfFormationId = new Guid("6b6bd415-0217-4286-a88f-5ba5dbd88c91")
+                            UnitOfFormationId = new Guid("51370ef7-f646-4445-9c8d-c00ba25abca3")
                         },
                         new
                         {
                             FiliereId = new Guid("c094c44b-cac4-4fb9-88e0-c29a43bb7edb"),
-                            UnitOfFormationId = new Guid("aacbf1c3-ea65-4792-8779-89d7c5bfb799")
+                            UnitOfFormationId = new Guid("ded55607-3c83-40fb-923b-57cac2fa443e")
                         },
                         new
                         {
                             FiliereId = new Guid("c094c44b-cac4-4fb9-88e0-c29a43bb7edb"),
-                            UnitOfFormationId = new Guid("cafc7c2d-fa6c-41fa-86a4-710c85d95359")
+                            UnitOfFormationId = new Guid("08c7d265-8605-44f3-aa5e-0e8d67e47ac2")
                         },
                         new
                         {
                             FiliereId = new Guid("c094c44b-cac4-4fb9-88e0-c29a43bb7edb"),
-                            UnitOfFormationId = new Guid("de4f3b7a-4a99-4881-aa82-638a096059b5")
+                            UnitOfFormationId = new Guid("bef62363-9dd1-4193-bace-bc52eec10c90")
                         },
                         new
                         {
                             FiliereId = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
-                            UnitOfFormationId = new Guid("b58180cb-eaa3-4d99-ad89-6f7ff3d48fba")
+                            UnitOfFormationId = new Guid("a4e49c71-b1c3-4d35-b9df-2c5077bbaa5f")
                         },
                         new
                         {
                             FiliereId = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
-                            UnitOfFormationId = new Guid("ce54dc15-b5a7-4f08-b0a0-48efbb7a6d69")
+                            UnitOfFormationId = new Guid("f20ca1a9-ed53-4963-815f-1cb43b6fda94")
                         },
                         new
                         {
                             FiliereId = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
-                            UnitOfFormationId = new Guid("03e7f340-7554-43df-bfd4-aee9f88303e1")
+                            UnitOfFormationId = new Guid("d7cb4e59-ffe1-4d88-b025-936dfc26cb46")
                         },
                         new
                         {
                             FiliereId = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
-                            UnitOfFormationId = new Guid("25314fd0-5139-4c2d-a26a-eeb92f0394da")
+                            UnitOfFormationId = new Guid("73a70be3-32b5-4caf-9a0a-156ee1416793")
                         },
                         new
                         {
                             FiliereId = new Guid("109d52af-6448-4280-bcb8-c9ed03570c8c"),
-                            UnitOfFormationId = new Guid("6b6bd415-0217-4286-a88f-5ba5dbd88c91")
+                            UnitOfFormationId = new Guid("fb338b27-aa60-4908-a350-28a39f1b7365")
                         },
                         new
                         {
                             FiliereId = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
-                            UnitOfFormationId = new Guid("c474807b-d826-4f0a-b614-1a21d27a1969")
+                            UnitOfFormationId = new Guid("f20ca1a9-ed53-4963-815f-1cb43b6fda94")
                         },
                         new
                         {
                             FiliereId = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
-                            UnitOfFormationId = new Guid("46ba8658-e724-459d-b470-857289287451")
+                            UnitOfFormationId = new Guid("a60afdf6-2972-4204-b3e8-bc6301770b7b")
                         },
                         new
                         {
                             FiliereId = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
-                            UnitOfFormationId = new Guid("fb506553-5c27-46a2-970f-932d56f5fba1")
+                            UnitOfFormationId = new Guid("812b28ae-aad1-4788-9f87-fc648cfacde0")
                         },
                         new
                         {
                             FiliereId = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
-                            UnitOfFormationId = new Guid("a47fe0a8-e83e-4170-9fbd-34977a50b00f")
+                            UnitOfFormationId = new Guid("a4e49c71-b1c3-4d35-b9df-2c5077bbaa5f")
                         },
                         new
                         {
                             FiliereId = new Guid("27039911-d1ef-4662-ad01-f5b0260bfa96"),
-                            UnitOfFormationId = new Guid("39fa0a0c-55b5-4870-820f-369336293ea4")
+                            UnitOfFormationId = new Guid("08c7d265-8605-44f3-aa5e-0e8d67e47ac2")
                         },
                         new
                         {
                             FiliereId = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
-                            UnitOfFormationId = new Guid("cafc7c2d-fa6c-41fa-86a4-710c85d95359")
+                            UnitOfFormationId = new Guid("96028752-f817-47e3-b24a-9d673dffc367")
                         },
                         new
                         {
                             FiliereId = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
-                            UnitOfFormationId = new Guid("ba1998ab-f9a9-4e13-a39d-c8d925dace08")
+                            UnitOfFormationId = new Guid("f07a95f9-d2c0-4f31-b8f8-21e994263b5f")
                         },
                         new
                         {
                             FiliereId = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
-                            UnitOfFormationId = new Guid("89cf38a6-2383-4ca6-a3d6-df75e587722c")
+                            UnitOfFormationId = new Guid("5e2afd75-7cc1-40ea-a292-61d0aad3b977")
                         },
                         new
                         {
                             FiliereId = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
-                            UnitOfFormationId = new Guid("2c53749d-c57f-4aa3-86e5-eb7ccbddbf37")
+                            UnitOfFormationId = new Guid("0bbc12bb-8163-457a-a852-ed28f0d6ea86")
                         },
                         new
                         {
                             FiliereId = new Guid("06f1a5e9-8864-40e3-b6d6-f8945f97e205"),
-                            UnitOfFormationId = new Guid("b3946977-e8e7-49c1-a79a-ee84afe0ae72")
+                            UnitOfFormationId = new Guid("518056b9-e28c-427d-a02c-9241ad3442d4")
                         });
                 });
 
@@ -1380,7 +1380,7 @@ namespace Infrastracture.Migrations
                         new
                         {
                             Id = new Guid("a1b2c3d4-e5f6-7a8b-9c0d-ef1234567890"),
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8171),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1536),
                             Email = "mehdi.bennani@example.com",
                             IsDeleted = false,
                             Nom = "Bennani",
@@ -1393,7 +1393,7 @@ namespace Infrastracture.Migrations
                         new
                         {
                             Id = new Guid("b1c2d3e4-f5a6-7b8c-9d0e-ef0987654321"),
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8178),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1556),
                             Email = "yassine.elamrani@example.com",
                             IsDeleted = false,
                             Nom = "El Amrani",
@@ -1406,7 +1406,7 @@ namespace Infrastracture.Migrations
                         new
                         {
                             Id = new Guid("c1d2e3f4-a5b6-7c8d-9e0f-ef1234987654"),
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8180),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1561),
                             Email = "nadia.kabbaj@example.com",
                             IsDeleted = false,
                             Nom = "Kabbaj",
@@ -1419,7 +1419,7 @@ namespace Infrastracture.Migrations
                         new
                         {
                             Id = new Guid("d1e2f3a4-b5c6-7d8e-9f0a-ef6543210987"),
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8183),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1564),
                             Email = "karim.alami@example.com",
                             IsDeleted = false,
                             Nom = "Alami",
@@ -1432,7 +1432,7 @@ namespace Infrastracture.Migrations
                         new
                         {
                             Id = new Guid("e1f2a3b4-c5d6-7e8f-9a0b-ef5678901234"),
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8202),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1568),
                             Email = "amina.fassi@example.com",
                             IsDeleted = false,
                             Nom = "Fassi",
@@ -1492,9 +1492,9 @@ namespace Infrastracture.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("fb506553-5c27-46a2-970f-932d56f5fba1"),
+                            Id = new Guid("207dcd58-8e1d-4139-9d34-e12cad4d43b3"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8207),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1575),
                             Duration = 45,
                             IsDeleted = false,
                             Name = "Français",
@@ -1502,9 +1502,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("a47fe0a8-e83e-4170-9fbd-34977a50b00f"),
+                            Id = new Guid("a65b1600-b5b1-4bf0-a48c-ba975a5e9f89"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8212),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1583),
                             Duration = 46,
                             IsDeleted = false,
                             Name = "English",
@@ -1512,9 +1512,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("eed3160b-c071-4de8-a1be-f8c51a49b990"),
+                            Id = new Guid("bd7f31c7-e9f5-49f9-b5b5-530b34463faa"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8214),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1589),
                             Duration = 47,
                             IsDeleted = false,
                             Name = "Math",
@@ -1522,9 +1522,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("b4517ec8-16c1-47a6-9fb0-418de08d2fa8"),
+                            Id = new Guid("dd7beea7-cf54-4f77-8c41-43a2ec8d87ba"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8215),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1591),
                             Duration = 48,
                             IsDeleted = false,
                             Name = "History",
@@ -1532,9 +1532,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("ba1998ab-f9a9-4e13-a39d-c8d925dace08"),
+                            Id = new Guid("a84528ba-767f-44eb-b42f-52ab30d6f46e"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8220),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1594),
                             Duration = 49,
                             IsDeleted = false,
                             Name = "Geography",
@@ -1542,9 +1542,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("2097b01b-88b1-417b-8f5f-65e44621c19f"),
+                            Id = new Guid("7d12a3a0-38b9-4dbb-848b-161d3a973df9"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8222),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1597),
                             Duration = 50,
                             IsDeleted = false,
                             Name = "Biology",
@@ -1552,9 +1552,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("4233664a-6d06-45c7-ad6f-953d1091422f"),
+                            Id = new Guid("a60afdf6-2972-4204-b3e8-bc6301770b7b"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8224),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1602),
                             Duration = 51,
                             IsDeleted = false,
                             Name = "Chemistry",
@@ -1562,9 +1562,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("02460a52-624a-4d97-8c19-e6b029224044"),
+                            Id = new Guid("76845ab0-6aac-4873-9563-a5d723b47c90"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8225),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1604),
                             Duration = 52,
                             IsDeleted = false,
                             Name = "Physics",
@@ -1572,9 +1572,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("6edd67c4-5aea-49ad-af4e-429cde0a6694"),
+                            Id = new Guid("4b6e905c-2bd7-44d7-8391-32e75fd550de"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8229),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1607),
                             Duration = 53,
                             IsDeleted = false,
                             Name = "Computer Science",
@@ -1582,9 +1582,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("8a31ebae-7b20-42b8-99db-96b9c57433a4"),
+                            Id = new Guid("f20ca1a9-ed53-4963-815f-1cb43b6fda94"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8231),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1610),
                             Duration = 54,
                             IsDeleted = false,
                             Name = "Art",
@@ -1592,9 +1592,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("f3ff0e95-18fb-4417-8771-cb98685d272b"),
+                            Id = new Guid("bf53b3c5-33e1-4ce6-a5ea-28edc87af26a"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8233),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1615),
                             Duration = 45,
                             IsDeleted = false,
                             Name = "Music",
@@ -1602,9 +1602,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("ad4d428d-3b45-4d7c-baca-a7a6b6f8239e"),
+                            Id = new Guid("d7cb4e59-ffe1-4d88-b025-936dfc26cb46"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8235),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1618),
                             Duration = 46,
                             IsDeleted = false,
                             Name = "Physical Education",
@@ -1612,9 +1612,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("3656ba7a-22d2-49c8-ac85-52620398c521"),
+                            Id = new Guid("08c7d265-8605-44f3-aa5e-0e8d67e47ac2"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8238),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1620),
                             Duration = 47,
                             IsDeleted = false,
                             Name = "Economics",
@@ -1622,9 +1622,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("aacbf1c3-ea65-4792-8779-89d7c5bfb799"),
+                            Id = new Guid("b0c0524e-9ab5-489f-9cde-c8df84d37443"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8239),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1622),
                             Duration = 48,
                             IsDeleted = false,
                             Name = "Psychology",
@@ -1632,9 +1632,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("fa1a1430-e11a-460c-94fc-d64219babc3f"),
+                            Id = new Guid("c7268c2a-47b9-4084-b76a-581b47de73f0"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8241),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1627),
                             Duration = 49,
                             IsDeleted = false,
                             Name = "Philosophy",
@@ -1642,9 +1642,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("89cf38a6-2383-4ca6-a3d6-df75e587722c"),
+                            Id = new Guid("0bbc12bb-8163-457a-a852-ed28f0d6ea86"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8242),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1779),
                             Duration = 50,
                             IsDeleted = false,
                             Name = "Sociology",
@@ -1652,9 +1652,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("828257db-6aa0-4bfa-aab7-f1c92b736924"),
+                            Id = new Guid("5e2afd75-7cc1-40ea-a292-61d0aad3b977"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8245),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1782),
                             Duration = 51,
                             IsDeleted = false,
                             Name = "Political Science",
@@ -1662,9 +1662,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("03e7f340-7554-43df-bfd4-aee9f88303e1"),
+                            Id = new Guid("597422d1-9775-4777-a79c-b99bd43012e0"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8248),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1786),
                             Duration = 52,
                             IsDeleted = false,
                             Name = "Statistics",
@@ -1672,9 +1672,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("b58180cb-eaa3-4d99-ad89-6f7ff3d48fba"),
+                            Id = new Guid("96028752-f817-47e3-b24a-9d673dffc367"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8249),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1791),
                             Duration = 53,
                             IsDeleted = false,
                             Name = "Engineering",
@@ -1682,9 +1682,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("de4f3b7a-4a99-4881-aa82-638a096059b5"),
+                            Id = new Guid("e318506c-22fb-4de5-9056-ee1f8b1e9a79"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8251),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1793),
                             Duration = 54,
                             IsDeleted = false,
                             Name = "Literature",
@@ -1692,9 +1692,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("13b9801a-4692-47ad-9098-acdd865de53d"),
+                            Id = new Guid("adc04f0d-b874-4a9d-852f-1356e097855b"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8254),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1796),
                             Duration = 45,
                             IsDeleted = false,
                             Name = "Spanish",
@@ -1702,9 +1702,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("a2b5749b-ae6d-4916-a5d7-66d39b1a5fab"),
+                            Id = new Guid("79491fb6-c30b-479a-9545-4f511c3fa87f"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8256),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1798),
                             Duration = 46,
                             IsDeleted = false,
                             Name = "German",
@@ -1712,9 +1712,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("2c53749d-c57f-4aa3-86e5-eb7ccbddbf37"),
+                            Id = new Guid("67778971-04b1-4c5d-aec5-a24fbb031c89"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8257),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1803),
                             Duration = 47,
                             IsDeleted = false,
                             Name = "Italian",
@@ -1722,9 +1722,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("c474807b-d826-4f0a-b614-1a21d27a1969"),
+                            Id = new Guid("518056b9-e28c-427d-a02c-9241ad3442d4"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8259),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1806),
                             Duration = 48,
                             IsDeleted = false,
                             Name = "Chinese",
@@ -1732,9 +1732,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("14651434-068f-4188-aca9-75ce57bd9098"),
+                            Id = new Guid("7c168860-1c57-4ef3-b6b2-fadb326c24dd"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8262),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1809),
                             Duration = 49,
                             IsDeleted = false,
                             Name = "Japanese",
@@ -1742,9 +1742,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("a2210d55-634d-41bf-8096-8d1e74a7dd55"),
+                            Id = new Guid("f9dba3a5-f75f-4051-83f6-29a5051c93ee"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8263),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1811),
                             Duration = 50,
                             IsDeleted = false,
                             Name = "Arabic",
@@ -1752,9 +1752,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("17f11d00-6a78-4823-96e2-4b775dda89fd"),
+                            Id = new Guid("c05ccfef-0963-446a-8896-e52812f93c70"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8265),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1815),
                             Duration = 51,
                             IsDeleted = false,
                             Name = "Latin",
@@ -1762,9 +1762,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("506b0193-f003-41fa-b980-4a410416320b"),
+                            Id = new Guid("a47f14d2-d321-4cf4-96e2-30193053069e"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8266),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1818),
                             Duration = 52,
                             IsDeleted = false,
                             Name = "Greek",
@@ -1772,9 +1772,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("81e448c2-06ef-41d2-8c39-987cae266b70"),
+                            Id = new Guid("a272f4fa-fd4d-4963-9133-fb66d11a248f"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8269),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1820),
                             Duration = 53,
                             IsDeleted = false,
                             Name = "Religion",
@@ -1782,9 +1782,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("cafc7c2d-fa6c-41fa-86a4-710c85d95359"),
+                            Id = new Guid("a8d9ca92-a72c-4d82-a2dc-9f9109436fb6"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8301),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1822),
                             Duration = 54,
                             IsDeleted = false,
                             Name = "Astronomy",
@@ -1792,9 +1792,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("b581e7a7-8779-4d59-bfb1-bbf0d0e0a9d3"),
+                            Id = new Guid("73a70be3-32b5-4caf-9a0a-156ee1416793"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8303),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1827),
                             Duration = 45,
                             IsDeleted = false,
                             Name = "Environmental Science",
@@ -1802,9 +1802,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("4e3ca126-3306-4b0a-b59f-615ffe3107aa"),
+                            Id = new Guid("ef617c46-ab87-4954-8d4e-934d9b257818"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8305),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1829),
                             Duration = 46,
                             IsDeleted = false,
                             Name = "Health Education",
@@ -1812,9 +1812,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("159f42b6-5d53-4e17-ab46-035d438ff528"),
+                            Id = new Guid("69210365-a437-4666-91c3-9fbf33e52904"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8308),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1832),
                             Duration = 47,
                             IsDeleted = false,
                             Name = "Business Studies",
@@ -1822,9 +1822,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("573ae136-2718-478b-8ef7-0e8db2d20a92"),
+                            Id = new Guid("812b28ae-aad1-4788-9f87-fc648cfacde0"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8310),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1835),
                             Duration = 48,
                             IsDeleted = false,
                             Name = "Law",
@@ -1832,9 +1832,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("1d4672d3-266e-4128-afbf-ef7db1d2d768"),
+                            Id = new Guid("f07a95f9-d2c0-4f31-b8f8-21e994263b5f"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8312),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1840),
                             Duration = 49,
                             IsDeleted = false,
                             Name = "Engineering Design",
@@ -1842,9 +1842,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("9b47dea2-98d6-4528-9349-1cac8f7d8bc7"),
+                            Id = new Guid("6791aad2-09e4-4cf0-86d3-d5d1339d2c6f"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8313),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1842),
                             Duration = 50,
                             IsDeleted = false,
                             Name = "Information Technology",
@@ -1852,9 +1852,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("46ba8658-e724-459d-b470-857289287451"),
+                            Id = new Guid("59c6e6a0-89e4-4043-9d33-fb0725a2b4f2"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8316),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1844),
                             Duration = 51,
                             IsDeleted = false,
                             Name = "Theater",
@@ -1862,9 +1862,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("42ff9ab6-5582-4f31-abb5-859efe27702f"),
+                            Id = new Guid("7a8364d2-087d-4184-9325-5a3fcdb8c878"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8318),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1847),
                             Duration = 52,
                             IsDeleted = false,
                             Name = "Dance",
@@ -1872,9 +1872,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("b3946977-e8e7-49c1-a79a-ee84afe0ae72"),
+                            Id = new Guid("68b0cb87-46b1-4129-91f2-8f50ff2de83c"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8319),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1852),
                             Duration = 53,
                             IsDeleted = false,
                             Name = "Media Studies",
@@ -1882,9 +1882,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("35f2d025-9f4c-4df7-83d7-ee9fd383bcab"),
+                            Id = new Guid("03ce2b05-1bee-4823-8f09-ee8a54baff53"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8321),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1854),
                             Duration = 54,
                             IsDeleted = false,
                             Name = "Anthropology",
@@ -1892,9 +1892,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("2e649385-a712-40b9-a796-61b3dddb4718"),
+                            Id = new Guid("24e0b880-406e-4c87-a7ad-0ef89cd9a0bb"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8324),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1856),
                             Duration = 45,
                             IsDeleted = false,
                             Name = "Ethics",
@@ -1902,9 +1902,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("4d03bb02-3ac8-44b3-8a06-c2194507c599"),
+                            Id = new Guid("48b88652-b6db-493f-871a-7de5adb5af05"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8325),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1859),
                             Duration = 46,
                             IsDeleted = false,
                             Name = "Mathematics",
@@ -1912,9 +1912,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("729aeb20-ae67-4885-8f70-c2ba9cff2c6b"),
+                            Id = new Guid("bef62363-9dd1-4193-bace-bc52eec10c90"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8326),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1863),
                             Duration = 47,
                             IsDeleted = false,
                             Name = "Statistics",
@@ -1922,9 +1922,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("010b6d13-2eac-4174-ad65-01465e63a214"),
+                            Id = new Guid("fb338b27-aa60-4908-a350-28a39f1b7365"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8328),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1866),
                             Duration = 48,
                             IsDeleted = false,
                             Name = "Cryptography",
@@ -1932,9 +1932,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("301f120a-7d37-4f90-8798-a22c1bfc4fbe"),
+                            Id = new Guid("51370ef7-f646-4445-9c8d-c00ba25abca3"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8331),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1868),
                             Duration = 49,
                             IsDeleted = false,
                             Name = "Pharmacology",
@@ -1942,9 +1942,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("eba4be51-b10a-4c2f-a37b-114e40428b35"),
+                            Id = new Guid("1239cc38-04cf-4430-9b92-aeb1e8dae76e"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8332),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1871),
                             Duration = 50,
                             IsDeleted = false,
                             Name = "Astrophysics",
@@ -1952,9 +1952,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("25314fd0-5139-4c2d-a26a-eeb92f0394da"),
+                            Id = new Guid("9aa85501-1ca3-44b1-804d-a362c03c8f41"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8334),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1875),
                             Duration = 51,
                             IsDeleted = false,
                             Name = "Geology",
@@ -1962,9 +1962,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("8b9d2463-921e-4964-b972-50968f5d6634"),
+                            Id = new Guid("e3626f57-16f9-4e6d-85fc-6048035334d5"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8335),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1877),
                             Duration = 52,
                             IsDeleted = false,
                             Name = "Oceanography",
@@ -1972,9 +1972,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("34395123-6532-464b-ac54-f70c286e75e1"),
+                            Id = new Guid("68c73084-72d8-47f7-8551-60bc6c563e32"),
                             Coefficient = 5,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8338),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1880),
                             Duration = 53,
                             IsDeleted = false,
                             Name = "Meteorology",
@@ -1982,9 +1982,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("39fa0a0c-55b5-4870-820f-369336293ea4"),
+                            Id = new Guid("cee2f638-2b57-4853-9ce4-d13ac61c664d"),
                             Coefficient = 6,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8339),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1882),
                             Duration = 54,
                             IsDeleted = false,
                             Name = "Robotics",
@@ -1992,9 +1992,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("39ddf2b8-c2ac-4f3e-954d-227e8ae86cdc"),
+                            Id = new Guid("a4e49c71-b1c3-4d35-b9df-2c5077bbaa5f"),
                             Coefficient = 2,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8341),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1887),
                             Duration = 45,
                             IsDeleted = false,
                             Name = "Machine Learning",
@@ -2002,9 +2002,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("6b6bd415-0217-4286-a88f-5ba5dbd88c91"),
+                            Id = new Guid("ded55607-3c83-40fb-923b-57cac2fa443e"),
                             Coefficient = 3,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8342),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1889),
                             Duration = 46,
                             IsDeleted = false,
                             Name = "Data Science",
@@ -2012,9 +2012,9 @@ namespace Infrastracture.Migrations
                         },
                         new
                         {
-                            Id = new Guid("ce54dc15-b5a7-4f08-b0a0-48efbb7a6d69"),
+                            Id = new Guid("21ca9b68-f335-4533-a02f-b8583f0503f6"),
                             Coefficient = 4,
-                            CreatedAt = new DateTime(2024, 8, 18, 17, 2, 28, 56, DateTimeKind.Utc).AddTicks(8345),
+                            CreatedAt = new DateTime(2024, 8, 19, 14, 39, 45, 52, DateTimeKind.Utc).AddTicks(1891),
                             Duration = 47,
                             IsDeleted = false,
                             Name = "Artificial Intelligence",
