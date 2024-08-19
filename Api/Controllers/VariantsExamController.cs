@@ -12,6 +12,7 @@ namespace Api.Controllers
     [ApiController]
     public class VariantsExamController : ControllerBase
     {
+        
         private readonly IMediator _mediator;
 
         public VariantsExamController(IMediator mediator)
